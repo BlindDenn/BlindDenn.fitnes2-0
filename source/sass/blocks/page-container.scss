@@ -1,0 +1,17 @@
+.page-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-container__header {
+  padding-block-start: 30px;
+  padding-block-end: 30px;
+  background-color: $bg-banner;
+}
+
+.page-container__footer {
+  margin-block-start: auto;
+  height: 120px;
+  background-color: $bg-footer;
+}

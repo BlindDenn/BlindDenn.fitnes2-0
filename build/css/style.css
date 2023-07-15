@@ -1241,6 +1241,71 @@ button,
   color: #15ab07;
 }
 
+.page-container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page-container__header {
+  -webkit-padding-before: 30px;
+          padding-block-start: 30px;
+  -webkit-padding-after: 30px;
+          padding-block-end: 30px;
+  background-color: #ed0233;
+}
+
+.page-container__footer {
+  -webkit-margin-before: auto;
+          margin-block-start: auto;
+  height: 120px;
+  background-color: #030a1a;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+}
+
+.header__logo-image {
+  display: block;
+  width: 122px;
+  height: 44px;
+}
+
+.main-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+  -webkit-margin-start: 40px;
+          margin-inline-start: 40px;
+}
+
+.main-nav__link {
+  color: #ffffff;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 31px;
+  letter-spacing: 0.78px;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {

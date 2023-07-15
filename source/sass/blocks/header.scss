@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+// .header__logo-link {
+//   // padding-block-start: 11px;
+//   // padding-block-end: 10px;
+// }
+
+.header__logo-image {
+  display: block;
+  width: 122px;
+  height: 44px;
+}
