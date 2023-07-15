@@ -8,6 +8,13 @@
   margin-inline-start: 40px;
 }
 
+.main-nav__item {
+  @include vp-tablet {
+    transform: translateY(-5px);
+  }
+
+}
+
 .main-nav__link {
   color: $color-white;
   font-family: "Alumni Sans", "Arial", sans-serif;
@@ -24,7 +31,7 @@
 
   @include vp-mobile {
     font-size: 20px;
-    line-height: 24px;
+    line-height: 27px;
     letter-spacing: 0.4px;
   }
 }

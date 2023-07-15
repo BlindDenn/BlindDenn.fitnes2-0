@@ -6,15 +6,17 @@
 
 .page-container__header {
   padding-block-start: 30px;
-  padding-block-end: 30px;
+  padding-block-end: 26px;
   background-color: $bg-banner;
 
   @include vp-tablet {
     padding-block-start: 40px;
+    padding-block-end: 31px;
   }
 
   @include vp-mobile {
     padding-block-start: 20px;
+    padding-block-end: 53px;
   }
 }
 

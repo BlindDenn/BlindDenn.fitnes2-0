@@ -1134,20 +1134,24 @@ button,
 .page-container__header {
   -webkit-padding-before: 30px;
           padding-block-start: 30px;
-  -webkit-padding-after: 30px;
-          padding-block-end: 30px;
+  -webkit-padding-after: 26px;
+          padding-block-end: 26px;
   background-color: #ed0233;
 }
 @media (max-width: 1199px) {
   .page-container__header {
     -webkit-padding-before: 40px;
             padding-block-start: 40px;
+    -webkit-padding-after: 31px;
+            padding-block-end: 31px;
   }
 }
 @media (max-width: 767px) {
   .page-container__header {
     -webkit-padding-before: 20px;
             padding-block-start: 20px;
+    -webkit-padding-after: 53px;
+            padding-block-end: 53px;
   }
 }
 
@@ -1175,14 +1179,14 @@ button,
 }
 @media (max-width: 1199px) {
   .header__logo-image {
-    width: 82px;
+    width: 80px;
     height: 17px;
   }
 }
-@media (max-width: 1199px) {
+@media (max-width: 767px) {
   .header__logo-image {
-    width: 69px;
-    height: 24px;
+    width: 67px;
+    height: 14px;
   }
 }
 
@@ -1198,6 +1202,14 @@ button,
   gap: 20px;
   -webkit-margin-start: 40px;
           margin-inline-start: 40px;
+}
+
+@media (max-width: 1199px) {
+  .main-nav__item {
+    -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
 }
 
 .main-nav__link {
@@ -1218,7 +1230,7 @@ button,
 @media (max-width: 767px) {
   .main-nav__link {
     font-size: 20px;
-    line-height: 24px;
+    line-height: 27px;
     letter-spacing: 0.4px;
   }
 }
