@@ -3,17 +3,39 @@
 
 // Default
 
-$color-default-black:               #000000;
+$color-default-black:               #102654;
 $color-default-white:               #ffffff;
 $color-transparent:                 rgba(255, 255, 255, 0);
 
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
+// Texts
+
+$color-basic:                       $color-default-black;
+$color-white:                       $color-default-white;
+$color-accent:                      #103aae;
+
 $color-neon-blue:                   #2c39f2;
 $color-torch-red:                   #ff1553;
 
+// Backgrounds
+
+$bg-basic:                          $color-default-white;
+$bg-additional:                     #f8f9fc;
+$bg-banner:                         #ed0233;
+$bg-dark:                           #102654;
+$bg-footer:                         #030a1a;
+
+// icons::after
+
+$color-icon-light:                  $color-default-white ;
+$color-icon-dark:                   $color-basic;
+
 // Gradient
+
+$gradient-text:                     linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
+$gradient-button:                   linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
 
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
 
