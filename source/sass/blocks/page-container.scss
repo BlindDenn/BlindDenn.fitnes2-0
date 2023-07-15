@@ -8,6 +8,14 @@
   padding-block-start: 30px;
   padding-block-end: 30px;
   background-color: $bg-banner;
+
+  @include vp-tablet {
+    padding-block-start: 40px;
+  }
+
+  @include vp-mobile {
+    padding-block-start: 20px;
+  }
 }
 
 .page-container__footer {

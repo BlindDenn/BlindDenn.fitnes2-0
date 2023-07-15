@@ -15,5 +15,17 @@
   font-weight: 600;
   line-height: 31px;
   letter-spacing: 0.78px;
+
+  @include vp-tablet {
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.48px;
+  }
+
+  @include vp-mobile {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+  }
 }
 
