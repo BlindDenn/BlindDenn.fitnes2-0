@@ -6,6 +6,16 @@
   grid-template-columns: 396fr 65fr 700fr;
   grid-template-rows: 72px auto auto 60px 94px;
   justify-items: end;
+
+  @include vp-tablet {
+    grid-template-columns: 1fr 30px 1fr;
+    grid-template-rows: 50px auto auto 61px 105px;
+  }
+
+  @include vp-mobile {
+    grid-template-columns: 1fr;
+    grid-template-rows: 8px auto auto 63px 78px;
+  }
 }
 
 .hero__title {
@@ -25,10 +35,20 @@
   text-transform: uppercase;
   text-align: right;
   -webkit-text-stroke: 4px $color-white;
-  //   $color-white $stroke $stroke-neg,
-  //   $color-white $stroke-neg $stroke,
-  //   $color-white $stroke-neg $stroke-neg;
   margin-block-end: 50px;
+
+  @include vp-tablet {
+    font-size: 72px;
+    line-height: 86px;
+    letter-spacing: 3.6px;
+    text-transform: none;
+    -webkit-text-stroke: 3px $color-white;
+    margin-block-end: 36px;
+  }
+
+  @include vp-mobile {
+    margin-block-end: 22px;
+  }
 }
 
 .hero__location {
@@ -45,12 +65,38 @@
   text-transform: lowercase;
   margin-inline-end: 50px;
   margin-block-end: 25px;
+
+  @include vp-tablet {
+    font-size: 34px;
+    line-height: 41px;
+    letter-spacing: 1.02px;
+    margin-inline-end: 4px;
+    margin-block-end: 7px;
+  }
+
+  @include vp-mobile {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 0.84px;
+    margin-block-end: 14px;
+  }
 }
 
 .hero__description {
   position: absolute;
   top: 46%;
   left: calc(29% - 316px);
+
+  @include vp-tablet {
+    top: 39.5%;
+    left: calc(50% - 339px);
+  }
+
+  @include vp-mobile {
+    top: 34%;
+    left: unset;
+    right: 178px;
+  }
 
 }
 
@@ -72,10 +118,28 @@
   justify-self: start;
   position: absolute;
   bottom: 51px;
+
+  @include vp-tablet {
+    position: relative;
+    width: 324px;
+    bottom: 0;
+  }
+
+  @include vp-mobile {
+    display: none;
+  }
 }
 
 .hero__button {
   grid-column: 1 / 2;
   grid-row: -2 / -3;
   width: 234px;
+
+  @include vp-tablet {
+    width: 185px;
+  }
+
+  @include vp-mobile {
+    width: 100%;
+  }
 }

@@ -10,6 +10,14 @@
     bottom: 0;
     height: 100vh;
     background: $gradient-hero-desktop;
+
+    @include vp-tablet {
+      background: $gradient-hero-tablet;
+    }
+
+    @include vp-mobile {
+      background: $gradient-hero-mobile;
+    }
   }
 
 }
