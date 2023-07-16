@@ -1,26 +1,44 @@
 .btn {
   display: inline-flex;
-  padding: 10px 20px;
+  // padding: 10px 20px;
 
-  color: $color-default-white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  background-color: $color-neon-blue;
-  border: none;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+
+  &--bg-dark {
+    color: $color-white;
+    background-color: transparent;
+    border: 4px solid $color-white;
+
+    &:hover,
+    &:focus-visible {
+      outline: none;
+      color: $color-accent;
+      background-color: $color-white;
+    }
+
+    &:active {
+      outline: none;
+      color: $bg-dark;
+      background-color: $color-white;
+    }
+  }
+
   cursor: pointer;
 
   transition: opacity $trans-default;
-
-  &--red {
-    background-color: $color-torch-red;
-  }
 
   &:disabled {
     opacity: 0.5;
 
     pointer-events: none;
-  }
-
-  @include hover-focus {
-    opacity: 0.8;
   }
 }

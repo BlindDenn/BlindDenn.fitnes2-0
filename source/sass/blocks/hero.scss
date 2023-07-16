@@ -1,49 +1,81 @@
 .hero {
   position: relative;
+  width: 100%;
   color: $color-white;
-  max-width: fit-content;
-  text-align: right;
+  display: grid;
+  grid-template-columns: 396fr 65fr 700fr;
+  grid-template-rows: 72px auto auto 60px 94px;
+  justify-items: end;
 }
 
-.hero span {
-  $stroke: 1.5px;
-  $stroke-neg: calc(-1 * $stroke);
+.hero__title {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+.hero__title span {
+  width: min-content;
   display: block;
-  width: 298px;
   color: inherit;
-  text-transform: uppercase;
-  font-family: "Alumni Sans" "Arial" sans-serif;
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 92px;
   font-weight: 600;
   line-height: 110px;
   letter-spacing: 4.6px;
-  text-shadow: $color-white $stroke $stroke,
-    $color-white $stroke $stroke-neg,
-    $color-white $stroke-neg $stroke,
-    $color-white $stroke-neg $stroke-neg;
-  margin-block-end: 80px;
-
+  text-transform: uppercase;
+  text-align: right;
+  -webkit-text-stroke: 4px $color-white;
+  //   $color-white $stroke $stroke-neg,
+  //   $color-white $stroke-neg $stroke,
+  //   $color-white $stroke-neg $stroke-neg;
+  margin-block-end: 50px;
 }
 
-.hero span:first-child {
-  text-transform: lowercase;
+.hero__location {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.hero__location span {
+  display: block;
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 48px;
-  line-height: 58px;
+  line-height: 37px;
   letter-spacing: 1.44px;
+  text-transform: lowercase;
+  margin-inline-end: 50px;
   margin-block-end: 25px;
-  text-shadow: none;
 }
 
-.hero ul {
+.hero__description {
+  position: absolute;
+  top: 46%;
+  left: calc(29% - 316px);
+
+}
+
+.hero__description ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  position: absolute;
-    top: 50%;
-  right: 300px;
   width: max-content;
   font-family: "Roboto Condensed", Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
+  text-align: right;
+}
+
+.hero picture {
+  grid-column: -2 / -1;
+  grid-row: 1 / -1;
+  justify-self: start;
+  position: absolute;
+  bottom: 51px;
+}
+
+.hero__button {
+  grid-column: 1 / 2;
+  grid-row: -2 / -3;
+  width: 234px;
 }

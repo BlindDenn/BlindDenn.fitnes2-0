@@ -582,28 +582,43 @@ button,
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 10px 20px;
-  color: #ffffff;
-  background-color: #2c39f2;
-  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
   cursor: pointer;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
-.btn--red {
-  background-color: #ff1553;
+.btn--bg-dark {
+  color: #ffffff;
+  background-color: transparent;
+  border: 4px solid #ffffff;
+}
+.btn--bg-dark:hover, .btn--bg-dark:focus-visible {
+  outline: none;
+  color: #103aae;
+  background-color: #ffffff;
+}
+.btn--bg-dark:active {
+  outline: none;
+  color: #102654;
+  background-color: #ffffff;
 }
 .btn:disabled {
   opacity: 0.5;
   pointer-events: none;
-}
-@media (hover: hover) {
-  .btn:hover:not(.focus-visible) {
-    opacity: 0.8;
-  }
-}
-.btn.focus-visible:focus {
-  opacity: 0.8;
 }
 
 .custom-input,
@@ -1245,50 +1260,81 @@ button,
   right: 0;
   bottom: 0;
   height: 100vh;
-  background: conic-gradient(from 70deg at calc(50% - 200px) calc(100% - 400px), #B80027 0deg, #B80027 15deg, #003D85 90deg, #003D85 120deg, #B80027);
+  background: conic-gradient(from 70deg at calc(50% - 465px) calc(100% - 400px), #B80027 0deg, #B80027 15deg, #003D85 90deg, #003D85 120deg, #B80027);
 }
 
 .hero {
   position: relative;
+  width: 100%;
   color: #ffffff;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
-  text-align: right;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 396fr 65fr 700fr;
+  grid-template-columns: 396fr 65fr 700fr;
+  -ms-grid-rows: 72px auto auto 60px 94px;
+  grid-template-rows: 72px auto auto 60px 94px;
+  justify-items: end;
 }
 
-.hero span {
+.hero__title {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+.hero__title span {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
   display: block;
-  width: 298px;
   color: inherit;
-  text-transform: uppercase;
-  font-family: "Alumni Sans" "Arial" sans-serif;
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 92px;
   font-weight: 600;
   line-height: 110px;
   letter-spacing: 4.6px;
-  text-shadow: #ffffff 1.5px 1.5px, #ffffff 1.5px -1.5px, #ffffff -1.5px 1.5px, #ffffff -1.5px -1.5px;
-  -webkit-margin-after: 80px;
-          margin-block-end: 80px;
+  text-transform: uppercase;
+  text-align: right;
+  -webkit-text-stroke: 4px #ffffff;
+  -webkit-margin-after: 50px;
+          margin-block-end: 50px;
 }
 
-.hero span:first-child {
-  text-transform: lowercase;
+.hero__location {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.hero__location span {
+  display: block;
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 48px;
-  line-height: 58px;
+  line-height: 37px;
   letter-spacing: 1.44px;
+  text-transform: lowercase;
+  -webkit-margin-end: 50px;
+          margin-inline-end: 50px;
   -webkit-margin-after: 25px;
           margin-block-end: 25px;
-  text-shadow: none;
 }
 
-.hero ul {
+.hero__description {
+  position: absolute;
+  top: 46%;
+  left: calc(29% - 316px);
+}
+
+.hero__description ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  position: absolute;
-  top: 50%;
-  right: 300px;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -1296,6 +1342,24 @@ button,
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
+  text-align: right;
+}
+
+.hero picture {
+  grid-column: -2/-1;
+  grid-row: 1/-1;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  position: absolute;
+  bottom: 51px;
+}
+
+.hero__button {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  grid-row: -2/-3;
+  width: 234px;
 }
 
 .footer {
