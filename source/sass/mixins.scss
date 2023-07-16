@@ -57,7 +57,7 @@
 }
 
 @mixin vp-tablet {
-  @media (max-width: ($vp-1200 - 1px)) {
+  @media (max-width: ($vp-1200 - 0.2px)) {
     @content;
   }
 }
@@ -69,7 +69,7 @@
 }
 
 @mixin vp-mobile {
-  @media (max-width: ($vp-768 - 1px)) {
+  @media (max-width: ($vp-768 - 0.2px)) {
     @content;
   }
 }

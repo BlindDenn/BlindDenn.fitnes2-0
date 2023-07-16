@@ -1,0 +1,49 @@
+.hero {
+  position: relative;
+  color: $color-white;
+  max-width: fit-content;
+  text-align: right;
+}
+
+.hero span {
+  $stroke: 1.5px;
+  $stroke-neg: calc(-1 * $stroke);
+  display: block;
+  width: 298px;
+  color: inherit;
+  text-transform: uppercase;
+  font-family: "Alumni Sans" "Arial" sans-serif;
+  font-size: 92px;
+  font-weight: 600;
+  line-height: 110px;
+  letter-spacing: 4.6px;
+  text-shadow: $color-white $stroke $stroke,
+    $color-white $stroke $stroke-neg,
+    $color-white $stroke-neg $stroke,
+    $color-white $stroke-neg $stroke-neg;
+  margin-block-end: 80px;
+
+}
+
+.hero span:first-child {
+  text-transform: lowercase;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 1.44px;
+  margin-block-end: 25px;
+  text-shadow: none;
+}
+
+.hero ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+    top: 50%;
+  right: 300px;
+  width: max-content;
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}

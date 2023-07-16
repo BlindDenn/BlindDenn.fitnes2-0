@@ -7,7 +7,8 @@
 .page-container__header {
   padding-block-start: 30px;
   padding-block-end: 26px;
-  background-color: $bg-banner;
+  // background-color: $bg-banner;
+  z-index: 1;
 
   @include vp-tablet {
     padding-block-start: 40px;

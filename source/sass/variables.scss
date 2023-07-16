@@ -36,6 +36,15 @@ $color-icon-dark:                   $color-basic;
 
 $gradient-text:                     linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
 $gradient-button:                   linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+$gradient-hero-desktop:             conic-gradient(
+                                      from 70deg
+                                      at calc(50% - 200px) calc(100% - 400px),
+                                      #B80027 0deg,
+                                      #B80027 15deg,
+                                      #003D85 90deg,
+                                      #003D85 120deg,
+                                      #B80027 ,
+                                      );
 
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
 
