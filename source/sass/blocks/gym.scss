@@ -1,17 +1,39 @@
 .gym {
   margin: 0;
   padding-block: 120px;
+
+  @include vp-tablet {
+    padding-block: 100px;
+  }
 }
 
 .gym__section-content {
   position: relative;
   display: grid;
   grid-template-columns: 50fr 66fr;
-  grid-template-rows: auto 115px;
+  grid-template-rows: auto 110px;
+
+  @include vp-tablet {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 345px 83px;
+  }
+
+  @include vp-mobile {
+    grid-template-rows: auto 313px 207px;
+
+  }
 }
 
 .gym__description {
-  padding: 49px 85px 38px 60px;
+  padding: 39px 85px 38px 60px;
+
+  @include vp-tablet {
+    padding: 0px 88px 50px;
+  }
+
+  @include vp-mobile {
+    padding: 0 0 50px;
+  }
 }
 
 .gym__description h2 {
@@ -23,6 +45,15 @@
   line-height: 58px;
   letter-spacing: 1.44px;
   margin-block-end: 7px;
+
+  @include vp-tablet {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: 1.26px;
+    margin-block-end: -2px;
+  }
 }
 
 .gym__description h3 {
@@ -31,8 +62,13 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
-  margin-block-end: 43px;
+  margin-block-end: 39px;
   /* 150% */
+
+  @include vp-tablet {
+    text-align: center;
+    margin-block-end: 37px;
+  }
 }
 
 .gym__description p {
@@ -43,6 +79,18 @@
   line-height: 150%;
   margin-block-end: 7px;
   /* 24px */
+
+  @include vp-tablet {
+    text-align: center;
+    display: none;
+  }
+}
+
+.gym__description p:first-of-type {
+
+  @include vp-tablet {
+    display: block;
+  }
 }
 
 .gym__description p+p {
@@ -53,13 +101,34 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
+
+  @include vp-tablet {
+    width: 678px;
+    margin-inline: auto;
+  }
+
+  @include vp-mobile {
+    width: 100%;
+    position: relative;
+  }
 }
 
-.gym image {
+.gym__image-wrapper img {
   display: block;
   width: 660px;
   height: 401px;
   background-color: black;
+
+  @include vp-tablet {
+    width: 100%;
+    height: auto;
+  }
+
+  @include vp-mobile {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 .gym__video {
@@ -67,14 +136,24 @@
   height: 228px;
   position: absolute;
   bottom: 0;
-  left: 50%;
+  left: 37.6%;
   background-color: brown;
-  transform: translateX(-143px);
+  // transform: translateX(-143px);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  // justify-items: center;
-  // align-items: center;
+
+  @include vp-tablet {
+    width: 266px;
+    height: 167px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @include vp-mobile {
+    width: 320px;
+    height: 167px;
+  }
 }
 
 .gym__video-content,
