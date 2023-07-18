@@ -22,8 +22,8 @@ $color-torch-red: #ff1553;
 // Backgrounds
 
 $bg-basic: $color-default-white;
-$bg-additional: #aaaaaa; // ПОМЕНЯТЬ НА ЗАКОММЕНТИРОВАННЫЙ!
-// $bg-additional: #f8f9fc;
+// $bg-additional: #aaaaaa; // ПОМЕНЯТЬ НА ЗАКОММЕНТИРОВАННЫЙ!
+$bg-additional: #f8f9fc;
 $bg-banner: #ed0233;
 $bg-dark: #102654;
 $bg-footer: #030a1a;
@@ -37,12 +37,18 @@ $color-icon-dark: $color-basic;
 
 $gradien-hero-colors: #B80027 0deg, #B80027 15deg, #003D85 90deg, #003D85 120deg, #B80027;
 $gradient-text: linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
-$gradient-button: linear-gradient(90deg, #ed0233 0%, #003eb7 100%);
+$gradient-button: linear-gradient(115deg, #ed0233 0%, #003eb7 100%);
 $gradient-hero-desktop: conic-gradient(from 70deg at calc(50% - 465px) calc(100% - 400px), $gradien-hero-colors);
 $gradient-hero-tablet: conic-gradient(from 70deg at calc(50% - 224px) calc(100% - 355px), $gradien-hero-colors);
 $gradient-hero-mobile: conic-gradient(from 70deg at calc(100% - 205px) calc(100% - 320px), $gradien-hero-colors);
 
 $black-to-right: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+
+// Utils
+
+$tabs-understroke: rgba(#787878, 0.2);
+$card-shadow-a48: rgba(#e8e8e8, 0.48);
+$tabs-select-understroke: #d10a42;
 
 // Typography
 // ---------------------------------
@@ -57,7 +63,7 @@ $ff-rouble: "Rouble", "Arial", sans-serif;
 $ff-placeholder: "Placeholder", "Arial", sans-serif;
 
 $font-basic: "Roboto Condensed", "Arial", sans-serif;
-$font-title: "Alumni Sans", "Arial", sans-serif;
+$font-accent: "Alumni Sans", "Arial", sans-serif;
 
 // Animation
 // ---------------------------------

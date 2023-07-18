@@ -1,0 +1,77 @@
+.subs-card {
+  max-width: 100%;
+  height: 448px;
+  background-color: $color-white;
+  padding: 60px 21% 68px;
+
+  &:hover {
+    border-image: $gradient-button;
+    border-image-slice: 1;
+    border-image-width: 7px;
+  }
+}
+
+.subs-card__content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subs-card h3 {
+  margin: 0;
+  color: $color-basic;
+  font-family: $font-basic;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-block-end: 21px;
+  /* 28.641px */
+}
+
+.subs-card p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24%;
+}
+
+.subs-card__price {
+  position: relative;
+  margin-top: auto;
+  z-index: 2;
+
+  &::before {
+    content: attr(data-content);
+    color: $card-shadow-a48;
+    font-family: $font-basic;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 150px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+}
+
+.subs-card__price span {
+  margin: 0;
+  color: $color-accent;
+  font-family: $font-basic;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 90px;
+}
+
+.subs-card__price svg {
+  display: inline;
+  margin-inline-start: 10px;
+}
+
+
+.subs-card__button {
+  width: 100%;
+  height: 66px;
+  margin-block-start: 34px;
+}

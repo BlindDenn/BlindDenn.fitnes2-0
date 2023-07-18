@@ -32,6 +32,25 @@
     }
   }
 
+  &--bg-light {
+    background-color: transparent;
+    border: 2px solid $color-basic;
+
+    &:hover,
+    &:focus-visible {
+      outline: none;
+      color: $color-white;
+      background: $gradient-button;
+      border: none;
+    }
+
+    &:active {
+      outline: none;
+      color: $bg-dark;
+      background-color: $color-white;
+    }
+  }
+
   cursor: pointer;
 
   transition: opacity $trans-default;
