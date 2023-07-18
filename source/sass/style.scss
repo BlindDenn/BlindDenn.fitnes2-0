@@ -4,6 +4,7 @@
 @import "vendor/normalize";
 // Swiper 7.4.1
 // @import "vendor/swiper";
+@import "vendor/data-tabs.scss";
 
 // Global
 // ---------------------------------
@@ -30,6 +31,7 @@
 @import "blocks/hero.scss";
 @import "blocks/footer.scss";
 @import "blocks/gym.scss";
+@import "./blocks/tabs.scss";
 
 // ---------------------------------
 
