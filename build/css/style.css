@@ -3074,8 +3074,9 @@ button,
   height: 448px;
   background-color: #ffffff;
   padding: 60px 20px 68px;
+  border: none;
 }
-.subs-card:hover {
+.subs-card:hover, .subs-card:focus-visible {
   -o-border-image: linear-gradient(115deg, #ed0233 0%, #003eb7 100%);
      border-image: linear-gradient(115deg, #ed0233 0%, #003eb7 100%);
   border-image-slice: 1;
@@ -3207,6 +3208,14 @@ button,
   }
 }
 
+.subs-card:hover .subs-card__button,
+.subs-card:focus-visible .subs-card__button {
+  outline: none;
+  color: #ffffff;
+  background: linear-gradient(115deg, #ed0233 0%, #003eb7 100%);
+  border: none;
+}
+
 .events {
   -webkit-padding-before: 120px;
           padding-block-start: 120px;
@@ -3214,10 +3223,12 @@ button,
 
 .events__banner {
   width: 100%;
+  max-width: 1160px;
+  margin-inline: auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(450px, 50fr) 66fr;
-  grid-template-columns: minmax(450px, 50fr) 66fr;
+  -ms-grid-columns: 500px 400px;
+  grid-template-columns: 500px 400px;
 }
 
 .events__banner-content {
@@ -3307,6 +3318,11 @@ button,
   height: 70px;
   -webkit-margin-before: auto;
           margin-block-start: auto;
+}
+
+.events__banner img {
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .trainers {

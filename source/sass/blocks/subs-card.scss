@@ -3,9 +3,10 @@
   height: 448px;
   background-color: $color-white;
   padding: 60px 20px 68px;
-  // padding: 60px 21% 68px;
+  border: none;
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
     border-image: $gradient-button;
     border-image-slice: 1;
     border-image-width: 7px;
@@ -115,4 +116,12 @@
     margin-block-start: 30px;
     width: calc(100% - 42px);
   }
+}
+
+.subs-card:hover .subs-card__button,
+.subs-card:focus-visible .subs-card__button {
+  outline: none;
+  color: $color-white;
+  background: $gradient-button;
+  border: none;
 }

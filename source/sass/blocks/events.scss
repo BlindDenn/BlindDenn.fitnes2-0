@@ -4,8 +4,10 @@
 
 .events__banner {
   width: 100%;
+  max-width: 1160px;
+  margin-inline: auto;
   display: grid;
-  grid-template-columns: minmax(450px, 50fr) 66fr;
+  grid-template-columns: 500px 400px;
 }
 
 .events__banner-content {
@@ -74,4 +76,8 @@
 .events__button {
   height: 70px;
   margin-block-start: auto;
+}
+
+.events__banner img {
+  object-fit: fill;
 }
