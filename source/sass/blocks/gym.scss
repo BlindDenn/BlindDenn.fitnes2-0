@@ -5,6 +5,10 @@
   @include vp-tablet {
     padding-block: 100px;
   }
+
+  @include vp-mobile {
+    padding-block: 63px;
+  }
 }
 
 .gym__section-content {
@@ -28,11 +32,11 @@
   padding: 39px 85px 38px 60px;
 
   @include vp-tablet {
-    padding: 0px 88px 50px;
+    padding: 0px 88px 35px;
   }
 
   @include vp-mobile {
-    padding: 0 0 50px;
+    padding: 0 15px 32px;
   }
 }
 
@@ -54,6 +58,14 @@
     letter-spacing: 1.26px;
     margin-block-end: -2px;
   }
+
+  @include vp-mobile {
+    text-align: left;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.96px;
+    margin-block-end: 7px;
+  }
 }
 
 .gym__description h3 {
@@ -68,6 +80,11 @@
   @include vp-tablet {
     text-align: center;
     margin-block-end: 37px;
+  }
+
+  @include vp-mobile {
+    text-align: left;
+    margin-block-end: 24px;
   }
 }
 
@@ -84,6 +101,15 @@
     text-align: center;
     display: none;
   }
+
+  @include vp-mobile {
+    text-align: left;
+    margin-block-end: 0;
+  }
+}
+
+.gym__description p+p {
+  margin-block-end: 0;
 }
 
 .gym__description p:first-of-type {
@@ -91,10 +117,6 @@
   @include vp-tablet {
     display: block;
   }
-}
-
-.gym__description p+p {
-  margin-block-end: 0;
 }
 
 .gym__image-wrapper {

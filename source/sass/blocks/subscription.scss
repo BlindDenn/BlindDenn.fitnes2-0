@@ -1,6 +1,51 @@
 .subscription {
   background-color: $bg-additional;
   padding-block: 120px;
+
+  @include vp-tablet {
+    padding-block: 100px;
+  }
+
+  @include vp-mobile {
+    padding-block: 71px;
+  }
+}
+
+.subscription__section-content {
+  margin-inline: auto;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: visible;
+  background-color: $bg-additional;
+
+  @include vp-tablet {
+    width: 442px;
+  }
+
+  &::before {
+    content: "";
+    width: 470px;
+    height: 494px;
+    background-image: url(../../img/weights-xl@1x.png);
+    position: absolute;
+    bottom: -269px;
+    right: -286px;
+
+    @include vp-tablet {
+      width: 423px;
+      height: 444px;
+      bottom: -228px;
+      right: -239px;
+      background-image: url(../../img/weights-m@1x.png);
+    }
+
+    @include vp-mobile {
+      display: none;
+    }
+  }
 }
 
 .subscription__title {
@@ -12,13 +57,20 @@
   line-height: 65px;
   letter-spacing: 1.62px;
   margin-block-end: 16px;
-}
 
-.subscription__section-content {
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include vp-tablet {
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: 1.26px;
+    margin-block-end: 21px;
+  }
+
+  @include vp-mobile {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0.96px;
+  }
 }
 
 .subscription__controls {
@@ -26,6 +78,17 @@
   display: flex;
   gap: 47px;
   margin-bottom: 39px;
+
+  @include vp-tablet {
+    gap: 54px;
+  }
+
+  @include vp-tablet {
+    width: 100%;
+    gap: unset;
+    justify-content: space-between;
+
+  }
 
   &::after {
     position: absolute;
@@ -55,6 +118,16 @@
   line-height: 30px;
   opacity: 0.5;
 
+  @include vp-tablet {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  @include vp-mobile {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
   // @media screen and (max-width: 1023px) {
   //   margin: 0 10px;
   //   padding: 15px;
@@ -75,10 +148,19 @@
 }
 
 .subscription__content {
+  position: relative;
   width: 100%;
   max-width: 1160px;
 
   transition: height 0.3s;
+
+  @include vp-tablet {
+    width: 442px;
+  }
+
+  @include vp-mobile {
+    width: 100%;
+  }
 }
 
 .subscription__element {
@@ -86,6 +168,16 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
+
+  @include vp-tablet {
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    gap: 41px;
+  }
+
+  @include vp-mobile {
+    gap: 35px;
+  }
 
   // @media screen and (max-width: 767px) {
   //   padding: 15px;
