@@ -118,6 +118,8 @@
   justify-self: start;
   position: absolute;
   bottom: 51px;
+  width: 100%;
+
 
   @include vp-tablet {
     position: relative;
@@ -128,6 +130,9 @@
   @include vp-mobile {
     display: none;
   }
+}
+
+.hero img {
 }
 
 .hero__button {
