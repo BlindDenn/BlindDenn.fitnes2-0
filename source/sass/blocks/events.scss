@@ -3,6 +3,10 @@
 
   @include vp-tablet {
     padding-block-start: 100px;
+  }
+
+  @include vp-mobile {
+    padding-block-start: 70px;
 
   }
 }
@@ -18,7 +22,11 @@
   @include vp-tablet {
     grid-template-columns: 292px 1fr;
     min-height: 292px;
+  }
 
+  @include vp-mobile {
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(292px, auto) 292px;
   }
 }
 
@@ -31,7 +39,12 @@
 
   @include vp-tablet {
     padding: 46px 15.5% 50px;
+  }
 
+  @include vp-mobile {
+    width: 202px;
+    padding: 46px 0 50px;
+    margin-inline: auto;
   }
 }
 
@@ -144,8 +157,11 @@
   height: 100%;
 
   @include vp-tablet {
-    background-color: aqua;
     height: 292px;
     object-fit: cover;
+  }
+
+  @include vp-mobile {
+    grid-column: 1 / -1;
   }
 }
