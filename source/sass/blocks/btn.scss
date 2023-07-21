@@ -49,8 +49,13 @@
       color: $bg-dark;
       background-color: $color-white;
     }
+
   }
 
+  &--thin-border {
+    border-width: 2px;
+  }
+  
   cursor: pointer;
 
   transition: opacity $trans-default;
