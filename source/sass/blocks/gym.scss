@@ -13,9 +13,10 @@
 
 .gym__section-content {
   position: relative;
+  width: 100%;
   display: grid;
   grid-template-columns: 50fr 66fr;
-  grid-template-rows: auto 110px;
+  grid-template-rows: 401px minmax(115px, auto);
 
   @include vp-tablet {
     grid-template-columns: 1fr;
@@ -30,10 +31,13 @@
 }
 
 .gym__description {
+  grid-row: 1 / -1;
   padding: 39px 85px 38px 60px;
 
   @include vp-tablet {
-    padding: 0px 88px 35px;
+    grid-row: unset;
+    padding: 0px 0 35px;
+    max-width: 640px;
   }
 
   @include vp-mobile {
@@ -120,32 +124,18 @@
   }
 }
 
-.gym__image-wrapper {
-  width: 100%;
+.gym__img img {
+  // width: 660px;
+  justify-self: unset;
   height: 100%;
-  // overflow: hidden;
-
-  @include vp-tablet {
-    width: 678px;
-    margin-inline: auto;
-  }
-
-  @include vp-mobile {
-    width: 100%;
-    position: relative;
-  }
-}
-
-.gym__img {
-  width: 660px;
-  height: 401px;
-  background-color: black;
+  width: 100%;
+  background-color: rgb(255, 0, 0);
   object-fit: cover;
 
   @include vp-tablet {
-    width: 678Px;
-    height: auto;
-    object-fit: contain;
+    width: 678px;
+    height: 345px;
+    object-fit: none;
   }
 
   @include vp-mobile {
@@ -160,11 +150,12 @@
 }
 
 .gym__video {
+  grid-column: -2 / -1;
   width: 364px;
   height: 228px;
   position: absolute;
   bottom: 0;
-  left: 37.6%;
+  left: -63px;
   background-color: brown;
   // transform: translateX(-143px);
   display: grid;

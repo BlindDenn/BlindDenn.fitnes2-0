@@ -2583,12 +2583,13 @@ button,
 
 .gym__section-content {
   position: relative;
+  width: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50fr 66fr;
   grid-template-columns: 50fr 66fr;
-  -ms-grid-rows: auto 110px;
-  grid-template-rows: auto 110px;
+  -ms-grid-rows: 401px minmax(115px, auto);
+  grid-template-rows: 401px minmax(115px, auto);
 }
 @media (max-width: 1199.8px) {
   .gym__section-content {
@@ -2608,11 +2609,14 @@ button,
 }
 
 .gym__description {
+  grid-row: 1/-1;
   padding: 39px 85px 38px 60px;
 }
 @media (max-width: 1199.8px) {
   .gym__description {
-    padding: 0px 88px 35px;
+    grid-row: unset;
+    padding: 0px 0 35px;
+    max-width: 640px;
   }
 }
 @media (max-width: 767.8px) {
@@ -2714,40 +2718,25 @@ button,
   }
 }
 
-.gym__image-wrapper {
-  width: 100%;
+.gym__img img {
+  -ms-grid-column-align: unset;
+      justify-self: unset;
   height: 100%;
-}
-@media (max-width: 1199.8px) {
-  .gym__image-wrapper {
-    width: 678px;
-    margin-inline: auto;
-  }
-}
-@media (max-width: 767.8px) {
-  .gym__image-wrapper {
-    width: 100%;
-    position: relative;
-  }
-}
-
-.gym__img {
-  width: 660px;
-  height: 401px;
-  background-color: black;
+  width: 100%;
+  background-color: rgb(255, 0, 0);
   -o-object-fit: cover;
      object-fit: cover;
 }
 @media (max-width: 1199.8px) {
-  .gym__img {
-    width: 678Px;
-    height: auto;
-    -o-object-fit: contain;
-       object-fit: contain;
+  .gym__img img {
+    width: 678px;
+    height: 345px;
+    -o-object-fit: none;
+       object-fit: none;
   }
 }
 @media (max-width: 767.8px) {
-  .gym__img {
+  .gym__img img {
     height: 100%;
     width: 100%;
     -o-object-fit: cover;
@@ -2756,11 +2745,12 @@ button,
 }
 
 .gym__video {
+  grid-column: -2/-1;
   width: 364px;
   height: 228px;
   position: absolute;
   bottom: 0;
-  left: 37.6%;
+  left: -63px;
   background-color: brown;
   display: -ms-grid;
   display: grid;
