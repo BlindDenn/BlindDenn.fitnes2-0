@@ -2039,6 +2039,130 @@ button,
   color: #15ab07;
 }
 
+.custom-swiper-button {
+  width: 56px;
+  position: absolute;
+  background-color: transparent;
+  top: 0;
+  bottom: 0;
+}
+@media (max-width: 767.8px) {
+  .custom-swiper-button {
+    width: 32px;
+  }
+}
+.custom-swiper-button--prev {
+  left: -56px;
+}
+@media (max-width: 767.8px) {
+  .custom-swiper-button--prev {
+    left: -32px;
+  }
+}
+.custom-swiper-button--next {
+  right: -56px;
+}
+@media (max-width: 767.8px) {
+  .custom-swiper-button--next {
+    right: -32px;
+  }
+}
+.custom-swiper-button::before {
+  display: block;
+  content: "";
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: transparent;
+  border: 1px solid transparent;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+@media (max-width: 767.8px) {
+  .custom-swiper-button::before {
+    width: 35px;
+    height: 35px;
+  }
+}
+.custom-swiper-button--prev::before {
+  left: -18px;
+}
+@media (max-width: 767.8px) {
+  .custom-swiper-button--prev::before {
+    left: -10px;
+  }
+}
+.custom-swiper-button--next::before {
+  right: -18px;
+}
+@media (max-width: 767.8px) {
+  .custom-swiper-button--next::before {
+    right: -10px;
+  }
+}
+.custom-swiper-button::after {
+  display: block;
+  content: "";
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  background-color: transparent;
+  border-top: 1px solid #102654;
+  border-left: 1px solid #102654;
+  top: 50%;
+}
+@media (max-width: 767.8px) {
+  .custom-swiper-button::after {
+    width: 14px;
+    height: 14px;
+  }
+}
+.custom-swiper-button--prev::after {
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+      -ms-transform: translateY(-50%) rotate(-45deg);
+          transform: translateY(-50%) rotate(-45deg);
+  left: 5px;
+}
+@media (max-width: 767.8px) {
+  .custom-swiper-button--prev::after {
+    left: 3px;
+  }
+}
+.custom-swiper-button--next::after {
+  -webkit-transform: translateY(-50%) rotate(135deg);
+      -ms-transform: translateY(-50%) rotate(135deg);
+          transform: translateY(-50%) rotate(135deg);
+  right: 5px;
+}
+@media (max-width: 767.8px) {
+  .custom-swiper-button--next::after {
+    right: 3px;
+  }
+}
+
+.custom-swiper-button:hover,
+.custom-swiper-button:focus-visible {
+  outline: none;
+}
+.custom-swiper-button:hover::before,
+.custom-swiper-button:focus-visible::before {
+  border-color: #102654;
+}
+
+.custom-swiper-button:active::before {
+  background-color: #102654;
+}
+.custom-swiper-button:active::after {
+  border-color: #ffffff;
+}
+
+.custom-swiper-button:disabled {
+  opacity: 0.3;
+}
+
 .page-container {
   height: 100vh;
   display: -webkit-box;
@@ -3541,83 +3665,13 @@ button,
 }
 @media (max-width: 1199.8px) {
   .trainers__swiper {
-    padding-inline: 56px;
+    margin-inline: 56px;
   }
 }
 @media (max-width: 767.8px) {
   .trainers__swiper {
-    padding-inline: 32px;
-    margin-inline: auto;
+    margin-inline: 32px;
   }
-}
-
-.trainers__swiper-button-prev,
-.trainers__swiper-button-next {
-  width: 56px;
-  position: absolute;
-  background-color: transparent;
-  top: 0;
-  bottom: 0;
-}
-
-.trainers__swiper-button-prev {
-  left: -56px;
-}
-
-.trainers__swiper-button-next {
-  right: -56px;
-}
-
-.trainers__swiper-button-prev::before,
-.trainers__swiper-button-next::before {
-  display: block;
-  content: "";
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  position: absolute;
-  background-color: transparent;
-  border: 1px solid red;
-  border-left: 1px solid red;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.trainers__swiper-button-prev::before {
-  left: -18px;
-}
-
-.trainers__swiper-button-next::before {
-  right: -18px;
-}
-
-.trainers__swiper-button-prev::after,
-.trainers__swiper-button-next::after {
-  display: block;
-  content: "";
-  width: 23px;
-  height: 23px;
-  position: absolute;
-  background-color: transparent;
-  border-top: 1px solid red;
-  border-left: 1px solid red;
-  top: 50%;
-}
-
-.trainers__swiper-button-prev::after {
-  -webkit-transform: translateY(-50%) rotate(-45deg);
-      -ms-transform: translateY(-50%) rotate(-45deg);
-          transform: translateY(-50%) rotate(-45deg);
-  left: 5px;
-}
-
-.trainers__swiper-button-next::after {
-  -webkit-transform: translateY(-50%) rotate(135deg);
-      -ms-transform: translateY(-50%) rotate(135deg);
-          transform: translateY(-50%) rotate(135deg);
-  right: 5px;
 }
 
 .trainer-card {

@@ -1,0 +1,130 @@
+$button-field-width: 56px;
+$button-field-width-mobile: 32px;
+
+.custom-swiper-button {
+  width: $button-field-width;
+  // height: 100%;
+  position: absolute;
+  background-color: transparent;
+  top: 0;
+  bottom: 0;
+
+  @include vp-mobile {
+    width: $button-field-width-mobile;
+  }
+
+  &--prev {
+    left: -$button-field-width;
+
+    @include vp-mobile {
+      left: -$button-field-width-mobile;
+    }
+  }
+
+  &--next {
+    right: -$button-field-width;
+
+    @include vp-mobile {
+      right: -$button-field-width-mobile;
+    }
+  }
+
+  &::before {
+    display: block;
+    content: "";
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: transparent;
+    border: 1px solid transparent;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @include vp-mobile {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  &--prev::before {
+    left: -18px;
+
+    @include vp-mobile {
+      left: -10px;
+    }
+  }
+
+  &--next::before {
+    right: -18px;
+
+    @include vp-mobile {
+      right: -10px;
+    }
+  }
+
+  &::after {
+    display: block;
+    content: "";
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    background-color: transparent;
+    border-top: 1px solid $color-basic;
+    border-left: 1px solid $color-basic;
+    top: 50%;
+
+    @include vp-mobile {
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  &--prev::after {
+    transform: translateY(-50%) rotate(-45deg);
+    left: 5px;
+
+    @include vp-mobile {
+      left: 3px;
+    }
+  }
+
+  &--next::after {
+    transform: translateY(-50%) rotate(135deg);
+    right: 5px;
+
+    @include vp-mobile {
+      right: 3px;
+    }
+  }
+}
+
+// Hover adn Focus
+
+.custom-swiper-button:hover,
+.custom-swiper-button:focus-visible {
+  outline: none;
+
+  &::before {
+    border-color: $color-basic;
+  }
+}
+
+// Active
+
+.custom-swiper-button:active {
+
+  &::before {
+    background-color: $color-basic;
+  }
+
+  &::after {
+    border-color: $color-white;
+  }
+}
+
+.custom-swiper-button:disabled {
+  opacity: 0.3;
+}
+
+
