@@ -2,8 +2,18 @@
   position: relative;
   display: grid;
   width: 100%;
+  max-width: 260px;
   height: 100%;
   min-height: 294px;
+
+  @include vp-tablet {
+    max-width: 268px;
+  }
+
+  @include vp-mobile {
+    max-width: 264px;
+    max-height: 274px;
+  }
 }
 
 .trainer-card__data {

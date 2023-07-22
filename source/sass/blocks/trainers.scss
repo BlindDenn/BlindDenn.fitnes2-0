@@ -14,4 +14,82 @@
 
 .trainers__swiper {
   margin-block-start: 48px;
+  position: relative;
+
+  @include vp-tablet {
+    padding-inline: 56px;
+  }
+
+  @include vp-mobile {
+    padding-inline: 32px;
+    margin-inline: auto;
+  }
 }
+
+.trainers__swiper-button-prev,
+.trainers__swiper-button-next {
+  width: 56px;
+  // height: 100%;
+  position: absolute;
+  background-color: transparent;
+  top: 0;
+  bottom: 0;
+}
+
+.trainers__swiper-button-prev {
+  left: -56px;
+  // transform: rotate(-45deg) translateY(-50%);
+}
+
+.trainers__swiper-button-next {
+  right: -56px;
+}
+
+.trainers__swiper-button-prev::before,
+.trainers__swiper-button-next::before {
+  display: block;
+  content: "";
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: transparent;
+  border: 1px solid red;
+  border-left: 1px solid red;
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+.trainers__swiper-button-prev::before {
+  left: -18px;
+}
+
+.trainers__swiper-button-next::before {
+  right: -18px;
+}
+
+.trainers__swiper-button-prev::after,
+.trainers__swiper-button-next::after {
+  display: block;
+  content: "";
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  background-color: transparent;
+  border-top: 1px solid red;
+  border-left: 1px solid red;
+  top: 50%;
+  // transform: translateY(-50%);
+}
+
+.trainers__swiper-button-prev::after {
+  transform: translateY(-50%) rotate(-45deg);
+  left: 5px;
+}
+
+.trainers__swiper-button-next::after {
+  transform: translateY(-50%) rotate(135deg);
+  right: 5px;
+}
+
+

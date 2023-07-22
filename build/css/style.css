@@ -603,7 +603,7 @@ template {
 
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
-  left: 10px;
+  left: -40px;
   right: auto;
 }
 
@@ -614,7 +614,7 @@ template {
 
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
-  right: 10px;
+  right: -40px;
   left: auto;
 }
 
@@ -627,20 +627,17 @@ template {
   display: none;
 }
 
-:root {
-  /*
-  --swiper-pagination-color: var(--swiper-theme-color);
-  --swiper-pagination-bullet-size: 8px;
-  --swiper-pagination-bullet-width: 8px;
-  --swiper-pagination-bullet-height: 8px;
-  --swiper-pagination-bullet-inactive-color: #000;
-  --swiper-pagination-bullet-inactive-opacity: 0.2;
-  --swiper-pagination-bullet-opacity: 1;
-  --swiper-pagination-bullet-horizontal-gap: 4px;
-  --swiper-pagination-bullet-vertical-gap: 6px;
-  */
-}
-
+/*
+--swiper-pagination-color: var(--swiper-theme-color);
+--swiper-pagination-bullet-size: 8px;
+--swiper-pagination-bullet-width: 8px;
+--swiper-pagination-bullet-height: 8px;
+--swiper-pagination-bullet-inactive-color: #000;
+--swiper-pagination-bullet-inactive-opacity: 0.2;
+--swiper-pagination-bullet-opacity: 1;
+--swiper-pagination-bullet-horizontal-gap: 4px;
+--swiper-pagination-bullet-vertical-gap: 6px;
+*/
 .swiper-pagination {
   position: absolute;
   text-align: center;
@@ -3540,6 +3537,87 @@ button,
 .trainers__swiper {
   -webkit-margin-before: 48px;
           margin-block-start: 48px;
+  position: relative;
+}
+@media (max-width: 1199.8px) {
+  .trainers__swiper {
+    padding-inline: 56px;
+  }
+}
+@media (max-width: 767.8px) {
+  .trainers__swiper {
+    padding-inline: 32px;
+    margin-inline: auto;
+  }
+}
+
+.trainers__swiper-button-prev,
+.trainers__swiper-button-next {
+  width: 56px;
+  position: absolute;
+  background-color: transparent;
+  top: 0;
+  bottom: 0;
+}
+
+.trainers__swiper-button-prev {
+  left: -56px;
+}
+
+.trainers__swiper-button-next {
+  right: -56px;
+}
+
+.trainers__swiper-button-prev::before,
+.trainers__swiper-button-next::before {
+  display: block;
+  content: "";
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: transparent;
+  border: 1px solid red;
+  border-left: 1px solid red;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.trainers__swiper-button-prev::before {
+  left: -18px;
+}
+
+.trainers__swiper-button-next::before {
+  right: -18px;
+}
+
+.trainers__swiper-button-prev::after,
+.trainers__swiper-button-next::after {
+  display: block;
+  content: "";
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  background-color: transparent;
+  border-top: 1px solid red;
+  border-left: 1px solid red;
+  top: 50%;
+}
+
+.trainers__swiper-button-prev::after {
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+      -ms-transform: translateY(-50%) rotate(-45deg);
+          transform: translateY(-50%) rotate(-45deg);
+  left: 5px;
+}
+
+.trainers__swiper-button-next::after {
+  -webkit-transform: translateY(-50%) rotate(135deg);
+      -ms-transform: translateY(-50%) rotate(135deg);
+          transform: translateY(-50%) rotate(135deg);
+  right: 5px;
 }
 
 .trainer-card {
@@ -3547,8 +3625,20 @@ button,
   display: -ms-grid;
   display: grid;
   width: 100%;
+  max-width: 260px;
   height: 100%;
   min-height: 294px;
+}
+@media (max-width: 1199.8px) {
+  .trainer-card {
+    max-width: 268px;
+  }
+}
+@media (max-width: 767.8px) {
+  .trainer-card {
+    max-width: 264px;
+    max-height: 274px;
+  }
 }
 
 .trainer-card__data {
