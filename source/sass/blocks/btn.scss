@@ -53,9 +53,12 @@
   }
 
   &--thin-border {
-    border-width: 2px;
+
+    @include vp-tablet {
+      border-width: 2px;
+    }
   }
-  
+
   cursor: pointer;
 
   transition: opacity $trans-default;

@@ -1,0 +1,54 @@
+.trainer-data {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.trainer-data h3 {
+  color: $color-white;
+  margin: 0;
+  font-family: $font-basic;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: center;
+}
+
+.trainer-data p {
+  margin: 0;
+  font-family: $font-basic;
+  text-align: center;
+}
+
+.trainer-data ul {
+  margin-block-start: auto;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  font-family: $font-basic;
+}
+
+.trainer-data li {
+  position: relative;
+  margin: 0;
+  padding-left: 31px;
+  font-family: $font-basic;
+  font-size: 14px;
+  line-height: 21px;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: $color-white;
+    position: absolute;
+    top: 8px;
+    left: 15px;
+  }
+}
+
+.trainer-data li+li {
+  margin-block-start: 13px;
+}
