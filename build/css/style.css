@@ -2045,6 +2045,7 @@ button,
   background-color: transparent;
   top: 0;
   bottom: 0;
+  cursor: pointer;
 }
 @media (max-width: 767.8px) {
   .custom-swiper-button {
@@ -2161,6 +2162,8 @@ button,
 
 .custom-swiper-button:disabled {
   opacity: 0.3;
+  cursor: auto;
+  pointer-events: none;
 }
 
 .page-container {

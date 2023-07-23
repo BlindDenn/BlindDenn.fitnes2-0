@@ -9,6 +9,8 @@ $button-field-width-mobile: 32px;
   top: 0;
   bottom: 0;
 
+  cursor: pointer;
+
   @include vp-mobile {
     width: $button-field-width-mobile;
   }
@@ -125,6 +127,6 @@ $button-field-width-mobile: 32px;
 
 .custom-swiper-button:disabled {
   opacity: 0.3;
+  cursor: auto;
+  pointer-events: none;
 }
-
-
