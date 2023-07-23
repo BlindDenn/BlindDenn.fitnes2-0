@@ -3789,6 +3789,19 @@ button,
           margin-block-start: 13px;
 }
 
+.advantages {
+  background-color: #f8f9fc;
+}
+
+.advantages__section-content {
+  padding: 108px 0 123px;
+}
+
+.advantages__advantages-table {
+  outline: auto;
+  margin-inline: 70px;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
