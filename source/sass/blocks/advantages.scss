@@ -6,7 +6,20 @@
   padding: 108px 0 123px;
 }
 
+.advantages__section-content h2 {
+  margin: 0;
+  margin-block-end: 55px;
+  color: $color-basic;
+  font-family: $font-accent;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 65px;
+  letter-spacing: 1.62px;
+  text-align: center;
+}
+
 .advantages__advantages-table {
-  outline: auto;
-  margin-inline: 70px;
+  width: 100%;
+  max-width: 1040px;
+  margin-inline: auto;
 }
