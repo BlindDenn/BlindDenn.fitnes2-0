@@ -11,6 +11,11 @@
     column-gap: 34px;
     row-gap: 50px;
   }
+
+  @include vp-mobile {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 239px auto auto;
+  }
 }
 
 dl.advantages-table,
@@ -37,6 +42,21 @@ dl.advantages-table,
     margin-inline: 118px;
     padding: 14px 135px 38px;
   }
+
+  @include vp-mobile {
+    width: 100%;
+    grid-row: 3 / 4;
+    padding: 14px 0 38px;
+    margin-inline: auto;
+  }
+}
+
+.advantage-table__main-item-content {
+
+  @include vp-mobile {
+    width: 200px;
+    margin-inline: auto;
+  }
 }
 
 .advantage-table__main-item dt {
@@ -61,6 +81,8 @@ dl.advantages-table,
   font-size: 16px;
   line-height: 24px;
   margin-block-start: auto;
+
+  @include vp-mobile {}
 }
 
 .advantage-table__item  {
@@ -72,6 +94,13 @@ dl.advantages-table,
 
   @include vp-tablet {
     border: none;
+  }
+
+  @include vp-mobile {
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
   }
 }
 

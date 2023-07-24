@@ -27,6 +27,12 @@
     line-height: 50px;
     letter-spacing: 1.26px;
   }
+
+  @include vp-mobile {
+font-size: 32px;
+line-height: 38px;
+letter-spacing: 0.96px;
+  }
 }
 
 .advantages__advantages-table {
@@ -37,5 +43,9 @@
   @include vp-tablet {
     width: 678px;
     margin-inline: auto;
+  }
+
+  @include vp-mobile {
+    width: 100%;
   }
 }
