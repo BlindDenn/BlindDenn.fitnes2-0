@@ -4,6 +4,13 @@
   grid-template-rows: repeat(2, 158px);
   column-gap: 60px;
   font-family: $font-basic;
+
+  @include vp-tablet {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 239px auto;
+    column-gap: 34px;
+    row-gap: 50px;
+  }
 }
 
 dl.advantages-table,
@@ -23,6 +30,13 @@ dl.advantages-table,
   display: flex;
   flex-direction: column;
   text-align: center;
+
+  @include vp-tablet {
+    grid-column: 1 / -1;
+    grid-row: 2 / -2;
+    margin-inline: 118px;
+    padding: 14px 135px 38px;
+  }
 }
 
 .advantage-table__main-item dt {
@@ -37,6 +51,10 @@ dl.advantages-table,
   font-size: 74px;
   line-height: 111px;
   margin-block-end: -20px;
+
+  @include vp-tablet {
+    margin-block-end: -22px;
+  }
 }
 
 .advantage-table__main-item dd {
@@ -50,10 +68,15 @@ dl.advantages-table,
   grid-template-columns: min-content auto;
   grid-template-rows: min-content min-content;
   column-gap: 30px;
+  border-bottom: 1px solid $adv-understroke-a20;
+
+  @include vp-tablet {
+    border: none;
+  }
 }
 
-.advantage-table__item {
-  border-bottom: 1px solid $adv-understroke-a20;
+.advantage-table__item:nth-child(2n) {
+  grid-template-columns: 88px auto;
 }
 
 .advantage-table__item:last-child,
@@ -70,10 +93,18 @@ dl.advantages-table,
   font-weight: 400;
   line-height: 21px;
   margin-block-start: -28px;
+
+  @include vp-tablet {
+    margin-block-start: -22px;
+  }
 }
 
 .advantage-table__item:nth-child(2n) dt {
   padding-inline-start: 19px;
+
+  @include vp-tablet {
+    padding: 0;
+  }
 }
 
 .advantage-table__item span {
@@ -85,7 +116,12 @@ dl.advantages-table,
   // font-family: $font-basic;
   font-size: 71px;
   font-weight: 700;
-  line-height: 106.5px;
+  line-height: 106px;
+
+  @include vp-tablet {
+    font-size: 58px;
+    line-height: 87px;
+  }
 }
 
 .advantage-table__item dd {
@@ -93,7 +129,7 @@ dl.advantages-table,
   // font-family: $font-basic;
   font-size: 16px;
   font-weight: 300;
-  line-height: 22.4px;
+  line-height: 22px;
 }
 
 .advantage-table__item dd:first-of-type {
@@ -101,4 +137,10 @@ dl.advantages-table,
   font-weight: 700;
   line-height: 14px;
   margin-block-end: 10px;
+
+  @include vp-tablet {
+    font-size: 20;
+    line-height: 19px;
+
+  }
 }

@@ -4,6 +4,10 @@
 
 .advantages__section-content {
   padding: 108px 0 123px;
+
+  @include vp-tablet {
+    padding: 91px 0 100px;
+  }
 }
 
 .advantages__section-content h2 {
@@ -16,10 +20,22 @@
   line-height: 65px;
   letter-spacing: 1.62px;
   text-align: center;
+
+  @include vp-tablet {
+    margin-block-end: 50px;
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: 1.26px;
+  }
 }
 
 .advantages__advantages-table {
   width: 100%;
   max-width: 1040px;
   margin-inline: auto;
+
+  @include vp-tablet {
+    width: 678px;
+    margin-inline: auto;
+  }
 }
