@@ -32,9 +32,6 @@ dl.advantages-table,
   color: $color-white;
   padding: 35px 34px 65px;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
 
   @include vp-tablet {
     grid-column: 1 / -1;
@@ -46,12 +43,16 @@ dl.advantages-table,
   @include vp-mobile {
     width: 100%;
     grid-row: 3 / 4;
-    padding: 14px 0 38px;
+    padding: 19px 0 43px;
     margin-inline: auto;
   }
 }
 
 .advantage-table__main-item-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 
   @include vp-mobile {
     width: 200px;
@@ -64,6 +65,15 @@ dl.advantages-table,
   font-size: 26px;
   font-weight: 700;
   line-height: 39px;
+
+  @include vp-tablet {
+    font-size: 22px;
+    line-height: 40px;
+  }
+
+  @include vp-mobile {
+    line-height: 32px;
+  }
 }
 
 .advantage-table__main-item span {
@@ -85,7 +95,7 @@ dl.advantages-table,
   @include vp-mobile {}
 }
 
-.advantage-table__item  {
+.advantage-table__item {
   display: grid;
   grid-template-columns: min-content auto;
   grid-template-rows: min-content min-content;
@@ -99,8 +109,10 @@ dl.advantages-table,
   @include vp-mobile {
     width: 230px;
     display: flex;
+    align-items: center;
     flex-direction: column;
     margin-inline: auto;
+    text-align: center;
   }
 }
 
@@ -125,6 +137,10 @@ dl.advantages-table,
 
   @include vp-tablet {
     margin-block-start: -22px;
+  }
+
+  @include vp-mobile {
+    margin-block-end: 7px;
   }
 }
 
@@ -154,11 +170,14 @@ dl.advantages-table,
 }
 
 .advantage-table__item dd {
-  // color: #102654;
-  // font-family: $font-basic;
+  font-family: $font-basic;
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
+
+  @include vp-mobile {
+    margin-block-end: -8px;
+  }
 }
 
 .advantage-table__item dd:first-of-type {
@@ -168,8 +187,12 @@ dl.advantages-table,
   margin-block-end: 10px;
 
   @include vp-tablet {
-    font-size: 20;
+    font-size: 20px;
     line-height: 19px;
+  }
 
+  @include vp-mobile {
+    line-height: 30px;
+    margin-block-end: 3px;
   }
 }

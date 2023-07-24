@@ -8,6 +8,10 @@
   @include vp-tablet {
     padding: 91px 0 100px;
   }
+
+  @include vp-mobile {
+    padding: 64px 0 70px;
+  }
 }
 
 .advantages__section-content h2 {
@@ -29,9 +33,10 @@
   }
 
   @include vp-mobile {
-font-size: 32px;
-line-height: 38px;
-letter-spacing: 0.96px;
+    margin-block-end: 51px;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.96px;
   }
 }
 

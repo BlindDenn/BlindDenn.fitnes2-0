@@ -1,17 +1,11 @@
 .subscription {
   background-color: $bg-additional;
-  padding-block: 120px;
 
-  @include vp-tablet {
-    padding-block: 100px;
-  }
-
-  @include vp-mobile {
-    padding-block: 71px;
-  }
+  @include vp-tablet {}
 }
 
 .subscription__section-content {
+  padding-block: 120px;
   margin-inline: auto;
   max-width: 100%;
   display: flex;
@@ -23,6 +17,13 @@
 
   @include vp-tablet {
     width: 442px;
+    padding-block-start: 100px;
+    padding-block-end: 103px;
+  }
+
+  @include vp-mobile {
+    padding-block-start: 71px;
+    padding-block-end: 67px;
   }
 }
 
@@ -61,7 +62,7 @@
     gap: 54px;
   }
 
-  @include vp-tablet {
+  @include vp-mobile {
     width: 100%;
     gap: unset;
     justify-content: space-between;

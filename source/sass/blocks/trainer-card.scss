@@ -8,11 +8,15 @@
 
   @include vp-tablet {
     max-width: 268px;
+    height: 294px;
   }
 
   @include vp-mobile {
-    max-width: 264px;
-    max-height: 274px;
+    min-width: unset;
+    max-width: unset;
+    max-width: 226px;
+    min-height: unset;
+    height: 274px
   }
 }
 
@@ -28,18 +32,18 @@
   position: absolute;
   top: 193px;
   transition: top 200ms,
-              color 200ms,
-              background-color 200ms;
+    color 200ms,
+    background-color 200ms;
 
-  // &:hover {
-    //   top: 0;
-    // }
+  @include vp-mobile {
+    top: 170px;
   }
+}
 
-  .trainer-card:hover .trainer-card__data {
-    top: 0;
-    color: $color-white;
-    background-color: $color-basic-a89;
+.trainer-card:hover .trainer-card__data {
+  top: 0;
+  color: $color-white;
+  background-color: $color-basic-a89;
 }
 
 .trainer-card img {

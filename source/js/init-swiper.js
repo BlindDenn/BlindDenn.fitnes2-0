@@ -3,7 +3,7 @@ import Swiper from './vendor/swiper';
 const initSwiper = () => {
   var swiper = new Swiper(".swiper", {
     slidesPerView: 1,
-    spaceBetween: 20,
+    spaceBetween: 10,
     breakpoints: {
       556: {
         slidesPerView: 2,
