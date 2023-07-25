@@ -1541,6 +1541,65 @@ button,
   pointer-events: none;
 }
 
+.link {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  -webkit-transform: translate(-10px, 9px);
+      -ms-transform: translate(-10px, 9px);
+          transform: translate(-10px, 9px);
+  border-radius: 0;
+}
+.link:hover {
+  opacity: 0.8;
+}
+.link:disabled {
+  opacity: 0.3;
+}
+.link::after {
+  position: absolute;
+  display: block;
+  content: "";
+  height: 1px;
+  left: 10px;
+  right: 10px;
+  bottom: 9px;
+  background-color: #102654;
+}
+.link:focus-visible {
+  padding: 9px;
+  outline: none;
+  border: 1px solid #102654;
+}
+.link:focus-visible::after {
+  display: none;
+}
+.link--bg-dark {
+  color: #ffffff;
+}
+.link--bg-dark::after {
+  background-color: #ffffff;
+}
+.link--bg-dark:focus-visible {
+  border-color: #ffffff;
+}
+.link--small {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.6px;
+}
+.link--small::after {
+  bottom: 8px;
+}
+
 .custom-input,
 .custom-textarea {
   position: relative;
@@ -2593,7 +2652,7 @@ button,
     height: 1px;
     left: 10px;
     right: 10px;
-    bottom: 0;
+    bottom: 2px;
     background-color: #ffffff;
   }
 }
@@ -3004,7 +3063,7 @@ button,
 }
 
 .subscription {
-  background-color: #aaaaaa;
+  background-color: #dddddd;
 }
 .subscription__section-content {
   padding-block: 120px;
@@ -3022,7 +3081,7 @@ button,
           align-items: center;
   position: relative;
   overflow: visible;
-  background-color: #aaaaaa;
+  background-color: #dddddd;
 }
 @media (max-width: 1199.8px) {
   .subscription__section-content {
@@ -3216,8 +3275,9 @@ button,
   border: none;
 }
 .subs-card:hover, .subs-card:focus-visible {
-  -o-border-image: linear-gradient(115deg, #ed0233 0%, #003eb7 100%);
-     border-image: linear-gradient(115deg, #ed0233 0%, #003eb7 100%);
+  -o-border-image: linear-gradient(to bottom right, #ed0233 0%, #003eb7 100%);
+     border-image: -webkit-gradient(linear, left top, right bottom, from(#ed0233), to(#003eb7));
+     border-image: linear-gradient(to bottom right, #ed0233 0%, #003eb7 100%);
   border-image-slice: 1;
   border-image-width: 7px;
 }
@@ -3852,7 +3912,7 @@ button,
 }
 
 .advantages {
-  background-color: #aaaaaa;
+  background-color: #dddddd;
 }
 
 .advantages__section-content {
@@ -4181,7 +4241,6 @@ dl.advantages-table,
 }
 
 .offers {
-  background-color: aquamarine;
   padding: 135px 0 120px;
 }
 
@@ -4195,8 +4254,119 @@ dl.advantages-table,
   text-align: center;
 }
 
+.offers__container {
+  -webkit-margin-before: 34px;
+          margin-block-start: 34px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: minmax(211px, -webkit-min-content) minmax(211px, -webkit-min-content);
+  -ms-grid-rows: minmax(211px, min-content) minmax(211px, min-content);
+  grid-template-rows: minmax(211px, -webkit-min-content) minmax(211px, -webkit-min-content);
+  grid-template-rows: minmax(211px, min-content) minmax(211px, min-content);
+  gap: 40px;
+  overflow: hidden;
+}
+
+.offer-main {
+  background-color: #ed0233;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/span 2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+.offer-main__text-content {
+  color: #ffffff;
+  padding: 34px 45px 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.offer-main__text-content h3 {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 156%;
+  /* 43.68px */
+}
+.offer-main__text-content span {
+  display: block;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 156%;
+  /* 109.2px */
+  -webkit-margin-before: -26px;
+          margin-block-start: -26px;
+}
+.offer-main__text-content p {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  /* 25.2px */
+}
+.offer-main__text-content a {
+  margin: 0;
+  margin-top: auto;
+}
+.offer-main img {
+  background-color: #5089e5;
+  width: 100%;
+  height: 462px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.offer {
+  color: #1c3374;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  padding: 30px 35px 36px;
+  -o-border-image: linear-gradient(to bottom right, #ed0233 0%, #003eb7 100%);
+     border-image: -webkit-gradient(linear, left top, right bottom, from(#ed0233), to(#003eb7));
+     border-image: linear-gradient(to bottom right, #ed0233 0%, #003eb7 100%);
+  border-image-slice: 1;
+  border-image-width: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.offer h3 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.offer p {
+  margin: 0;
+  -webkit-margin-before: 7px;
+          margin-block-start: 7px;
+  font-size: 16px;
+  line-height: 140%;
+  /* 22.4px */
+}
+.offer a {
+  margin: 0;
+  margin-top: auto;
+}
+
 .faq {
-  background-color: #aaaaaa;
+  background-color: #dddddd;
   padding-block: 120px;
 }
 
@@ -4257,8 +4427,8 @@ dl.advantages-table,
   content: "";
   width: 18px;
   height: 18px;
-  -webkit-mask: url(../img/svg/plus-sign.svg);
-          mask: url(../img/svg/plus-sign.svg);
+  -webkit-mask: url(../img/sprite.svg#plus-sign);
+          mask: url(../img/sprite.svg#plus-sign);
   background-color: #102654;
   position: absolute;
   right: 12px;
@@ -4274,8 +4444,8 @@ dl.advantages-table,
   background-color: #102654;
 }
 .accordion__element.is-active > .accordion__button::after {
-  -webkit-mask: url(../img/svg/minus-sign.svg);
-          mask: url(../img/svg/minus-sign.svg);
+  -webkit-mask: url(../img/sprite.svg#minus-sign);
+          mask: url(../img/sprite.svg#minus-sign);
   background-color: #ffffff;
 }
 .accordion__wrapper {

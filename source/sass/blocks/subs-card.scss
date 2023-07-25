@@ -7,7 +7,7 @@
 
   &:hover,
   &:focus-visible {
-    border-image: $gradient-button;
+    border-image: $gradient-border;
     border-image-slice: 1;
     border-image-width: 7px;
   }

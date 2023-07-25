@@ -23,7 +23,7 @@ $color-torch-red: #ff1553;
 // Backgrounds
 
 $bg-basic: $color-default-white;
-$bg-additional: #aaaaaa; // ПОМЕНЯТЬ НА ЗАКОММЕНТИРОВАННЫЙ!
+$bg-additional: #dddddd; // ПОМЕНЯТЬ НА ЗАКОММЕНТИРОВАННЫЙ!
 // $bg-additional: #f8f9fc;
 $bg-banner: #ed0233;
 $bg-dark: #102654;
@@ -39,6 +39,7 @@ $color-icon-dark: $color-basic;
 $gradien-hero-colors: #B80027 0deg, #B80027 15deg, #003D85 90deg, #003D85 120deg, #B80027;
 $gradient-text: linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
 $gradient-button: linear-gradient(115deg, #ed0233 0%, #003eb7 100%);
+$gradient-border: linear-gradient(to bottom right, #ed0233 0%, #003eb7 100%);
 $gradient-hero-desktop: conic-gradient(from 70deg at calc(50% - 465px) calc(100% - 400px), $gradien-hero-colors);
 $gradient-hero-tablet: conic-gradient(from 70deg at calc(50% - 224px) calc(100% - 355px), $gradien-hero-colors);
 $gradient-hero-mobile: conic-gradient(from 70deg at calc(100% - 205px) calc(100% - 320px), $gradien-hero-colors);
