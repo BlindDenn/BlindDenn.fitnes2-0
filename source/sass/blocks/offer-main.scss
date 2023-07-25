@@ -1,4 +1,5 @@
 .offer-main {
+  height: 100%;
   background-color: $bg-banner;
   grid-row: 1 / span 2;
   display: grid;
@@ -8,14 +9,27 @@
     grid-column: 1 / span 2;
     grid-row: unset;
     grid-template-columns: 279px 1fr;
+  }
 
+  @include vp-mobile {
+    grid-column: unset;
+    grid-row: unset;
+    grid-template-columns: auto;
+    grid-template-rows: 299px 299px;
+    align-items: center;
   }
 
   &__text-content {
+    height: 100%;
     color: $color-white;
     padding: 34px 45px 45px;
     display: flex;
     flex-direction: column;
+
+    @include vp-mobile {
+      padding: 34px 45px 36px;
+      align-items: center;
+    }
 
     & h3 {
       margin: 0;
@@ -42,11 +56,20 @@
       font-weight: 400;
       line-height: 140%;
       /* 25.2px */
+
+      @include vp-mobile {
+        margin-block-start: -5px;
+      }
     }
 
     & a {
       margin: 0;
       margin-top: auto;
+      transform: translate(-10px, 9px);
+
+      @include vp-mobile {
+        transform: none;
+      }
     }
   }
 
@@ -56,5 +79,12 @@
     height: 462px;
     object-fit: cover;
     object-position: top;
+
+    @include vp-mobile {
+      width: 100%;
+      height: 299px;
+      object-fit: cover;
+      object-position: top;
+    }
   }
 }
