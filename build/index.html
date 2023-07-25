@@ -576,7 +576,13 @@
                   <p>Безлимитный абонемент в&nbsp;тренажерный зал</p>
                   <a class="link link--bg-dark" href="">Подробнее</a>
                 </div>
-                <img src="./img/action-figure-xl@1x.png" alt="">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./img/action-figure-xl@1x.png 1x, ./img/action-figure-xl@2x.png 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="./img/action-figure-m@1x.png 1x, ./img/action-figure-m@2x.png 2x">
+                  <img src="./img/action-figure-xl@1x.png" alt="">
+                </picture>
               </div>
               <div class="offer">
                 <h3>Месяц бесплатно</h3>

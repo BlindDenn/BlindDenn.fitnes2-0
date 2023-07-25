@@ -3,7 +3,13 @@
   grid-row: 1 / span 2;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  // height: 100%;
+
+  @include vp-tablet {
+    grid-column: 1 / span 2;
+    grid-row: unset;
+    grid-template-columns: 279px 1fr;
+
+  }
 
   &__text-content {
     color: $color-white;

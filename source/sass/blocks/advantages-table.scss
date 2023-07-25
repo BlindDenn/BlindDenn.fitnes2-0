@@ -189,6 +189,7 @@ dl.advantages-table,
   @include vp-tablet {
     font-size: 20px;
     line-height: 19px;
+    margin-block-end: 7px;
   }
 
   @include vp-mobile {
