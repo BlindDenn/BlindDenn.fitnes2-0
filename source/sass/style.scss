@@ -5,6 +5,7 @@
 // Swiper 7.4.1
 @import "vendor/swiper";
 @import "vendor/data-tabs.scss";
+@import "vendor/data-accordion.scss";
 
 // Global
 // ---------------------------------
@@ -42,6 +43,9 @@
 @import "./blocks/trainer-data.scss";
 @import "./blocks/advantages.scss";
 @import "./blocks/advantages-table.scss";
+@import "./blocks/offers.scss";
+@import "./blocks/faq.scss";
+@import "./blocks/accordion.scss";
 
 // ---------------------------------
 

@@ -3,11 +3,20 @@ import { initModals } from './modules/modals/init-modals';
 import { Form } from './modules/form-validate/form';
 import { initVideo } from './video';
 import { initTabs } from './vendor/tabs/init-tabs';
+import { initAccordions } from './vendor/accordion/init-accordion';
 import { initSwiper } from './init-swiper';
+
 
 window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initTabs();
+  });
+});
+
+
+window.addEventListener('DOMContentLoaded', () => {
+  window.addEventListener('load', () => {
+    initAccordions();
   });
 });
 

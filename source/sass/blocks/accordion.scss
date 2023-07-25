@@ -1,0 +1,95 @@
+.accordion {
+  // //max-width: 500px;
+  // margin: 0 auto 50px auto;
+
+  // & & {
+  //   width: 90%;
+  //   margin: 0 auto;
+  // }
+
+  &__element:last-child {
+    margin-bottom: 0;
+  }
+
+  &__element {
+    margin-bottom: 34px;
+    // padding: 10px;
+  }
+
+  &__button {
+    position: relative;
+    padding: 0 60px 0 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+
+    width: 100%;
+    color: $color-basic;
+    font-family: $font-basic;
+    font-size: 24px;
+    font-weight: 400;
+    -webkit-text-stroke: 0.6px $color-basic;
+    line-height: 28.8px;
+    text-align: left;
+    // padding: 10px;
+
+    // text-transform: uppercase;
+
+    cursor: pointer;
+
+    &:focus-visible {
+      outline: none;
+    }
+
+    &::before {
+      display: block;
+      content: "";
+      width: 42px;
+      height: 42px;
+      border: 1px solid $color-basic;
+      border-radius: 50%;
+      background-color: transparent;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &:hover::before,
+    &:focus-visible::before {
+      // outline: none;
+      background-color: $color-basic;
+    }
+
+    &::after {
+      display: block;
+      content: "";
+      width: 18px;
+      height: 18px;
+      mask: url(../img/svg/plus-sign.svg);
+      background-color: $color-basic;
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &:hover::after,
+    &:focus-visible::after {
+      background-color: $color-white;
+    }
+  }
+
+  &__element.is-active>&__button::before {
+    background-color: $color-basic;
+  }
+
+  &__element.is-active>&__button::after {
+    mask: url(../img/svg/minus-sign.svg);
+    background-color: $color-white;
+  }
+
+  &__wrapper {
+    padding: 0 200px 0 0;
+  }
+}
