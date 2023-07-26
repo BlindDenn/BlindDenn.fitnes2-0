@@ -11,3 +11,20 @@
   line-height: 65px;
   letter-spacing: 1.62px;
 }
+
+.faq__content {
+  margin-block-start: 39px;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 30px;
+}
+
+.faq__controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.faq__control {
+  height: 54px;
+}
