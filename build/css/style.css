@@ -4760,6 +4760,12 @@ dl.advantages-table,
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
 }
+@media (max-width: 767.8px) {
+  .accordion__button::before {
+    width: 32px;
+    height: 32px;
+  }
+}
 .accordion__button:hover::before, .accordion__button:focus-visible::before {
   background-color: #102654;
 }
@@ -4778,6 +4784,17 @@ dl.advantages-table,
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
 }
+@media (max-width: 767.8px) {
+  .accordion__button::after {
+    width: 12px;
+    height: 12px;
+    -webkit-mask: url(../img/sprite.svg#plus-sign-s);
+            mask: url(../img/sprite.svg#plus-sign-s);
+    background-color: #102654;
+    position: absolute;
+    right: 9px;
+  }
+}
 .accordion__button:hover::after, .accordion__button:focus-visible::after {
   background-color: #ffffff;
 }
@@ -4788,6 +4805,12 @@ dl.advantages-table,
   -webkit-mask: url(../img/sprite.svg#minus-sign);
           mask: url(../img/sprite.svg#minus-sign);
   background-color: #ffffff;
+}
+@media (max-width: 767.8px) {
+  .accordion__element.is-active > .accordion__button::after {
+    -webkit-mask: url(../img/sprite.svg#minus-sign-s);
+            mask: url(../img/sprite.svg#minus-sign-s);
+  }
 }
 .accordion__wrapper {
   padding: 0 200px 0 0;
