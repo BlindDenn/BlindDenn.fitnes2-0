@@ -1,6 +1,14 @@
 .faq {
   background-color: $bg-additional;
   padding-block: 120px;
+
+  @include vp-tablet {
+    padding-block: 100px;
+  }
+
+  @include vp-mobile {
+    padding-block: 70px;
+  }
 }
 
 .faq h2 {
@@ -10,6 +18,19 @@
   font-weight: 600;
   line-height: 65px;
   letter-spacing: 1.62px;
+
+  @include vp-tablet {
+    text-align: center;
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: 1.26px;
+  }
+
+  @include vp-mobile {
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.96px;
+  }
 }
 
 .faq__content {
@@ -17,14 +38,41 @@
   display: grid;
   grid-template-columns: 260px 1fr;
   gap: 40px;
+
+  @include vp-tablet {
+    margin-block-start: 41px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include vp-mobile {
+    margin-block-start: 31px;
+    gap: 30px;
+  }
 }
 
 .faq__controls {
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+  @include vp-tablet {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  @include vp-mobile {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+  }
 }
 
 .faq__control {
   height: 54px;
+
+  @include vp-mobile {
+    height: 44px;
+  }
 }

@@ -22,14 +22,38 @@
     padding-block-end: 16px;
     border-bottom: 1px solid $color-basic-a20;
 
+    @include vp-tablet {
+      margin-block-start: 30px;
+      padding-block-end: 19px;
+    }
+
+    @include vp-mobile {
+      margin-block-start: 20px;
+      padding-block-end: 8px;
+    }
+
     &.is-active {
       padding-block-end: 23px;
+
+      @include vp-tablet {
+        margin-block-start: 29px;
+        padding-block-end: 24px;
+      }
+
+      @include vp-mobile {
+        margin-block-start: 20px;
+        padding-block-end: 19px;
+      }
     }
   }
 
   &__content {
     margin-block-start: 14px;
     // margin-block-end: 8px;
+
+    @include vp-mobile {
+      margin-block-start: 11px;
+    }
   }
 
   & p {
@@ -39,6 +63,13 @@
     font-weight: 300;
     line-height: 140%;
     /* 25.2px */
+
+    @include vp-mobile {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 140%;
+      /* 22.4px */
+    }
   }
 
   &__button {
@@ -54,9 +85,25 @@
     font-size: 24px;
     font-weight: 400;
     -webkit-text-stroke: 0.6px $color-basic;
-    line-height: 28.8px;
+    line-height: 120%;
     text-align: left;
-    // padding: 10px;
+
+    @include vp-tablet {
+      line-height: 120%;
+      /* 24px */
+    }
+
+    @include vp-mobile {
+      font-size: 18px;
+      line-height: 120%;
+      /* 21.6px */
+    }
+
+    &.is-active {
+      @include vp-tablet {
+        line-height: 100%;
+      }
+    }
 
     // text-transform: uppercase;
 
@@ -116,5 +163,13 @@
 
   &__wrapper {
     padding: 0 200px 0 0;
+
+    @include vp-tablet {
+      padding-inline-end: 150px;
+    }
+
+    @include vp-mobile {
+      padding-inline-end: 0;
+    }
   }
 }

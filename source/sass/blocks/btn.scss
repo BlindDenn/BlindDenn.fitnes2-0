@@ -78,5 +78,9 @@
     border-width: 1px;
     border-color: $color-basic-a20;
     text-transform: capitalize;
+
+    @include vp-mobile {
+      font-size: 16px;
+    }
   }
 }
