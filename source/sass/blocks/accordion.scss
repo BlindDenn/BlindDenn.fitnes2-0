@@ -7,7 +7,7 @@
   //   margin: 0 auto;
   // }
 
-  border-top: 1px solid red;
+  border-top: 1px solid $color-basic-a20;
 
 
   &__element:last-child {
@@ -16,13 +16,20 @@
 
   &__element {
     margin: 0;
-    padding-block: 32px;
-    padding-block-end: 24px;
-    border-bottom: 1px solid red;
+    margin-block-start: 33px;
+    margin-block-end: 0;
+    padding-block-start: 0px;
+    padding-block-end: 16px;
+    border-bottom: 1px solid $color-basic-a20;
+
+    &.is-active {
+      padding-block-end: 23px;
+    }
   }
 
   &__content {
-    margin-block-start: 10px;
+    margin-block-start: 14px;
+    // margin-block-end: 8px;
   }
 
   & p {

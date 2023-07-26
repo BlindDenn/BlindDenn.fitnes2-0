@@ -37,7 +37,8 @@
     border: 2px solid $color-basic;
 
     &:hover,
-    &:focus-visible {
+    &:focus-visible,
+    &.is-active {
       outline: none;
       color: $color-white;
       background: $gradient-button;
@@ -67,5 +68,15 @@
     opacity: 0.5;
 
     pointer-events: none;
+  }
+
+  &--faq-tabs {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 100%;
+    /* 18px */
+    border-width: 1px;
+    border-color: $color-basic-a20;
+    text-transform: capitalize;
   }
 }

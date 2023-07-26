@@ -1520,7 +1520,7 @@ button,
   background-color: transparent;
   border: 2px solid #102654;
 }
-.btn--bg-light:hover, .btn--bg-light:focus-visible {
+.btn--bg-light:hover, .btn--bg-light:focus-visible, .btn--bg-light.is-active {
   outline: none;
   color: #ffffff;
   background: linear-gradient(115deg, #ed0233 0%, #003eb7 100%);
@@ -1539,6 +1539,15 @@ button,
 .btn:disabled {
   opacity: 0.5;
   pointer-events: none;
+}
+.btn--faq-tabs {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 100%;
+  /* 18px */
+  border-width: 1px;
+  border-color: rgba(16, 38, 84, 0.2);
+  text-transform: capitalize;
 }
 
 .link {
@@ -3060,7 +3069,7 @@ button,
 }
 
 .subscription {
-  background-color: #dddddd;
+  background-color: #f8f9fc;
 }
 .subscription__section-content {
   padding-block: 120px;
@@ -3078,7 +3087,7 @@ button,
           align-items: center;
   position: relative;
   overflow: visible;
-  background-color: #dddddd;
+  background-color: #f8f9fc;
 }
 @media (max-width: 1199.8px) {
   .subscription__section-content {
@@ -3909,7 +3918,7 @@ button,
 }
 
 .advantages {
-  background-color: #dddddd;
+  background-color: #f8f9fc;
 }
 
 .advantages__section-content {
@@ -4508,7 +4517,7 @@ dl.advantages-table,
 }
 
 .faq {
-  background-color: #dddddd;
+  background-color: #f8f9fc;
   padding-block: 120px;
 }
 
@@ -4528,7 +4537,7 @@ dl.advantages-table,
   display: grid;
   -ms-grid-columns: 260px 1fr;
   grid-template-columns: 260px 1fr;
-  gap: 30px;
+  gap: 40px;
 }
 
 .faq__controls {
@@ -4547,21 +4556,30 @@ dl.advantages-table,
 }
 
 .accordion {
-  border-top: 1px solid red;
+  border-top: 1px solid rgba(16, 38, 84, 0.2);
 }
 .accordion__element:last-child {
   margin-bottom: 0;
 }
 .accordion__element {
   margin: 0;
-  padding-block: 32px;
-  -webkit-padding-after: 24px;
-          padding-block-end: 24px;
-  border-bottom: 1px solid red;
+  -webkit-margin-before: 33px;
+          margin-block-start: 33px;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-padding-before: 0px;
+          padding-block-start: 0px;
+  -webkit-padding-after: 16px;
+          padding-block-end: 16px;
+  border-bottom: 1px solid rgba(16, 38, 84, 0.2);
+}
+.accordion__element.is-active {
+  -webkit-padding-after: 23px;
+          padding-block-end: 23px;
 }
 .accordion__content {
-  -webkit-margin-before: 10px;
-          margin-block-start: 10px;
+  -webkit-margin-before: 14px;
+          margin-block-start: 14px;
 }
 .accordion p {
   margin: 0;
