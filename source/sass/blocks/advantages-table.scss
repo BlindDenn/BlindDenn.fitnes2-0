@@ -172,9 +172,10 @@ dl.advantages-table,
   }
 }
 
-.advantage-table__item dd {
+.advantage-table__item p {
   // align-self: end;
   // display: block;
+  margin: 0;
   font-family: $font-basic;
   font-size: 16px;
   font-weight: 300;
@@ -188,7 +189,7 @@ dl.advantages-table,
   }
 }
 
-.advantage-table__item dd:first-of-type {
+.advantage-table__item p:first-of-type {
   // align-self: start;
   font-size: 22px;
   font-weight: 700;

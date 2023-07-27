@@ -4214,20 +4214,21 @@ dl.advantages-table,
   }
 }
 
-.advantage-table__item dd {
+.advantage-table__item p {
+  margin: 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
 }
 @media (max-width: 767.8px) {
-  .advantage-table__item dd {
+  .advantage-table__item p {
     -webkit-margin-after: -8px;
             margin-block-end: -8px;
   }
 }
 
-.advantage-table__item dd:first-of-type {
+.advantage-table__item p:first-of-type {
   font-size: 22px;
   font-weight: 700;
   line-height: 22px;
@@ -4235,7 +4236,7 @@ dl.advantages-table,
           margin-block-end: 10px;
 }
 @media (max-width: 1199.8px) {
-  .advantage-table__item dd:first-of-type {
+  .advantage-table__item p:first-of-type {
     font-size: 20px;
     line-height: 19px;
     -webkit-margin-after: 7px;
@@ -4243,7 +4244,7 @@ dl.advantages-table,
   }
 }
 @media (max-width: 767.8px) {
-  .advantage-table__item dd:first-of-type {
+  .advantage-table__item p:first-of-type {
     line-height: 30px;
     -webkit-margin-after: 3px;
             margin-block-end: 3px;
