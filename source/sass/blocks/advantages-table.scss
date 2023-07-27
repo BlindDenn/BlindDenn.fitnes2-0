@@ -31,8 +31,11 @@ dl.advantages-table,
   grid-row: 1 / -1;
   background-color: #1c3374;
   color: $color-white;
-  padding: 35px 34px 57px;
   height: 100%;
+  padding: 35px 34px 57px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 
   @include vp-tablet {
     grid-column: 1 / -1;
@@ -44,16 +47,12 @@ dl.advantages-table,
   @include vp-mobile {
     width: 100%;
     grid-row: 3 / 4;
-    padding: 19px 0 43px;
+    padding: 19px calc((100vw - 200px) / 2) 43px;
     margin-inline: auto;
   }
 }
 
 .advantage-table__main-item-content {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
 
   @include vp-mobile {
     width: 200px;
