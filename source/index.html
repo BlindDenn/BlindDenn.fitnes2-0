@@ -54,11 +54,14 @@
 
             <picture>
               <source type="image/webp" media="(min-width: 1200px)"
-                srcset="img/hero-figure-xl@1x.webp 1x, img/hero-figure-xl@2x.webp 2x">
+                srcset="img/hero-figure-xl@1x.webp 1x, img/hero-figure-xl@2x.webp 2x" width="500" height="556">
               <source type="image/webp" media="(min-width: 768px)"
                 srcset="img/hero-figure-m@1x.webp 1x, img/hero-figure-m@2x.webp 2x">
-              <img srscet="img/hero-figure-m@1x.jpg 1x, img/hero-figure-m@2x.jpg 2x" src="img/hero-figure-m@1x.jpg"
-                width="500" height="556" alt="Атлет-супермен - типичный посетитель спортивного клуба SUPERGYM">
+              <source media="(min-width: 1200px)" srcset="img/hero-figure-xl@1x.jpg 1x, img/hero-figure-xl@2x.jpg 2x"
+                width="500" height="556">
+              <source media="(min-width: 768px)" srcset="img/hero-figure-m@1x.jpg 1x, img/hero-figure-m@2x.jpg 2x">
+              <img src="img/hero-figure-m@1x.jpg" width="324" height="390"
+                alt="Атлет-супермен — посетитель спортивного клуба SUPERGYM">
             </picture>
 
             <!-- <picture>
