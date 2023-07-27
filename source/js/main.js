@@ -4,7 +4,8 @@ import { Form } from './modules/form-validate/form';
 import { initVideo } from './video';
 import { initTabs } from './vendor/tabs/init-tabs';
 import { initAccordions } from './vendor/accordion/init-accordion';
-import { initSwiper } from './init-swiper';
+import { initTrainersSwiper } from './init-trainers-swiper';
+import { initReviewsSwiper } from './init-reviews-swiper';
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -43,7 +44,8 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 initVideo();
-initSwiper();
+initTrainersSwiper();
+initReviewsSwiper();
 
 // ---------------------------------
 

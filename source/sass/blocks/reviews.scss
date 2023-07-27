@@ -1,0 +1,52 @@
+.reviews {
+  padding-block-start: 106px;
+  padding-block-end: 110px;
+
+  @include vp-tablet {
+    padding-block-start: 100px;
+    padding-block-end: 100px;
+  }
+
+  @include vp-mobile {
+    padding-block-start: 63px;
+    padding-block-end: 70px;
+  }
+}
+
+.reviews h2 {
+  margin: 0;
+  font-family: $font-accent;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 65px;
+  letter-spacing: 1.62px;
+
+  @include vp-tablet {
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: 1.26px;
+    text-align: center;
+  }
+
+  @include vp-mobile {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0.96px;
+  }
+}
+
+.reviews__swiper {
+  margin-block-start: 48px;
+  position: relative;
+
+  @include vp-tablet {
+    margin-block-start: 32px;
+    margin-inline: 56px;
+  }
+
+  @include vp-mobile {
+    margin-block-start: 43px;
+    margin-inline: 32px;
+  }
+}

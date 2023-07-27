@@ -1,7 +1,7 @@
 import Swiper from './vendor/swiper';
 
-const initSwiper = () => {
-  var swiper = new Swiper(".swiper", {
+const initTrainersSwiper = () => {
+  var trainersSwiper = new Swiper(".trainers-swiper", {
     slidesPerView: 1,
     spaceBetween: 10,
     breakpoints: {
@@ -36,4 +36,4 @@ const initSwiper = () => {
   });
 };
 
-export { initSwiper };
+export { initTrainersSwiper };
