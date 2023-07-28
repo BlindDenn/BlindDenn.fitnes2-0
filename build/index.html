@@ -33,7 +33,7 @@
     </header>
 
     <main class="main">
-      <!-- <h1 class="visually-hidden">SUPERGYM. Самый большой фитнесс-центр за Уралом</h1> -->
+      <h1 class="visually-hidden">SUPERGYM. Самый большой фитнесс-центр за Уралом</h1>
       <section class="main__hero">
         <div class="container">
           <div class="hero">
@@ -54,14 +54,12 @@
 
             <picture>
               <source type="image/webp" media="(min-width: 1200px)"
-                srcset="img/hero-figure-xl@1x.webp 1x, img/hero-figure-xl@2x.webp 2x" width="500" height="556">
+                srcset="img/hero-figure-xl@1x.webp 1x, img/hero-figure-xl@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
                 srcset="img/hero-figure-m@1x.webp 1x, img/hero-figure-m@2x.webp 2x">
-              <source media="(min-width: 1200px)" srcset="img/hero-figure-xl@1x.jpg 1x, img/hero-figure-xl@2x.jpg 2x"
-                width="500" height="556">
-              <source media="(min-width: 768px)" srcset="img/hero-figure-m@1x.jpg 1x, img/hero-figure-m@2x.jpg 2x">
-              <img src="img/hero-figure-m@1x.jpg" width="324" height="390"
-                alt="Атлет-супермен — посетитель спортивного клуба SUPERGYM">
+              <source media="(min-width: 1200px)" srcset="img/hero-figure-xl@1x.jpg 1x, img/hero-figure-xl@2x.jpg 2x">
+              <img src="img/hero-figure-m@1x.jpg" srcset="img/hero-figure-m@2x.jpg 2x"
+                sizes="(min-width: 1200px) 500px, 324px" alt="Атлет-супермен — посетитель спортивного клуба SUPERGYM">
             </picture>
 
             <!-- <picture>
@@ -103,7 +101,11 @@
                 srcset="img/gym-xl@1x.webp 1x, img/gym-xl@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/gym-m@1x.webp 1x, img/gym-m@2x.webp 2x">
               <source type="image/webp" srcset="img/gym-s@1x.webp 1x, img/gym-s@2x.webp 2x">
-              <img src="img/gym-s@1x.jpg" alt="Тренажерный зал фитнес центра Supergym">
+              <source media="(min-width: 1200px)" srcset="img/gym-xl@1x.jpg 1x, img/gym-xl@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/gym-m@1x.jpg 1x, img/gym-m@2x.jpg 2x">
+              <img src="img/gym-s@1x.jpg" srcset="img/gym-s@2x.jpg 2x"
+                sizes="(min-width: 1200px) 660px, (min-width: 768px) 678px, 320px"
+                alt="Тренажерный зал фитнес центра Supergym">
             </picture>
             <div class="gym__video">
               <div class="gym__video-content gym__video-content--hidden" data-bem="gym__video-content">
@@ -867,206 +869,36 @@
               <div class="swiper reviews-swiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <div class="swiper-slide__container">
-                      <div class="trainer-card">
-                        <div class="trainer-card__data">
-                          <div class="trainer-data">
-                            <h3>Анна Павлова</h3>
-                            <p>CrossFit</p>
-                            <ul>
-                              <li>
-                                Certified Level 3 Trainer
-                              </li>
-                              <li>
-                                Победитель чемпионата России по CrossFit
-                              </li>
-                              <li>
-                                Опыт — 6 лет
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <img class="trainer-card__image" src="./img/trainer-1-xl@1x.png" width="260" height="294"
-                          alt="">
-                      </div>
+                    <div class="review-card">
+                      <p class="review-card__review-body">«Хожу в Supergym уже больше года. Нравится, что в клубе
+                        всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время
+                        нет очередей»</p>
+                      <p class="review-card__review-author">Анна Орлова</p>
+                      <img src="./img/review-1@1x.png" alt="" class="review-card__review-author-avatar" width="80"
+                        height="80">
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="swiper-slide__container">
-                      <div class="trainer-card">
-                        <div class="trainer-card__data">
-                          <div class="trainer-data">
-                            <h3>Алексей Лавров</h3>
-                            <p>CrossFit</p>
-                            <ul>
-                              <li>
-                                Certified Level 3 Trainer
-                              </li>
-                              <li>
-                                Победитель чемпионата России по CrossFit
-                              </li>
-                              <li>
-                                Опыт — 6 лет
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <img class="trainer-card__image" src="./img/trainer-2-xl@1x.png" width="260" height="294"
-                          alt="">
-                      </div>
-                    </div>
-
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="swiper-slide__container">
-                      <div class="trainer-card">
-                        <div class="trainer-card__data">
-                          <div class="trainer-data">
-                            <h3>Александр Пашков</h3>
-                            <p>CrossFit</p>
-                            <ul>
-                              <li>
-                                Certified Level 3 Trainer
-                              </li>
-                              <li>
-                                Победитель чемпионата России по CrossFit
-                              </li>
-                              <li>
-                                Опыт — 6 лет
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <img class="trainer-card__image" src="./img/trainer-3-xl@1x.png" width="260" height="294"
-                          alt="">
-                      </div>
+                    <div class="review-card">
+                      <p class="review-card__review-body">«Хожу в Supergym уже больше года. Нравится.»</p>
+                      <p class="review-card__review-author">Мария Орлова</p>
+                      <img src="./img/review-1@1x.png" alt="" class="review-card__review-author-avatar" width="80"
+                        height="80">
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="swiper-slide__container">
-                      <div class="trainer-card">
-                        <div class="trainer-card__data">
-                          <div class="trainer-data">
-                            <h3>Мария Кетова</h3>
-                            <p>CrossFit</p>
-                            <ul>
-                              <li>
-                                Certified Level 3 Trainer
-                              </li>
-                              <li>
-                                Победитель чемпионата России по CrossFit
-                              </li>
-                              <li>
-                                Опыт — 6 лет
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <img class="trainer-card__image" src="./img/trainer-4-xl@1x.png" width="260" height="294"
-                          alt="">
-                      </div>
+                    <div class="review-card">
+                      <p class="review-card__review-body">«Нравится, что в клубе
+                        всегда чисто, тренажеры обновляют, персонал дружелюбный.»</p>
+                      <p class="review-card__review-author">Татьяна Орлова</p>
+                      <img src="./img/review-1@1x.png" alt="" class="review-card__review-author-avatar" width="80"
+                        height="80">
                     </div>
-
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="swiper-slide__container">
-                      <div class="trainer-card">
-                        <div class="trainer-card__data">
-                          <div class="trainer-data">
-                            <h3>Мария Павлова</h3>
-                            <p>CrossFit</p>
-                            <ul>
-                              <li>
-                                Certified Level 3 Trainer
-                              </li>
-                              <li>
-                                Опыт — 6 лет
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <img class="trainer-card__image" src="./img/trainer-1-xl@1x.png" width="260" height="294"
-                          alt="">
-                      </div>
-                    </div>
-
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="swiper-slide__container">
-                      <div class="trainer-card">
-                        <div class="trainer-card__data">
-                          <div class="trainer-data">
-                            <h3>Наталья Павлова</h3>
-                            <p>CrossFit</p>
-                            <ul>
-                              <li>
-                                Опыта нет
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <img class="trainer-card__image" src="./img/trainer-1-xl@1x.png" width="260" height="294"
-                          alt="">
-                      </div>
-                    </div>
-
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="swiper-slide__container">
-                      <div class="trainer-card">
-                        <div class="trainer-card__data">
-                          <div class="trainer-data">
-                            <h3>Екатерина Павлова</h3>
-                            <p>CrossFit</p>
-                            <ul>
-                              <li>
-                                Certified Level 3 Trainer
-                              </li>
-                              <li>
-                                Победитель чемпионата России по CrossFit
-                              </li>
-                              <li>
-                                Опыт — 6 лет
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <img class="trainer-card__image" src="./img/trainer-1-xl@1x.png" width="260" height="294"
-                          alt="">
-                      </div>
-                    </div>
-
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="swiper-slide__container">
-                      <div class="trainer-card">
-                        <div class="trainer-card__data">
-                          <div class="trainer-data">
-                            <h3>Анастасия Павлова</h3>
-                            <p>CrossFit</p>
-                            <ul>
-                              <li>
-                                Certified Level 3 Trainer
-                              </li>
-                              <li>
-                                Победитель чемпионата России по CrossFit
-                              </li>
-                              <li>
-                                Опыт — 6 лет
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <img class="trainer-card__image" src="./img/trainer-1-xl@1x.png" width="260" height="294"
-                          alt="">
-                      </div>
-                    </div>
-
                   </div>
                 </div>
               </div>
-              <div class="reviews_swiper-button-prev custom-swiper-button custom-swiper-button--prev"></div>
-              <div class="reviews_swiper-button-next custom-swiper-button custom-swiper-button--next"></div>
+              <div class="reviews-swiper-button-prev custom-swiper-button custom-swiper-button--prev"></div>
+              <div class="reviews-swiper-button-next custom-swiper-button custom-swiper-button--next"></div>
             </div>
           </div>
         </div>
@@ -1108,21 +940,21 @@
               <li>
                 <a href="#" aria-label="Ссылка на страницу спортклуба в сети Вконтакте.">
                   <svg width="25" height="25">
-                    <use href="./img/sprite.svg#icon-vk">
+                    <use href="./img/sprite.svg#icon-vk" />
                   </svg>
                 </a>
               </li>
               <li>
                 <a href="#" aria-label="Ссылка на страницу спортклуба в сети Одноклассники.">
                   <svg width="25" height="25">
-                    <use href="./img/sprite.svg#icon-ok">
+                    <use href="./img/sprite.svg#icon-ok" />
                   </svg>
                 </a>
               </li>
               <li>
                 <a href="#" aria-label="Ссылка на страницу спортклуба в сети Reddit.">
                   <svg width="25" height="25">
-                    <use href="./img/sprite.svg#icon-reddit">
+                    <use href="./img/sprite.svg#icon-reddit" />
                   </svg>
                 </a>
               </li>

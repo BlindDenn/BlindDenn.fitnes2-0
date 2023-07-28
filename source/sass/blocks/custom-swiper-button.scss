@@ -125,7 +125,7 @@ $button-field-width-mobile: 32px;
   }
 }
 
-.custom-swiper-button:disabled {
+.custom-swiper-button[aria-disabled="true"] {
   opacity: 0.3;
   cursor: auto;
   pointer-events: none;

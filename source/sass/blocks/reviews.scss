@@ -38,6 +38,7 @@
 
 .reviews__swiper {
   margin-block-start: 48px;
+  margin-inline: 300px;
   position: relative;
 
   @include vp-tablet {
@@ -49,4 +50,9 @@
     margin-block-start: 43px;
     margin-inline: 32px;
   }
+}
+
+.reviews .swiper-wrapper {
+  height: 100%;
+  background-color: red;
 }
