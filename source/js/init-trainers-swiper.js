@@ -5,7 +5,7 @@ const initTrainersSwiper = () => {
     slidesPerView: 1,
     spaceBetween: 10,
     breakpoints: {
-      556: {
+      500: {
         slidesPerView: 2,
         spaceBetween: 30,
       },
@@ -13,7 +13,7 @@ const initTrainersSwiper = () => {
         slidesPerView: 2,
         spaceBetween: 30,
       },
-      1066: {
+      850: {
         slidesPerView: 3,
         spaceBetween: 30,
       },
@@ -21,8 +21,12 @@ const initTrainersSwiper = () => {
         slidesPerView: 4,
         spaceBetween: 40,
       },
-      1500: {
+      1550: {
         slidesPerView: 5,
+        spaceBetween: 40,
+      },
+      1900: {
+        slidesPerView: 6,
         spaceBetween: 40,
       },
     },
