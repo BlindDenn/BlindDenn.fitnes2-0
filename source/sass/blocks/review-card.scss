@@ -32,8 +32,10 @@
   }
 
   & img {
+    width: 80px;
+    height: 80px;
     grid-column: 1 / 2;
-    grid-row: 1 / -1;
+    grid-row: 1 / span 2;
     border-radius: 50%;
   }
 }
