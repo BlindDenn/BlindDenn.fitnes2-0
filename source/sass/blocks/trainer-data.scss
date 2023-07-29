@@ -18,6 +18,10 @@
   margin: 0;
   font-family: $font-basic;
   text-align: center;
+
+  @include vp-mobile {
+    margin-block-start: -4px;
+  }
 }
 
 .trainer-data ul {

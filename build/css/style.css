@@ -3802,7 +3802,6 @@ button,
 
 .trainer-card {
   background-color: #b9c0cf;
-  position: relative;
   display: -ms-grid;
   display: grid;
   width: 100%;
@@ -3827,6 +3826,7 @@ button,
   color: transparent;
   background-color: transparent;
   padding: 51px calc((100% - 180px) / 2) 53px;
+  height: 294px;
   height: 100%;
   position: absolute;
   top: 193px;
@@ -3836,6 +3836,7 @@ button,
 @media (max-width: 767.8px) {
   .trainer-card__data {
     top: 170px;
+    padding: 41px calc((100% - 190px) / 2) 43px;
   }
 }
 
@@ -3881,6 +3882,12 @@ button,
   margin: 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   text-align: center;
+}
+@media (max-width: 767.8px) {
+  .trainer-data p {
+    -webkit-margin-before: -4px;
+            margin-block-start: -4px;
+  }
 }
 
 .trainer-data ul {
