@@ -4881,6 +4881,8 @@ dl.advantages-table,
           margin-block-start: 48px;
   margin-inline: 300px;
   position: relative;
+  -webkit-box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
+          box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
 }
 @media (max-width: 1199.8px) {
   .reviews__swiper {
@@ -4899,7 +4901,6 @@ dl.advantages-table,
 
 .reviews .swiper-wrapper {
   height: 100%;
-  background-color: red;
 }
 
 .review-card {
@@ -4920,7 +4921,11 @@ dl.advantages-table,
 }
 @media (max-width: 767.8px) {
   .review-card {
-    padding: 40px 25px;
+    padding: 40px 25px 33px;
+    -ms-grid-columns: 1fr 68px 14px fit-content(20%) 1fr;
+    grid-template-columns: 1fr 68px 14px fit-content(20%) 1fr;
+    -ms-grid-rows: 68px 1fr;
+    grid-template-rows: 68px 1fr;
   }
 }
 .review-card p {
@@ -4931,6 +4936,14 @@ dl.advantages-table,
   font-weight: 400;
   line-height: 140%;
   /* 22.4px */
+}
+@media (max-width: 767.8px) {
+  .review-card p {
+    grid-column: 1/-1;
+    -webkit-margin-before: 14px;
+            margin-block-start: 14px;
+    text-align: center;
+  }
 }
 .review-card p:last-of-type {
   grid-column: -2/-1;
@@ -4944,9 +4957,20 @@ dl.advantages-table,
           margin-block-start: -6px;
   -webkit-margin-after: 12px;
           margin-block-end: 12px;
+  text-align: left;
   /* 30px */
 }
-.review-card img {
+@media (max-width: 767.8px) {
+  .review-card p:last-of-type {
+    grid-column: -3/-2;
+    -ms-grid-row-align: center;
+        align-self: center;
+    margin: 0;
+    overflow-wrap: break-word;
+    line-height: 130%;
+  }
+}
+.review-card .review-card__avatar-wrapper {
   width: 80px;
   height: 80px;
   -ms-grid-column: 1;
@@ -4955,6 +4979,22 @@ dl.advantages-table,
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1/span 2;
+}
+@media (max-width: 767.8px) {
+  .review-card .review-card__avatar-wrapper {
+    width: 68px;
+    height: 68px;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+}
+.review-card img {
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
 }
 

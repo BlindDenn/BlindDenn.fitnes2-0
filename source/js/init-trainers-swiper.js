@@ -30,7 +30,7 @@ const initTrainersSwiper = () => {
         spaceBetween: 40,
       },
     },
-    grabCursor: true,
+    grabCursor: false,
     autoHeight: false,
     loop: true,
     navigation: {
@@ -40,4 +40,4 @@ const initTrainersSwiper = () => {
   });
 };
 
-export { initTrainersSwiper };
+export {initTrainersSwiper};

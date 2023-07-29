@@ -17,5 +17,5 @@ const initVideo = () => {
 }
 
 export {
-  initVideo,
+  initVideo
 };
