@@ -8,7 +8,7 @@
 
   display: grid;
   grid-template-columns: 102px 1fr;
-  grid-template-rows: min-content auto;
+  grid-template-rows: min-content 1fr;
 
   & p {
     grid-column: -2 / -1;
