@@ -1476,6 +1476,18 @@ button,
     padding: 0;
   }
 }
+.container--start, .container--end {
+  max-width: 960px;
+}
+.container--start {
+  margin: 0 0 0 auto;
+  padding: 0 0 0 103px;
+}
+.container--end {
+  max-width: 960px;
+  margin: 0 auto 0 0;
+  padding: 0 103px 0 0;
+}
 
 .btn {
   display: -webkit-inline-box;
@@ -2387,6 +2399,13 @@ button,
   .main__hero::after {
     background: conic-gradient(from 70deg at calc(100% - 205px) calc(100% - 320px), #B80027 0deg, #B80027 15deg, #003D85 90deg, #003D85 120deg, #B80027);
   }
+}
+
+.main__footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .hero {
@@ -4996,6 +5015,18 @@ dl.advantages-table,
   width: 100%;
   height: 100%;
   border-radius: 50%;
+}
+
+.promotion {
+  color: #ffffff;
+  background-color: #102654;
+}
+.promotion__content {
+  padding: 56px 170px 70px 0;
+}
+
+.contacts__content {
+  padding: 56px 0 70px 120px;
 }
 
 /* @mixin hover-focus {
