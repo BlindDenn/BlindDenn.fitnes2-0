@@ -10,6 +10,10 @@
   grid-template-columns: 102px 1fr;
   grid-template-rows: min-content 1fr;
 
+  @include vp-mobile {
+    padding: 40px 25px;
+  }
+
   & p {
     grid-column: -2 / -1;
     grid-row: 2 / -1;
