@@ -2716,8 +2716,9 @@ button,
     -webkit-columns: 2;
        -moz-columns: 2;
             columns: 2;
-    -webkit-margin-after: 10px;
-            margin-block-end: 10px;
+    gap: 31px;
+    -webkit-margin-after: 18px;
+            margin-block-end: 18px;
   }
 }
 
@@ -2733,6 +2734,8 @@ button,
 @media (max-width: 767.8px) {
   .footer__nav a {
     padding: 0;
+    font-size: 16px;
+    line-height: 19px;
   }
 }
 @media (hover: hover) {
@@ -2777,12 +2780,13 @@ button,
 }
 @media (max-width: 767.8px) {
   .footer__nav svg {
-    width: 68px;
+    width: 66px;
   }
 }
 
 .footer__nav a:has(svg) {
   padding: 0;
+  top: -4px;
 }
 @media (hover: hover) {
   .footer__nav a:has(svg):hover:not(.focus-visible)::after {
@@ -5202,7 +5206,7 @@ dl.advantages-table,
 }
 @media (max-width: 767.8px) {
   .contacts__section-content {
-    padding: 64px 0 62px;
+    padding: 64px 0 63px;
   }
 }
 .contacts h2 {

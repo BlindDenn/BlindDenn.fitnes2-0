@@ -42,7 +42,8 @@
   @include vp-mobile {
     display: block;
     columns: 2;
-    margin-block-end: 10px;
+    gap: 31px;
+    margin-block-end: 18px;
   }
 }
 
@@ -57,6 +58,8 @@
 
   @include vp-mobile {
     padding: 0;
+    font-size: 16px;
+    line-height: 19px;
   }
 
   @include hover {
@@ -109,12 +112,13 @@
   }
 
   @include vp-mobile {
-    width: 68px;
+    width: 66px;
   }
 }
 
 .footer__nav a:has(svg) {
   padding: 0;
+  top: -4px;
 
   @include hover {
     &::after {
