@@ -2,10 +2,18 @@
   display: flex;
   flex-direction: column;
 
+  @include vp-tablet {
+    margin-block-start: 25px;
+  }
+
   &__inputs-wrapper {
     width: 100%;
     display: flex;
     gap: 30px;
+
+    @include vp-tablet {
+      gap: 60px;
+    }
   }
 
   &__submit-button {

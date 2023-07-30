@@ -1,17 +1,33 @@
 .contacts {
   border-top: 1px solid $column-divider;
 
+  @include vp-tablet {
+    border: none;
+  }
+
   &__section-content {
     padding: 56px 0 67px 120px;
+
+    @include vp-tablet {
+      width: 100%;
+      padding: 61px 118px 62px 88px;
+
+    }
   }
 
   & h2 {
     margin: 0;
-font-family: $font-accent;
-font-size: 54px;
-font-weight: 600;
-line-height: 68px;
-letter-spacing: 1.62px;
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 68px;
+    letter-spacing: 1.62px;
+
+    @include vp-tablet {
+      font-size: 42px;
+      font-weight: 600;
+      line-height: 50px;
+      letter-spacing: 1.26px;
+    }
   }
 
   & ul {
@@ -26,11 +42,16 @@ letter-spacing: 1.62px;
     // display: block;
     columns: 2;
     column-gap: 124px;
+
+    @include vp-tablet {
+      margin-block-start: 33px;
+      column-gap: 155px;
+    }
   }
 
   & li {
     margin-bottom: 20px;
-    margin-right: -40px;
+    margin-right: -70px;
   }
 
   & li:first-child::after {
@@ -42,6 +63,10 @@ letter-spacing: 1.62px;
     top: 6px;
     bottom: 26px;
     left: 51%;
+
+    @include vp-tablet {
+      left: 56.3%;
+    }
   }
 
   & h3 {
@@ -49,6 +74,14 @@ letter-spacing: 1.62px;
     font-size: 16px;
     font-weight: 700;
     line-height: 150%; /* 24px */
+
+    &::after {
+      content: ":";
+    }
+
+    @include vp-tablet {
+      font-size: 20px;
+    }
   }
 
   & p,
@@ -59,5 +92,10 @@ letter-spacing: 1.62px;
     font-size: 14px;
     font-weight: 400;
     line-height: 152.344%; /* 21.328px */
+
+    @include vp-tablet {
+      font-size: 18px;
+      margin-block-start: 5px;
+    }
   }
 }
