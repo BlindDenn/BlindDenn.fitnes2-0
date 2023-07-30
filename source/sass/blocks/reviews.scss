@@ -1,9 +1,9 @@
 .reviews {
-  padding-block-start: 106px;
-  padding-block-end: 110px;
+  padding-block-start: 118px;
+  padding-block-end: 120px;
 
   @include vp-tablet {
-    padding-block-start: 100px;
+    padding-block-start: 91px;
     padding-block-end: 100px;
   }
 
@@ -37,14 +37,14 @@
 }
 
 .reviews__swiper {
-  margin-block-start: 48px;
+  margin-block-start: 37px;
   margin-inline: 300px;
   position: relative;
 
   box-shadow: (0px 0px 40px $review-card-shadow);
 
   @include vp-tablet {
-    margin-block-start: 32px;
+    margin-block-start: 40px;
     margin-inline: 56px;
   }
 

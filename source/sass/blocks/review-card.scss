@@ -3,11 +3,12 @@
   height: 100%;
   min-height: 240px;
   padding: 62px;
+  padding-block-end: 57px;
   font-family: $font-basic;
   color: $color-white;
 
   display: grid;
-  grid-template-columns: 102px 1fr;
+  grid-template-columns: 108px 1fr;
   grid-template-rows: min-content 1fr;
 
   @include vp-mobile {
@@ -37,7 +38,7 @@
     grid-row: 1 / 2;
     font-size: 20px;
     font-weight: 700;
-    line-height: 150%;
+    line-height: 140%;
     margin-block-start: -6px;
     margin-block-end: 12px;
     text-align: left;
