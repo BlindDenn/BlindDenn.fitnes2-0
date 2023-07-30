@@ -28,10 +28,12 @@
 
       &--start,
       &--end {
+        width: 100%;
         max-width: 960px;
       }
 
       &--start {
+        height: 100%;
         margin: 0 0 0 auto;
         padding: 0 0 0 103px;
       }

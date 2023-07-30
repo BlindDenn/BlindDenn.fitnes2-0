@@ -916,24 +916,50 @@
       <div class="main__footer">
       <section class="promotion">
         <div class="container container--start">
-          <div class="promotion__content">
+          <div class="promotion__section-content">
             <h2>Бесплатное занятие</h2>
-            <form  class="promotion__form" action="https://echo.htmlacademy.ru" method="post">
-              <label for="" class="promotion__form-input-container">
-                <input class="promotion_form-input" type="text" name="promotion-form-name" placeholder="Имя" required>
-              </label>
-              <label for="" class="promotion__form-input-container">
-                <input class="promotion_form-input" type="tel" name="promotion-form-phone-number" placeholder="Телефон" required>
-              </label>
-              <button class="promotion__submit-button btn btn--bg-dark" type="submit">Отправить</button>
-            </form>
+            <div class="promotion__form" data-form-validate="data-form-validate" data-callback="base">
+              <form class="promotion-form" action="https://echo.htmlacademy.ru" method="post">
+                <div class="promotion-form__inputs-wrapper">
+                  <div class="promotion-form__custom-input" data-validate-type="text" data-limitation="name" data-message-base="Укажите ваше имя" data-required="data-required">
+                    <label class="promotion-form__label">
+                      <input class="promotion-form__custom-input" type="text" name="promotion-form-name" placeholder="Имя">
+                    </label>
+                  </div>
+                  <div class="promotion-form__custom-input" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-message-base="Укажите корректный телефон" data-required="data-required">
+                    <label for="" class="promotion__form-input-container" >
+                      <input class="promotion-form__custom-input" type="tel" name="promotion-form-phone-number" placeholder="Телефон">
+                    </label>
+                  </div>
+                </div>
+                <button class="promotion-form__submit-button btn btn--bg-dark btn--form" type="submit">Отправить</button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
       <section class="contacts">
         <div class="container container--end">
-          <div class="contacts__content">
+          <div class="contacts__section-content">
             <h2>Контакты</h2>
+            <ul class="contacts__items">
+              <li class="contacts__item">
+                <h3>Адрес</h3>
+                <p class="adress">г. Омск, ул. 60 лет Октября, 7</p>
+              </li>
+              <li class="contacts__item">
+                <h3>График работы</h3>
+                <p class="adress">Пн-Вс: с 8:00 до 22:00</p>
+              </li>
+              <li class="contacts__item">
+                <h3>Телефон</h3>
+                <a href="tel:88005555555">8-800-555-55-55</a>
+              </li>
+              <li class="contacts__item">
+                <h3>Email</h3>
+                <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -993,9 +1019,6 @@
                 </a>
               </li>
             </ul>
-          </div>
-          <div class="footer__social">
-
           </div>
         </div>
       </div>

@@ -1,0 +1,16 @@
+.promotion-form {
+  display: flex;
+  flex-direction: column;
+
+  &__inputs-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+  }
+
+  &__submit-button {
+    margin-block-start: 29px;
+    width: 100%;
+    height: 55px;
+  }
+}

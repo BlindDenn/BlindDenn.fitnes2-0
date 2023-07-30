@@ -1,10 +1,11 @@
-.custom-input,
+.promotion-form__custom-input,
 .custom-textarea {
   position: relative;
 
+  width: 100%;
   display: flex;
-  width: 530px;
-  padding: 14px 0 28px;
+  // width: 530px;
+  // padding: 10px 0;
 
   @media screen and (max-width: 767px) {
     padding: 4px 0 48px;
@@ -23,29 +24,52 @@
 
     input,
     textarea {
-      flex-grow: 1;
-      max-width: 300px;
-      min-height: 48px;
-      margin-left: auto;
-      padding: 10px;
 
-      border: 2px solid rgba(#000000, 0.2);
-      border-radius: 5px;
+      color: $color-white;
+
+      font-family: $font-basic;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px; /* 157.143% */
+
+      flex-grow: 1;
+      // max-width: 300px;
+      // min-height: 36px;
+      // margin-left: auto;
+      padding: 10px 0 3px 15px;
+
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid $color-white-a50;
       outline: none;
 
       transition: border 0.3s ease;
+
+      &::placeholder {
+        color: $color-white;
+        transform: translateX(-15px);
+      }
 
       @media screen and (max-width: 767px) {
         max-width: unset;
         width: 100%;
       }
 
+      &:disabled {
+        opacity: 0.5;
+        border-color: $color-white;
+      }
+
       &:hover {
-        border: 2px solid rgba(#000000, 0.5);
+        border-color: $color-white;
       }
 
       &:focus {
-        border: 2px solid rgba(#000000, 0.8);
+        border: 1px solid $color-white;
+      }
+
+      &:focus::placeholder {
+        color: transparent;
       }
     }
   }
@@ -56,49 +80,56 @@
     }
   }
 
-  &__error {
-    position: absolute;
-    right: 0;
-    bottom: 35px;
+  // &__error {
 
-    color: #ff1553;
+  //   position: absolute;
+  //   right: 0;
+  //   bottom: 35px;
 
-    opacity: 0;
+  //   color: #ff1553;
 
-    transition: opacity 0.3s ease;
+  //   opacity: 0;
 
-    @media screen and (max-width: 767px) {
-      bottom: 20px;
-    }
-  }
+  //   transition: opacity 0.3s ease;
+
+  //   @media screen and (max-width: 767px) {
+  //     bottom: 20px;
+  //   }
+  // }
 
   &.is-invalid {
     input,
     textarea {
-      border: 2px solid #ff1553;
+      border-color: #ff1553;
 
-      &:focus,
-      &:hover {
-        border: 2px solid rgba(#ff1553, 0.5);
-      }
+    //   &:focus,
+    //   &:hover {
+    //     border: 2px solid rgba(#ff1553, 0.5);
+    //   }
+    // }
     }
-  }
 
-  &.is-valid {
-    input {
-      border: 2px solid #22b259;
+  // &.is-valid {
+  //   input {
+  //     border: 2px solid #22b259;
 
-      &:focus,
-      &:hover {
-        border: 2px solid rgba(#22b259, 0.5);
-      }
-    }
-  }
+  //     &:focus,
+  //     &:hover {
+  //       border: 2px solid rgba(#22b259, 0.5);
+  //     }
+  //   }
+  // }
 
   .input-message {
+
+    font-family: $font-basic;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+
     position: absolute;
-    right: 0;
-    bottom: -5px;
+    left: 0;
+    bottom: -22px;
 
     &.is-invalid {
       color: #ff0000;
@@ -108,4 +139,5 @@
       color: #15ab07;
     }
   }
+}
 }

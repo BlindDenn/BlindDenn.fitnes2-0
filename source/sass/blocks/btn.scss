@@ -53,6 +53,14 @@
 
   }
 
+  &--form {
+    border-width: 3px;
+    font-size: 14px;
+    // font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.7px;
+  }
+
   &--thin-border {
 
     @include vp-tablet {
