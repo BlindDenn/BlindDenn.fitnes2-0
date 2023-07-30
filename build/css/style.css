@@ -1265,6 +1265,7 @@ body {
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2765,6 +2766,11 @@ button,
   top: 40px;
   left: 0;
 }
+@media (max-width: 1199.8px) {
+  .footer__nav li:first-child {
+    top: 44px;
+  }
+}
 @media (max-width: 767.8px) {
   .footer__nav li:first-child {
     position: relative;
@@ -3400,8 +3406,9 @@ button,
   background-color: #ffffff;
   padding: 60px 20px 68px;
   border: none;
+  cursor: de;
 }
-.subs-card:hover, .subs-card:focus-visible {
+.subs-card:hover, .subs-card:focus-within {
   -o-border-image: linear-gradient(to bottom right, #ed0233 0%, #003eb7 100%);
      border-image: -webkit-gradient(linear, left top, right bottom, from(#ed0233), to(#003eb7));
      border-image: linear-gradient(to bottom right, #ed0233 0%, #003eb7 100%);

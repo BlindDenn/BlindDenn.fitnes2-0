@@ -4,9 +4,10 @@
   background-color: $color-white;
   padding: 60px 20px 68px;
   border: none;
+  cursor: de;
 
   &:hover,
-  &:focus-visible {
+  &:focus-within {
     border-image: $gradient-border;
     border-image-slice: 1;
     border-image-width: 7px;

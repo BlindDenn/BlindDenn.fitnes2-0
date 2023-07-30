@@ -98,6 +98,10 @@
   top: 40px;
   left: 0;
 
+  @include vp-tablet {
+    top: 44px;
+  }
+
   @include vp-mobile {
     position: relative;
     top: unset;
