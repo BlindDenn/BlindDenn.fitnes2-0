@@ -3104,8 +3104,14 @@ button,
   height: 72px;
   border: none;
   border-radius: 50%;
-  background: linear-gradient(115deg, #ed0233 0%, #003eb7 100%);
+  background: linear-gradient(215deg, #ed0233 0%, #003eb7 100%);
   cursor: pointer;
+}
+@media (max-width: 1199.8px) {
+  .gym__video-button {
+    width: 52px;
+    height: 52px;
+  }
 }
 .gym__video-button--hidden {
   display: none;
@@ -3116,6 +3122,12 @@ button,
 .gym__video-button:active {
   width: 58px;
   height: 58px;
+}
+@media (max-width: 1199.8px) {
+  .gym__video-button:active {
+    width: 38px;
+    height: 38px;
+  }
 }
 .gym__video-button::before {
   content: "";
@@ -3132,6 +3144,12 @@ button,
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   opacity: 0.3;
+}
+@media (max-width: 1199.8px) {
+  .gym__video-button::before {
+    width: 73px;
+    height: 73px;
+  }
 }
 .gym__video-button:hover::before, .gym__video-button:focus-visible::before {
   border-color: #102654;
@@ -3152,8 +3170,23 @@ button,
           transform: translate(-50%, -50%);
   z-index: 5;
 }
+@media (max-width: 1199.8px) {
+  .gym__video-button::after {
+    width: 10px;
+    height: 10px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 7px solid #ffffff;
+    left: calc(50% + 3px);
+  }
+}
 .gym__video-button:hover::after, .gym__video-button:focus-visible::after {
   border-left: 13px solid #102654;
+}
+@media (max-width: 1199.8px) {
+  .gym__video-button:hover::after, .gym__video-button:focus-visible::after {
+    border-left: 7px solid #102654;
+  }
 }
 
 .subscription {
@@ -4281,7 +4314,7 @@ dl.advantages-table,
           margin-block-start: -10px;
   -webkit-margin-after: -5px;
           margin-block-end: -5px;
-  background: linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
+  background: linear-gradient(135deg, #d10a42 5px, #0041ca 80px);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;

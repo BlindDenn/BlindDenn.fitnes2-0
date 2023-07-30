@@ -206,8 +206,13 @@
   height: 72px;
   border: none;
   border-radius: 50%;
-  background: $gradient-button;
+  background: $gradient-video-button;
   cursor: pointer;
+
+  @include vp-tablet {
+    width: 52px;
+    height: 52px;
+  }
 
   &--hidden {
     display: none;
@@ -221,6 +226,11 @@
   &:active {
     width: 58px;
     height: 58px;
+
+    @include vp-tablet {
+      width: 38px;
+      height: 38px;
+    }
   }
 
   &::before {
@@ -236,6 +246,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0.3;
+
+    @include vp-tablet {
+      width: 73px;
+      height: 73px;
+    }
   }
 
   &:hover::before,
@@ -256,10 +271,25 @@
     left: calc(50% + 4px);
     transform: translate(-50%, -50%);
     z-index: 5;
+
+    @include vp-tablet {
+      width: 10px;
+      height: 10px;
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      border-left: 7px solid $color-white;
+      left: calc(50% + 3px);
+
+    }
   }
 
   &:hover::after,
   &:focus-visible::after {
     border-left: 13px solid $color-basic;
+
+    @include vp-tablet {
+      border-left: 7px solid $color-basic;
+
+    }
   }
 }
