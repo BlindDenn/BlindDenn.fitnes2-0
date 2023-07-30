@@ -14,11 +14,21 @@
     @include vp-tablet {
       gap: 60px;
     }
+
+    @include vp-mobile {
+      flex-direction: column;
+      gap: unset;
+    }
   }
 
   &__submit-button {
     margin-block-start: 29px;
     width: 100%;
     height: 55px;
+
+    @include vp-mobile {
+      margin-block-start: 19px;
+    }
   }
+
 }

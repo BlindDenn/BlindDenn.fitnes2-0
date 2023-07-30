@@ -15,6 +15,10 @@
       padding: 61px 118px 68px 88px;
       display: block;
     }
+
+    @include vp-mobile {
+      padding: 63px 0 68px;
+    }
   }
 
   & h2 {
@@ -22,7 +26,7 @@
     margin-block-end: auto;
     font-family: $font-accent;
     font-size: 54px;
-    font-weight: 800;
+    font-weight: 600;
     line-height: 156%; /* 84.24px */
     letter-spacing: 1.62px;
 
@@ -30,6 +34,12 @@
       font-size: 42px;
       line-height: 50px;
       letter-spacing: 0.95px;
+    }
+
+    @include vp-mobile {
+      font-size: 32px;
+      line-height: 38px;
+      letter-spacing: 0.93px;
     }
   }
 }
