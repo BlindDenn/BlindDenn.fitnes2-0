@@ -21,14 +21,14 @@ const initTrainersSwiper = () => {
         slidesPerView: 4,
         spaceBetween: 40,
       },
-      1550: {
-        slidesPerView: 5,
-        spaceBetween: 40,
-      },
-      1900: {
-        slidesPerView: 6,
-        spaceBetween: 40,
-      },
+      // 1550: {
+      //   slidesPerView: 5,
+      //   spaceBetween: 40,
+      // },
+      // 1900: {
+      //   slidesPerView: 6,
+      //   spaceBetween: 40,
+      // },
     },
     grabCursor: false,
     autoHeight: false,
@@ -40,4 +40,4 @@ const initTrainersSwiper = () => {
   });
 };
 
-export {initTrainersSwiper};
+export { initTrainersSwiper };
