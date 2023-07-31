@@ -2453,16 +2453,16 @@ button,
   right: 0;
   bottom: 0;
   height: 100vh;
-  background: conic-gradient(from 70deg at calc(50% - 465px) calc(100% - 400px), #B80027 0deg, #B80027 15deg, #003D85 90deg, #003D85 120deg, #B80027);
+  background: conic-gradient(from 70deg at calc(50% - 465px) calc(100% - 400px), #b80027 0deg, #b80027 15deg, #003d85 90deg, #003d85 120deg, #b80027);
 }
 @media (max-width: 1199.8px) {
   .main__hero::after {
-    background: conic-gradient(from 70deg at calc(50% - 224px) calc(100% - 355px), #B80027 0deg, #B80027 15deg, #003D85 90deg, #003D85 120deg, #B80027);
+    background: conic-gradient(from 70deg at calc(50% - 224px) calc(100% - 355px), #b80027 0deg, #b80027 15deg, #003d85 90deg, #003d85 120deg, #b80027);
   }
 }
 @media (max-width: 767.8px) {
   .main__hero::after {
-    background: conic-gradient(from 70deg at calc(100% - 205px) calc(100% - 320px), #B80027 0deg, #B80027 15deg, #003D85 90deg, #003D85 120deg, #B80027);
+    background: conic-gradient(from 70deg at calc(100% - 205px) calc(100% - 320px), #b80027 0deg, #b80027 15deg, #003d85 90deg, #003d85 120deg, #b80027);
   }
 }
 
@@ -2488,7 +2488,10 @@ button,
   grid-template-columns: 396fr 65fr 700fr;
   -ms-grid-rows: 72px auto auto 60px 94px;
   grid-template-rows: 72px auto auto 60px 94px;
-  justify-items: end;
+}
+.hero > * {
+  -ms-grid-column-align: end;
+      justify-self: end;
 }
 @media (max-width: 1199.8px) {
   .hero {

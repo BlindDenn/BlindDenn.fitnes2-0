@@ -40,7 +40,6 @@
 
   &__content {
     margin-block-start: 14px;
-    // margin-block-end: 8px;
 
     @include vp-mobile {
       margin-block-start: 11px;
@@ -93,8 +92,6 @@
     &.is-active {
       @include vp-tablet {}
     }
-
-    // text-transform: uppercase;
 
     cursor: pointer;
 

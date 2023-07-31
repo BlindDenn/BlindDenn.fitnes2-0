@@ -10,11 +10,11 @@ const videoButtonOnClick = () => {
   videoContent.classList.remove('gym__video-content--hidden');
   videoSrc += '&autoplay=1';
   videoPlayer.setAttribute('src', videoSrc);
-}
+};
 
 const initVideo = () => {
-  videoButton.addEventListener('click', videoButtonOnClick)
-}
+  videoButton.addEventListener('click', videoButtonOnClick);
+};
 
 export {
   initVideo

@@ -14,9 +14,9 @@ $color-transparent: rgba(255, 255, 255, 0);
 
 $color-basic: $color-default-black;
 $color-basic-a89: rgba($color-basic, 0.89);
-$color-basic-a20: rgba($color-basic, 0.20);
+$color-basic-a20: rgba($color-basic, 0.2);
 $color-white: $color-default-white;
-$color-white-a50: rgba($color-white, 0.50);
+$color-white-a50: rgba($color-white, 0.5);
 $color-accent: #103aae;
 
 $color-neon-blue: #2c39f2;
@@ -39,7 +39,7 @@ $color-icon-dark: $color-basic;
 
 // Gradient
 
-$gradien-hero-colors: #B80027 0deg, #B80027 15deg, #003D85 90deg, #003D85 120deg, #B80027;
+$gradien-hero-colors: #b80027 0deg, #b80027 15deg, #003d85 90deg, #003d85 120deg, #b80027;
 $gradient-text: linear-gradient(135deg, #d10a42 5px, #0041ca 80px);
 $gradient-button: linear-gradient(115deg, #ed0233 0%, #003eb7 100%);
 $gradient-video-button: linear-gradient(215deg, #ed0233 0%, #003eb7 100%);
@@ -54,7 +54,7 @@ $black-to-right: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0)
 
 $tabs-understroke: rgba(#787878, 0.2);
 $card-shadow-a48: rgba(#e8e8e8, 0.48);
-$review-card-shadow: rgba($bg-card, 0.20);
+$review-card-shadow: rgba($bg-card, 0.2);
 $tabs-select-understroke: #d10a42;
 $adv-understroke-a20: rgba(#d10a42, 0.2);
 $column-divider: #74819c;
