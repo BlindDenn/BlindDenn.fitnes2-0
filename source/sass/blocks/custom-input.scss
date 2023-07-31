@@ -30,7 +30,8 @@
       font-family: $font-basic;
       font-size: 14px;
       font-weight: 400;
-      line-height: 22px; /* 157.143% */
+      line-height: 22px;
+      /* 157.143% */
 
       flex-grow: 1;
       // max-width: 300px;
@@ -98,46 +99,52 @@
   // }
 
   &.is-invalid {
+
     input,
     textarea {
       border-color: #ff1553;
 
-    //   &:focus,
-    //   &:hover {
-    //     border: 2px solid rgba(#ff1553, 0.5);
+      //   &:focus,
+      //   &:hover {
+      //     border: 2px solid rgba(#ff1553, 0.5);
+      //   }
+      // }
+    }
+
+    // &.is-valid {
+    //   input {
+    //     border: 2px solid #22b259;
+
+    //     &:focus,
+    //     &:hover {
+    //       border: 2px solid rgba(#22b259, 0.5);
+    //     }
     //   }
     // }
-    }
 
-  // &.is-valid {
-  //   input {
-  //     border: 2px solid #22b259;
+    .input-message {
 
-  //     &:focus,
-  //     &:hover {
-  //       border: 2px solid rgba(#22b259, 0.5);
-  //     }
-  //   }
-  // }
+      font-family: $font-basic;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+      /* 157.143% */
 
-  .input-message {
+      position: absolute;
+      left: 0;
+      bottom: -22px;
 
-    font-family: $font-basic;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px; /* 157.143% */
+      @include vp-mobile {
+        bottom: -8px;
+      }
 
-    position: absolute;
-    left: 0;
-    bottom: -22px;
+      &.is-invalid {
+        color: #ff0000;
+      }
 
-    &.is-invalid {
-      color: #ff0000;
-    }
-
-    &.is-valid {
-      color: #15ab07;
+      &.is-valid {
+        color: #15ab07;
+      }
     }
   }
-}
 }

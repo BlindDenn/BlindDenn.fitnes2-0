@@ -1699,7 +1699,8 @@ button,
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 22px; /* 157.143% */
+  line-height: 22px;
+  /* 157.143% */
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -1802,10 +1803,17 @@ button,
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 22px; /* 157.143% */
+  line-height: 22px;
+  /* 157.143% */
   position: absolute;
   left: 0;
   bottom: -22px;
+}
+@media (max-width: 767.8px) {
+  .promotion-form__custom-input.is-invalid .input-message,
+.custom-textarea.is-invalid .input-message {
+    bottom: -8px;
+  }
 }
 .promotion-form__custom-input.is-invalid .input-message.is-invalid,
 .custom-textarea.is-invalid .input-message.is-invalid {
