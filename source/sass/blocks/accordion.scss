@@ -36,7 +36,7 @@
       padding-block-end: 23px;
 
       @include vp-tablet {
-        margin-block-start: 29px;
+        // margin-block-start: 29px;
         padding-block-end: 24px;
       }
 
@@ -101,7 +101,7 @@
 
     &.is-active {
       @include vp-tablet {
-        line-height: 100%;
+        // line-height: 100%;
       }
     }
 
@@ -125,6 +125,7 @@
       right: 0;
       top: 50%;
       transform: translateY(-50%);
+      transition: background-color 200ms;
 
       @include vp-mobile {
         width: 32px;
@@ -168,16 +169,24 @@
   }
 
   &__element.is-active>&__button::before {
+    background-color: $color-white;
+  }
+
+  &__element.is-active>&__button:hover::before {
     background-color: $color-basic;
   }
 
   &__element.is-active>&__button::after {
     mask: url(../img/sprite.svg#minus-sign);
-    background-color: $color-white;
+    background-color: $color-basic;
 
     @include vp-mobile {
       mask: url(../img/sprite.svg#minus-sign-s);
     }
+  }
+
+  &__element.is-active>&__button:hover::after {
+    background-color: $color-white;
   }
 
   &__wrapper {

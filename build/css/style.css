@@ -4792,8 +4792,6 @@ dl.advantages-table,
 }
 @media (max-width: 1199.8px) {
   .accordion__element.is-active {
-    -webkit-margin-before: 29px;
-            margin-block-start: 29px;
     -webkit-padding-after: 24px;
             padding-block-end: 24px;
   }
@@ -4861,11 +4859,6 @@ dl.advantages-table,
     /* 21.6px */
   }
 }
-@media (max-width: 1199.8px) {
-  .accordion__button.is-active {
-    line-height: 100%;
-  }
-}
 .accordion__button:focus-visible {
   outline: none;
 }
@@ -4883,6 +4876,8 @@ dl.advantages-table,
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
+  -webkit-transition: background-color 200ms;
+  transition: background-color 200ms;
 }
 @media (max-width: 767.8px) {
   .accordion__button::before {
@@ -4923,18 +4918,24 @@ dl.advantages-table,
   background-color: #ffffff;
 }
 .accordion__element.is-active > .accordion__button::before {
+  background-color: #ffffff;
+}
+.accordion__element.is-active > .accordion__button:hover::before {
   background-color: #102654;
 }
 .accordion__element.is-active > .accordion__button::after {
   -webkit-mask: url(../img/sprite.svg#minus-sign);
           mask: url(../img/sprite.svg#minus-sign);
-  background-color: #ffffff;
+  background-color: #102654;
 }
 @media (max-width: 767.8px) {
   .accordion__element.is-active > .accordion__button::after {
     -webkit-mask: url(../img/sprite.svg#minus-sign-s);
             mask: url(../img/sprite.svg#minus-sign-s);
   }
+}
+.accordion__element.is-active > .accordion__button:hover::after {
+  background-color: #ffffff;
 }
 .accordion__wrapper {
   padding: 0 200px 0 0;

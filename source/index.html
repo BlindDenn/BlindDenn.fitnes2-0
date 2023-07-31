@@ -58,23 +58,8 @@
               <source type="image/webp" media="(min-width: 768px)"
                 srcset="img/hero-figure-m@1x.webp 1x, img/hero-figure-m@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/hero-figure-xl@1x.jpg 1x, img/hero-figure-xl@2x.jpg 2x">
-              <img src="img/hero-figure-m@1x.jpg" srcset="img/hero-figure-m@2x.jpg 2x" alt="Атлет-супермен — посетитель спортивного клуба SUPERGYM">
+              <img src="img/hero-figure-m@1x.jpg" srcset="img/hero-figure-m@2x.jpg 2x" alt="Атлет в костюме супермена — посетитель спортивного клуба SUPERGYM">
             </picture>
-
-            <!-- <picture>
-              <source type="image/webp" media="(min-width: 1200px)"
-                srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
-              <source media="(min-width: 1220px)"
-                srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
-              <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
-              <img class="section-hero__image" srcset="img/index-can-mobile@2x.png 2x, img/index-can-mobile@1x.png 1x"
-                src="img/index-can-mobile@1x.png" width="280" height="270"
-                alt="Упаковка питания для котов серии Кэт Энерджи Про весом 500 грамм со вкусом курицы.">
-            </picture> -->
 
             <a href="#subscription" class="hero__button btn btn--bg-dark">Купить абонемент</a>
           </div>
@@ -107,17 +92,19 @@
             <div class="gym__video">
               <div class="gym__video-content gym__video-content--hidden" data-bem="gym__video-content">
                 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9TZXsZItgdw?rel=0"
-                  title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen></iframe>
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
               </div>
               <div class="gym__video-poster" data-bem="gym__video-poster">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)"
                     srcset="img/video-xl@1x.webp 1x, img/video-xl@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/video-m@1x.webp 1x, img/video-m@2x.webp 2x">
-                  <img src="img/video-s@1x.jpg" width="660" height="401" alt="">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/video-m@1x.webp 1x, img/video-m@2x.webp 2x">
+                  <source type="image/webp" srcset="img/video-s@1x.webp 1x, img/video-s@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/video-xl@1x.jpg 1x, img/video-xl@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/video-m@1x.jpg 1x, img/video-m@2x.jpg 2x">
+                  <img src="img/video-s@1x.jpg" srcset="img/videom-s@2x.jpg 2x" alt="Обложка видео-ролика о фитес-центре Supergym">
                 </picture>
               </div>
               <button class="gym__video-button" type="button" data-bem="gym__video-button"></button>
@@ -307,13 +294,14 @@
                   <button class="event__button btn btn--bg-dark btn--thin-border">Заполнить заявку</button>
                 </div>
               </div>
-              <picture class="event-banner__picture">
+              <picture>
                 <source type="image/webp" media="(min-width: 1200px)"
                   srcset="img/splash-xl@1x.webp 1x, img/splash-xl@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/splash-m@1x.webp 1x, img/splash-m@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/splash-m@1x.webp 1x, img/splash-m@2x.webp 2x">
                 <source type="image/webp" srcset="img/splash-s@1x.webp 1x, img/splash-s@2x.webp 2x">
-                <img src="./img/splash-xl@1x.png" width="660" alt="">
+                <source media="(min-width: 1200px)" srcset="img/splash-xl@1x.jpg 1x, img/splash-xl@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/splash-m@1x.jpg 1x, img/splash-m@2x.jpg 2x">
+                <img src="img/splash-s@1x.jpg" srcset="img/splash-s@2x.jpg 2x" alt="Обложка видео-ролика о фитес-центре Supergym">
               </picture>
             </div>
 
@@ -348,8 +336,12 @@
                             </ul>
                           </div>
                         </div>
-                        <img class="trainer-card__image" src="./img/trainer-1-xl@1x.png" width="260" height="294"
-                          alt="">
+
+                        <picture>
+                          <source type="image/webp" srcset="img/trainer-1-xl@1x.webp 1x, img/trainer-1-xl@2x.webp 2x">
+                          <img class="trainer-card__image"  src="img/trainer-1-s@1x.jpg" srcset="img/trainer-1-s@2x.jpg 2x" alt="Тренер фитнес центра">
+                        </picture>
+
                       </div>
                     </div>
                   </div>
@@ -373,8 +365,11 @@
                             </ul>
                           </div>
                         </div>
-                        <img class="trainer-card__image" src="./img/trainer-2-xl@1x.png" width="260" height="294"
-                          alt="">
+
+                        <picture>
+                          <source type="image/webp" srcset="img/trainer-2-xl@1x.webp 1x, img/trainer-2-xl@2x.webp 2x">
+                          <img class="trainer-card__image"  src="img/trainer-2-s@1x.jpg" srcset="img/trainer-2-s@2x.jpg 2x" alt="Тренер фитнес центра">
+                        </picture>
                       </div>
                     </div>
 
@@ -399,8 +394,10 @@
                             </ul>
                           </div>
                         </div>
-                        <img class="trainer-card__image" src="./img/trainer-3-xl@1x.png" width="260" height="294"
-                          alt="">
+                        <picture>
+                          <source type="image/webp" srcset="img/trainer-3-xl@1x.webp 1x, img/trainer-3-xl@2x.webp 2x">
+                          <img class="trainer-card__image"  src="img/trainer-3-s@1x.jpg" srcset="img/trainer-3-s@2x.jpg 2x" alt="Тренер фитнес центра">
+                        </picture>
                       </div>
                     </div>
                   </div>
@@ -424,8 +421,10 @@
                             </ul>
                           </div>
                         </div>
-                        <img class="trainer-card__image" src="./img/trainer-4-xl@1x.png" width="260" height="294"
-                          alt="">
+                        <picture>
+                          <source type="image/webp" srcset="img/trainer-4-xl@1x.webp 1x, img/trainer-4-xl@2x.webp 2x">
+                          <img class="trainer-card__image"  src="img/trainer-4-s@1x.jpg" srcset="img/trainer-4-s@2x.jpg 2x" alt="Тренер фитнес центра">
+                        </picture>
                       </div>
                     </div>
 
@@ -447,8 +446,10 @@
                             </ul>
                           </div>
                         </div>
-                        <img class="trainer-card__image" src="./img/trainer-1-xl@1x.png" width="260" height="294"
-                          alt="">
+                        <picture>
+                          <source type="image/webp" srcset="img/trainer-5-xl@1x.webp 1x, img/trainer-5-xl@2x.webp 2x">
+                          <img class="trainer-card__image"  src="img/trainer-5-s@1x.jpg" srcset="img/trainer-5-s@2x.jpg 2x" alt="Тренер фитнес центра">
+                        </picture>
                       </div>
                     </div>
 
@@ -467,8 +468,10 @@
                             </ul>
                           </div>
                         </div>
-                        <img class="trainer-card__image" src="./img/trainer-1-xl@1x.png" width="260" height="294"
-                          alt="">
+                        <picture>
+                          <source type="image/webp" srcset="img/trainer-6-xl@1x.webp 1x, img/trainer-6-xl@2x.webp 2x">
+                          <img class="trainer-card__image"  src="img/trainer-6-s@1x.jpg" srcset="img/trainer-6-s@2x.jpg 2x" alt="Тренер фитнес центра">
+                        </picture>
                       </div>
                     </div>
 
@@ -493,8 +496,10 @@
                             </ul>
                           </div>
                         </div>
-                        <img class="trainer-card__image" src="./img/trainer-1-xl@1x.png" width="260" height="294"
-                          alt="">
+                        <picture>
+                          <source type="image/webp" srcset="img/trainer-7-xl@1x.webp 1x, img/trainer-7-xl@2x.webp 2x">
+                          <img class="trainer-card__image"  src="img/trainer-7-s@1x.jpg" srcset="img/trainer-7-s@2x.jpg 2x" alt="Тренер фитнес центра">
+                        </picture>
                       </div>
                     </div>
 
@@ -519,8 +524,10 @@
                             </ul>
                           </div>
                         </div>
-                        <img class="trainer-card__image" src="./img/trainer-1-xl@1x.png" width="260" height="294"
-                          alt="">
+                        <picture>
+                          <source type="image/webp" srcset="img/trainer-8-xl@1x.webp 1x, img/trainer-8-xl@2x.webp 2x">
+                          <img class="trainer-card__image"  src="img/trainer-8-s@1x.jpg" srcset="img/trainer-8-s@2x.jpg 2x" alt="Тренер фитнес центра">
+                        </picture>
                       </div>
                     </div>
 
@@ -590,14 +597,17 @@
                   <p>Безлимитный абонемент в&nbsp;тренажерный зал</p>
                   <a class="link link--bg-dark" href="#">Подробнее</a>
                 </div>
+
                 <picture>
-                  <source media="(min-width: 1200px)"
-                    srcset="./img/action-figure-xl@1x.png 1x, ./img/action-figure-xl@2x.png 2x">
-                  <source media="(min-width: 768px)"
-                    srcset="./img/action-figure-m@1x.png 1x, ./img/action-figure-m@2x.png 2x">
-                  <source srcset="./img/action-figure-s@1x.png 1x, ./img/action-figure-s@2x.png 2x">
-                  <img src="./img/action-figure-xl@1x.png" alt="">
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/action-figure-xl@1x.webp 1x, img/action-figure-xl@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/action-figure-m@1x.webp 1x, img/action-figure-m@2x.webp 2x">
+                  <source type="image/webp" srcset="img/action-figure-s@1x.webp 1x, img/action-figure-s@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/action-figure-xl@1x.jpg 1x, img/action-figure-xl@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/action-figure-m@1x.jpg 1x, img/action-figure-m@2x.jpg 2x">
+                  <img src="img/action-figure-s@1x.jpg" srcset="img/action-figure-s@2x.jpg 2x" alt="Улыбающаяся спортсменка.">
                 </picture>
+
               </div>
               <div class="offer">
                 <h3>Месяц бесплатно</h3>
@@ -870,10 +880,14 @@
                       <p class="review-card__review-body">&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что&nbsp;в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже&nbsp;в&nbsp;вечернее время нет&nbsp;очередей&raquo;</p>
                       <p class="review-card__review-author">Анна Орлова</p>
                       <div class="review-card__avatar-wrapper">
+
                         <picture>
-                          <source srcset="img/review-1@1x.png 1x, img/review-1@2x.png 2x" media="(min-width: 768px)">
-                          <img src="img/review-1-s@1x.png" srcset="img/review-1-s@2x.png 2x" alt="Аватар пользователя, оставившего отзыв." class="review-card__review-author-avatar">
+                          <source type="image/webp" media="(min-width: 768px)" srcset="img/review-1@1x.webp 1x, img/review-1@2x.webp 2x">
+                          <source type="image/webp" srcset="img/review-1-s@1x.webp 1x, img/review-1-s@2x.webp 2x">
+                          <source media="(min-width: 768px)" srcset="img/review-1@1x.jpg 1x, img/review-1@2x.jpg 2x">
+                          <img src="img/review-1-s@1x.jpg" srcset="img/review-1-s@2x.jpg 2x" alt="Аватар пользователя, оставившего отзыв." class="review-card__review-author-avatar">
                         </picture>
+
                       </div>
                     </div>
                   </div>
@@ -883,8 +897,10 @@
                       <p class="review-card__review-author">Мария Орлова</p>
                       <div class="review-card__avatar-wrapper">
                         <picture>
-                          <source srcset="img/review-1@1x.png 1x, img/review-1@2x.png 2x" media="(min-width: 768px)">
-                          <img src="img/review-1-s@1x.png" srcset="img/review-1-s@2x.png 2x" alt="Аватар пользователя, оставившего отзыв." class="review-card__review-author-avatar">
+                          <source type="image/webp" media="(min-width: 768px)" srcset="img/review-2@1x.webp 1x, img/review-2@2x.webp 2x">
+                          <source type="image/webp" srcset="img/review-2-s@1x.webp 1x, img/review-2-s@2x.webp 2x">
+                          <source media="(min-width: 768px)" srcset="img/review-2@1x.jpg 1x, img/review-2@2x.jpg 2x">
+                          <img src="img/review-2-s@1x.jpg" srcset="img/review-2-s@2x.jpg 2x" alt="Аватар пользователя, оставившего отзыв." class="review-card__review-author-avatar">
                         </picture>
                       </div>
                     </div>
@@ -895,8 +911,10 @@
                       <p class="review-card__review-author">Васелиса</p>
                       <div class="review-card__avatar-wrapper">
                         <picture>
-                          <source srcset="img/review-1@1x.png 1x, img/review-1@2x.png 2x" media="(min-width: 768px)">
-                          <img src="img/review-1-s@1x.png" srcset="img/review-1-s@2x.png 2x" alt="Аватар пользователя, оставившего отзыв." class="review-card__review-author-avatar">
+                          <source type="image/webp" media="(min-width: 768px)" srcset="img/review-3@1x.webp 1x, img/review-3@2x.webp 2x">
+                          <source type="image/webp" srcset="img/review-3-s@1x.webp 1x, img/review-3-s@2x.webp 2x">
+                          <source media="(min-width: 768px)" srcset="img/review-3@1x.jpg 1x, img/review-3@2x.jpg 2x">
+                          <img src="img/review-3-s@1x.jpg" srcset="img/review-3-s@2x.jpg 2x" alt="Аватар пользователя, оставившего отзыв." class="review-card__review-author-avatar">
                         </picture>
                       </div>
                     </div>
