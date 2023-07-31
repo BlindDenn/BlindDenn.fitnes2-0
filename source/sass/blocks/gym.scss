@@ -21,12 +21,23 @@
   @include vp-tablet {
     grid-template-columns: 1fr;
     grid-template-rows: auto 345px 83px;
-    justify-items: center;
+    // justify-items: center;
   }
 
   @include vp-mobile {
     grid-template-rows: auto 313px 207px;
-    justify-items: unset;
+    // justify-items: unset;
+  }
+
+  &>* {
+
+    @include vp-tablet {
+      justify-self: center;
+    }
+
+    @include vp-mobile {
+      justify-self: unset;
+    }
   }
 }
 
