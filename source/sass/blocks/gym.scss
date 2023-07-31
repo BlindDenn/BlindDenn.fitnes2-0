@@ -162,6 +162,12 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
 
+  & iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
   @include vp-tablet {
     width: 266px;
     height: 167px;

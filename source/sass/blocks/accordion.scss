@@ -1,14 +1,5 @@
 .accordion {
-  // //max-width: 500px;
-  // margin: 0 auto 50px auto;
-
-  // & & {
-  //   width: 90%;
-  //   margin: 0 auto;
-  // }
-
   border-top: 1px solid $color-basic-a20;
-
 
   &__element:last-child {
     margin-bottom: 0;
@@ -100,9 +91,7 @@
     }
 
     &.is-active {
-      @include vp-tablet {
-        // line-height: 100%;
-      }
+      @include vp-tablet {}
     }
 
     // text-transform: uppercase;
@@ -135,7 +124,6 @@
 
     &:hover::before,
     &:focus-visible::before {
-      // outline: none;
       background-color: $color-basic;
     }
 
