@@ -8,7 +8,11 @@
   width: 100%;
   display: grid;
   grid-template-columns: min-content 1fr auto;
-  align-items: center;
+  // align-items: center;
+
+  &>* {
+    align-self: center;
+  }
 }
 
 .event__anounce h3 {

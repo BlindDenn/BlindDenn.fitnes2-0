@@ -36,50 +36,6 @@
   }
 }
 
-.events__banner-description {
-  width: 100%;
-  display: grid;
-  grid-template-columns: min-content 1fr auto;
-  align-items: center;
-}
-
-.events__banner-description h3 {
-  display: block;
-  margin: 0;
-  margin-inline: 10px;
-  padding-bottom: 10px;
-  text-align: center;
-  font-family: $font-accent;
-  font-size: 82px;
-  font-weight: 600;
-  line-height: 78px;
-  letter-spacing: 2.46px;
-  text-transform: uppercase;
-
-  @include vp-tablet {
-    font-size: 48px;
-    line-height: 46px;
-    letter-spacing: 1.44px;
-    margin-inline: 6px;
-    padding-bottom: 3px;
-  }
-}
-
-.events__banner-description dl {
-  font-family: $font-basic;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  grid-column: -2 / -1;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-
-  @include vp-tablet {
-    gap: 0;
-  }
-}
-
 .event-banner img {
   object-fit: cover;
   width: 100%;

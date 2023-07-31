@@ -53,7 +53,14 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto minmax(211px, min-content) minmax(211px, min-content);
     gap: 30px;
-    align-items: center;
     text-align: center;
+    // align-items: center;
+  }
+
+  &>* {
+
+    @include vp-mobile {
+      align-self: center;
+    }
   }
 }

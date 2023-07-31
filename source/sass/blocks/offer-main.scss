@@ -16,7 +16,14 @@
     grid-row: unset;
     grid-template-columns: auto;
     grid-template-rows: 299px 299px;
-    align-items: center;
+    // align-items: center;
+  }
+
+  &>* {
+
+    @include vp-mobile {
+      align-self: center;
+    }
   }
 
   &__text-content {

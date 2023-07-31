@@ -3644,63 +3644,6 @@ button,
   }
 }
 
-.events__banner-description {
-  width: 100%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: -webkit-min-content 1fr auto;
-  -ms-grid-columns: min-content 1fr auto;
-  grid-template-columns: -webkit-min-content 1fr auto;
-  grid-template-columns: min-content 1fr auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.events__banner-description h3 {
-  display: block;
-  margin: 0;
-  margin-inline: 10px;
-  padding-bottom: 10px;
-  text-align: center;
-  font-family: "Alumni Sans", "Arial", sans-serif;
-  font-size: 82px;
-  font-weight: 600;
-  line-height: 78px;
-  letter-spacing: 2.46px;
-  text-transform: uppercase;
-}
-@media (max-width: 1199.8px) {
-  .events__banner-description h3 {
-    font-size: 48px;
-    line-height: 46px;
-    letter-spacing: 1.44px;
-    margin-inline: 6px;
-    padding-bottom: 3px;
-  }
-}
-
-.events__banner-description dl {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  grid-column: -2/-1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 15px;
-}
-@media (max-width: 1199.8px) {
-  .events__banner-description dl {
-    gap: 0;
-  }
-}
-
 .event-banner img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -3739,9 +3682,11 @@ button,
   -ms-grid-columns: min-content 1fr auto;
   grid-template-columns: -webkit-min-content 1fr auto;
   grid-template-columns: min-content 1fr auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+.event__anounce > * {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .event__anounce h3 {
@@ -4490,10 +4435,14 @@ dl.advantages-table,
     grid-template-rows: auto minmax(211px, -webkit-min-content) minmax(211px, -webkit-min-content);
     grid-template-rows: auto minmax(211px, min-content) minmax(211px, min-content);
     gap: 30px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     text-align: center;
+  }
+}
+@media (max-width: 767.8px) {
+  .offers__container > * {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 
@@ -4526,9 +4475,13 @@ dl.advantages-table,
     grid-template-columns: auto;
     -ms-grid-rows: 299px 299px;
     grid-template-rows: 299px 299px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  }
+}
+@media (max-width: 767.8px) {
+  .offer-main > * {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 .offer-main__text-content {
