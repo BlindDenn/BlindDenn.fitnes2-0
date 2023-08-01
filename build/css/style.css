@@ -3376,7 +3376,8 @@ button,
   content: "";
   width: 470px;
   height: 494px;
-  background-image: url(../../img/weights-xl@1x.png);
+  background-image: -webkit-image-set(url("../../img/weights-xl@2x.webp") type("image/webp") 2x, url("../../img/weights-xl@1x.webp") type("image/webp") 1x, url("../../img/weights-xl@2x.png") 2x, url("../../img/weights-xl@1x.png") 1x);
+  background-image: image-set(url("../../img/weights-xl@2x.webp") type("image/webp") 2x, url("../../img/weights-xl@1x.webp") type("image/webp") 1x, url("../../img/weights-xl@2x.png") 2x, url("../../img/weights-xl@1x.png") 1x);
   position: absolute;
   bottom: -269px;
   right: -286px;
@@ -3387,7 +3388,8 @@ button,
     height: 444px;
     bottom: -228px;
     right: -239px;
-    background-image: url(../../img/weights-m@1x.png);
+    background-image: -webkit-image-set(url("../../img/weights-m@2x.webp") type("image/webp") 2x, url("../../img/weights-m@1x.webp") type("image/webp") 1x, url("../../img/weights-m@2x.png") 2x, url("../../img/weights-m@1x.png") 1x);
+    background-image: image-set(url("../../img/weights-m@2x.webp") type("image/webp") 2x, url("../../img/weights-m@1x.webp") type("image/webp") 1x, url("../../img/weights-m@2x.png") 2x, url("../../img/weights-m@1x.png") 1x);
   }
 }
 @media (max-width: 767.8px) {
