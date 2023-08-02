@@ -1,5 +1,4 @@
-.promotion-form__custom-input,
-.custom-textarea {
+.promotion-form__custom-input {
   position: relative;
 
   width: 100%;
@@ -21,65 +20,65 @@
       align-items: flex-start;
       flex-direction: column;
     }
+  }
 
-    input,
-    textarea {
+  input {
 
+    color: $color-white;
+
+    font-family: $font-basic;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    /* 157.143% */
+
+    flex-grow: 1;
+    // max-width: 300px;
+    // min-height: 36px;
+    // margin-left: auto;
+    padding: 10px 0 3px 15px;
+
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $color-white-a50;
+    outline: none;
+
+    transition: border 0.3s ease;
+
+    &::placeholder {
       color: $color-white;
-
-      font-family: $font-basic;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 22px;
-      /* 157.143% */
-
-      flex-grow: 1;
-      // max-width: 300px;
-      // min-height: 36px;
-      // margin-left: auto;
-      padding: 10px 0 3px 15px;
-
-      background-color: transparent;
-      border: none;
-      border-bottom: 1px solid $color-white-a50;
-      outline: none;
-
-      transition: border 0.3s ease;
-
-      &::placeholder {
-        color: $color-white;
-        transform: translateX(-15px);
-      }
-
-      @media screen and (max-width: 767px) {
-        max-width: unset;
-        width: 100%;
-      }
-
-      &:disabled {
-        opacity: 0.5;
-        border-color: $color-white;
-      }
-
-      &:hover {
-        border-color: $color-white;
-      }
-
-      &:focus {
-        border: 1px solid $color-white;
-      }
-
-      &:focus::placeholder {
-        color: transparent;
-      }
+      transform: translateX(-15px);
     }
-  }
 
-  &__label {
     @media screen and (max-width: 767px) {
-      margin: 0 0 18px 0;
+      max-width: unset;
+      width: 100%;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      border-color: $color-white;
+    }
+
+    &:hover {
+      border-color: $color-white;
+    }
+
+    &:focus {
+      border: 1px solid $color-white;
+    }
+
+    &:focus::placeholder {
+      color: transparent;
     }
   }
+
+
+  // &__label {
+  //   @media screen and (max-width: 767px) {
+  //     margin: 0 0 18px 0;
+  //   }
+  // }
 
   // &__error {
 
@@ -100,8 +99,7 @@
 
   &.is-invalid {
 
-    input,
-    textarea {
+    input {
       border-color: #ff1553;
 
       //   &:focus,
@@ -121,6 +119,7 @@
     //     }
     //   }
     // }
+
 
     .input-message {
 

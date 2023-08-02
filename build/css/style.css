@@ -1490,7 +1490,7 @@ button,
   .container--start {
     height: unset;
     margin-inline: auto;
-    padding: 0 45px;
+    padding: 0 0px;
   }
 }
 @media (max-width: 767.8px) {
@@ -1506,7 +1506,7 @@ button,
   .container--end {
     height: unset;
     margin-inline: auto;
-    padding: 0 45px;
+    padding: 0 0;
   }
 }
 @media (max-width: 767.8px) {
@@ -1654,8 +1654,7 @@ button,
   bottom: 8px;
 }
 
-.promotion-form__custom-input,
-.custom-textarea {
+.promotion-form__custom-input {
   position: relative;
   width: 100%;
   display: -webkit-box;
@@ -1663,14 +1662,12 @@ button,
   display: flex;
 }
 @media screen and (max-width: 767px) {
-  .promotion-form__custom-input,
-.custom-textarea {
+  .promotion-form__custom-input {
     padding: 4px 0 19px;
     width: 100%;
   }
 }
-.promotion-form__custom-input label,
-.custom-textarea label {
+.promotion-form__custom-input label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1680,8 +1677,7 @@ button,
   width: 100%;
 }
 @media screen and (max-width: 767px) {
-  .promotion-form__custom-input label,
-.custom-textarea label {
+  .promotion-form__custom-input label {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -1691,10 +1687,7 @@ button,
             flex-direction: column;
   }
 }
-.promotion-form__custom-input label input,
-.promotion-form__custom-input label textarea,
-.custom-textarea label input,
-.custom-textarea label textarea {
+.promotion-form__custom-input input {
   color: #ffffff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
@@ -1712,94 +1705,66 @@ button,
   -webkit-transition: border 0.3s ease;
   transition: border 0.3s ease;
 }
-.promotion-form__custom-input label input::-webkit-input-placeholder, .promotion-form__custom-input label textarea::-webkit-input-placeholder, .custom-textarea label input::-webkit-input-placeholder, .custom-textarea label textarea::-webkit-input-placeholder {
+.promotion-form__custom-input input::-webkit-input-placeholder {
   color: #ffffff;
   -webkit-transform: translateX(-15px);
           transform: translateX(-15px);
 }
-.promotion-form__custom-input label input::-moz-placeholder, .promotion-form__custom-input label textarea::-moz-placeholder, .custom-textarea label input::-moz-placeholder, .custom-textarea label textarea::-moz-placeholder {
+.promotion-form__custom-input input::-moz-placeholder {
   color: #ffffff;
   transform: translateX(-15px);
 }
-.promotion-form__custom-input label input:-ms-input-placeholder, .promotion-form__custom-input label textarea:-ms-input-placeholder, .custom-textarea label input:-ms-input-placeholder, .custom-textarea label textarea:-ms-input-placeholder {
+.promotion-form__custom-input input:-ms-input-placeholder {
   color: #ffffff;
   -ms-transform: translateX(-15px);
       transform: translateX(-15px);
 }
-.promotion-form__custom-input label input::-ms-input-placeholder, .promotion-form__custom-input label textarea::-ms-input-placeholder, .custom-textarea label input::-ms-input-placeholder, .custom-textarea label textarea::-ms-input-placeholder {
+.promotion-form__custom-input input::-ms-input-placeholder {
   color: #ffffff;
   -ms-transform: translateX(-15px);
       transform: translateX(-15px);
 }
-.promotion-form__custom-input label input::placeholder,
-.promotion-form__custom-input label textarea::placeholder,
-.custom-textarea label input::placeholder,
-.custom-textarea label textarea::placeholder {
+.promotion-form__custom-input input::placeholder {
   color: #ffffff;
   -webkit-transform: translateX(-15px);
       -ms-transform: translateX(-15px);
           transform: translateX(-15px);
 }
 @media screen and (max-width: 767px) {
-  .promotion-form__custom-input label input,
-.promotion-form__custom-input label textarea,
-.custom-textarea label input,
-.custom-textarea label textarea {
+  .promotion-form__custom-input input {
     max-width: unset;
     width: 100%;
   }
 }
-.promotion-form__custom-input label input:disabled,
-.promotion-form__custom-input label textarea:disabled,
-.custom-textarea label input:disabled,
-.custom-textarea label textarea:disabled {
+.promotion-form__custom-input input:disabled {
   opacity: 0.5;
   border-color: #ffffff;
 }
-.promotion-form__custom-input label input:hover,
-.promotion-form__custom-input label textarea:hover,
-.custom-textarea label input:hover,
-.custom-textarea label textarea:hover {
+.promotion-form__custom-input input:hover {
   border-color: #ffffff;
 }
-.promotion-form__custom-input label input:focus,
-.promotion-form__custom-input label textarea:focus,
-.custom-textarea label input:focus,
-.custom-textarea label textarea:focus {
+.promotion-form__custom-input input:focus {
   border: 1px solid #ffffff;
 }
-.promotion-form__custom-input label input:focus::-webkit-input-placeholder, .promotion-form__custom-input label textarea:focus::-webkit-input-placeholder, .custom-textarea label input:focus::-webkit-input-placeholder, .custom-textarea label textarea:focus::-webkit-input-placeholder {
+.promotion-form__custom-input input:focus::-webkit-input-placeholder {
   color: transparent;
 }
-.promotion-form__custom-input label input:focus::-moz-placeholder, .promotion-form__custom-input label textarea:focus::-moz-placeholder, .custom-textarea label input:focus::-moz-placeholder, .custom-textarea label textarea:focus::-moz-placeholder {
+.promotion-form__custom-input input:focus::-moz-placeholder {
   color: transparent;
 }
-.promotion-form__custom-input label input:focus:-ms-input-placeholder, .promotion-form__custom-input label textarea:focus:-ms-input-placeholder, .custom-textarea label input:focus:-ms-input-placeholder, .custom-textarea label textarea:focus:-ms-input-placeholder {
+.promotion-form__custom-input input:focus:-ms-input-placeholder {
   color: transparent;
 }
-.promotion-form__custom-input label input:focus::-ms-input-placeholder, .promotion-form__custom-input label textarea:focus::-ms-input-placeholder, .custom-textarea label input:focus::-ms-input-placeholder, .custom-textarea label textarea:focus::-ms-input-placeholder {
+.promotion-form__custom-input input:focus::-ms-input-placeholder {
   color: transparent;
 }
-.promotion-form__custom-input label input:focus::placeholder,
-.promotion-form__custom-input label textarea:focus::placeholder,
-.custom-textarea label input:focus::placeholder,
-.custom-textarea label textarea:focus::placeholder {
+.promotion-form__custom-input input:focus::placeholder {
   color: transparent;
 }
-@media screen and (max-width: 767px) {
-  .promotion-form__custom-input__label,
-.custom-textarea__label {
-    margin: 0 0 18px 0;
-  }
-}
-.promotion-form__custom-input.is-invalid input,
-.promotion-form__custom-input.is-invalid textarea,
-.custom-textarea.is-invalid input,
-.custom-textarea.is-invalid textarea {
+.promotion-form__custom-input.is-invalid input {
   border-color: #ff1553;
 }
-.promotion-form__custom-input.is-invalid .input-message,
-.custom-textarea.is-invalid .input-message {
+.promotion-form__custom-input.is-invalid .input-message {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -1810,17 +1775,14 @@ button,
   bottom: -22px;
 }
 @media (max-width: 767.8px) {
-  .promotion-form__custom-input.is-invalid .input-message,
-.custom-textarea.is-invalid .input-message {
+  .promotion-form__custom-input.is-invalid .input-message {
     bottom: -8px;
   }
 }
-.promotion-form__custom-input.is-invalid .input-message.is-invalid,
-.custom-textarea.is-invalid .input-message.is-invalid {
+.promotion-form__custom-input.is-invalid .input-message.is-invalid {
   color: #ff0000;
 }
-.promotion-form__custom-input.is-invalid .input-message.is-valid,
-.custom-textarea.is-invalid .input-message.is-valid {
+.promotion-form__custom-input.is-invalid .input-message.is-valid {
   color: #15ab07;
 }
 
@@ -5161,6 +5123,7 @@ dl.advantages-table,
 }
 
 .promotion-form {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

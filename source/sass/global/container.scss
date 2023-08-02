@@ -34,7 +34,7 @@
     @include vp-tablet {
       height: unset;
       margin-inline: auto;
-      padding: 0 45px;
+      padding: 0 0px;
     }
 
     @include vp-mobile {
@@ -49,7 +49,7 @@
     @include vp-tablet {
       height: unset;
       margin-inline: auto;
-      padding: 0 45px;
+      padding: 0 0;
     }
 
     @include vp-mobile {
