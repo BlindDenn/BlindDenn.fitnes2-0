@@ -4745,8 +4745,8 @@ dl.advantages-table,
           margin-block-start: 33px;
   -webkit-margin-after: 0;
           margin-block-end: 0;
-  -webkit-padding-before: 0px;
-          padding-block-start: 0px;
+  -webkit-padding-before: 0;
+          padding-block-start: 0;
   -webkit-padding-after: 16px;
           padding-block-end: 16px;
   border-bottom: 1px solid rgba(16, 38, 84, 0.2);
@@ -4788,11 +4788,20 @@ dl.advantages-table,
 .accordion__content {
   -webkit-margin-before: 14px;
           margin-block-start: 14px;
+  padding: 0 200px 0 0;
+}
+@media (max-width: 1199.8px) {
+  .accordion__content {
+    -webkit-padding-end: 150px;
+            padding-inline-end: 150px;
+  }
 }
 @media (max-width: 767.8px) {
   .accordion__content {
     -webkit-margin-before: 11px;
             margin-block-start: 11px;
+    -webkit-padding-end: 0;
+            padding-inline-end: 0;
   }
 }
 .accordion p {
@@ -4917,21 +4926,6 @@ dl.advantages-table,
 }
 .accordion__element.is-active > .accordion__button:hover::after {
   background-color: #ffffff;
-}
-.accordion__wrapper {
-  padding: 0 200px 0 0;
-}
-@media (max-width: 1199.8px) {
-  .accordion__wrapper {
-    -webkit-padding-end: 150px;
-            padding-inline-end: 150px;
-  }
-}
-@media (max-width: 767.8px) {
-  .accordion__wrapper {
-    -webkit-padding-end: 0;
-            padding-inline-end: 0;
-  }
 }
 
 .reviews {
