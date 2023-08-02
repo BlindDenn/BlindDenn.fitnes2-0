@@ -18,80 +18,73 @@
     grid-template-rows: 299px 299px;
     // align-items: center;
   }
+}
 
-  &>* {
+&__text-content {
+  height: 100%;
+  color: $color-white;
+  padding: 34px 45px 45px;
+  display: flex;
+  flex-direction: column;
+
+  @include vp-mobile {
+    padding: 34px 45px 36px;
+    align-items: center;
+  }
+
+  & h3 {
+    margin: 0;
+    font-family: $font-basic;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 156%;
+    /* 43.68px */
+  }
+
+  & span {
+    display: block;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 156%;
+    /* 109.2px */
+    margin-block-start: -26px;
+  }
+
+  & p {
+    margin: 0;
+    font-family: $font-basic;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+    /* 25.2px */
 
     @include vp-mobile {
-      align-self: center;
+      margin-block-start: -5px;
     }
   }
 
-  &__text-content {
-    height: 100%;
-    color: $color-white;
-    padding: 34px 45px 45px;
-    display: flex;
-    flex-direction: column;
+  & a {
+    margin: 0;
+    margin-top: auto;
+    transform: translate(-10px, 9px);
 
     @include vp-mobile {
-      padding: 34px 45px 36px;
-      align-items: center;
-    }
-
-    & h3 {
-      margin: 0;
-      font-family: $font-basic;
-      font-size: 28px;
-      font-weight: 700;
-      line-height: 156%;
-      /* 43.68px */
-    }
-
-    & span {
-      display: block;
-      font-size: 70px;
-      font-weight: 700;
-      line-height: 156%;
-      /* 109.2px */
-      margin-block-start: -26px;
-    }
-
-    & p {
-      margin: 0;
-      font-family: $font-basic;
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 140%;
-      /* 25.2px */
-
-      @include vp-mobile {
-        margin-block-start: -5px;
-      }
-    }
-
-    & a {
-      margin: 0;
-      margin-top: auto;
-      transform: translate(-10px, 9px);
-
-      @include vp-mobile {
-        transform: none;
-      }
+      transform: none;
     }
   }
+}
 
-  & img {
-    background-color: #5089e5;
+& img {
+  background-color: #5089e5;
+  width: 100%;
+  height: 462px;
+  object-fit: cover;
+  object-position: top;
+
+  @include vp-mobile {
     width: 100%;
-    height: 462px;
+    height: 299px;
     object-fit: cover;
     object-position: top;
-
-    @include vp-mobile {
-      width: 100%;
-      height: 299px;
-      object-fit: cover;
-      object-position: top;
-    }
   }
 }
