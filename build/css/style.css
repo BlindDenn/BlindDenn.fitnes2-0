@@ -5003,6 +5003,12 @@ dl.advantages-table,
   height: 100%;
 }
 
+.reviews ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .review-card {
   background-color: #1c3374;
   height: 100%;
