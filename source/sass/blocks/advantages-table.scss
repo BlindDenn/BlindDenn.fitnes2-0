@@ -114,10 +114,6 @@ dl.advantages-table,
   }
 }
 
-.advantages-table__item:nth-child(2n) {
-  // grid-template-columns: 88px auto;
-}
-
 .advantages-table__item:last-child,
 .advantages-table__item:nth-last-child(2) {
   border: none;
