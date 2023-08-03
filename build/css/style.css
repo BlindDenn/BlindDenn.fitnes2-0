@@ -4037,8 +4037,9 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: (153px)[2];
-  grid-template-rows: repeat(2, 153px);
+  -ms-grid-rows: (133px)[2];
+  grid-template-rows: repeat(2, 133px);
+  row-gap: 40px;
 }
 @media (max-width: 1199.8px) {
   .advantages-table {
@@ -4153,6 +4154,7 @@ dl.advantages-table,
           margin-block-start: auto;
 }
 .advantages-table__item {
+  position: relative;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: -webkit-min-content auto;
@@ -4162,11 +4164,20 @@ dl.advantages-table,
   -webkit-column-gap: 30px;
      -moz-column-gap: 30px;
           column-gap: 30px;
-  border-bottom: 1px solid rgba(209, 10, 66, 0.2);
+}
+.advantages-table__item::after {
+  position: absolute;
+  display: block;
+  content: "";
+  left: 0;
+  right: 0;
+  height: 1px;
+  bottom: -20px;
+  background-color: rgba(209, 10, 66, 0.2);
 }
 @media (max-width: 1199.8px) {
-  .advantages-table__item {
-    border: none;
+  .advantages-table__item::after {
+    display: none;
   }
 }
 @media (max-width: 767.8px) {
@@ -4211,7 +4222,7 @@ dl.advantages-table,
 }
 
 .advantages-table__item:last-child,
-.advantages-table__item:nth-last-child(2) {
+.advantages-table__item:nth-last-child(2).advantages-table__item:nth-child(2n) {
   border: none;
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
@@ -4222,17 +4233,18 @@ dl.advantages-table,
 }
 @media (max-width: 767.8px) {
   .advantages-table__item:last-child,
-.advantages-table__item:nth-last-child(2) {
+.advantages-table__item:nth-last-child(2).advantages-table__item:nth-child(2n) {
     -webkit-transform: translateY(-1px);
         -ms-transform: translateY(-1px);
             transform: translateY(-1px);
   }
 }
+.advantages-table__item:last-child::after,
+.advantages-table__item:nth-last-child(2).advantages-table__item:nth-child(2n)::after {
+  display: none;
+}
 
 .advantages-table__item dt {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  grid-row: 1/3;
   color: #2e35ac;
   font-size: 14px;
   font-weight: 400;

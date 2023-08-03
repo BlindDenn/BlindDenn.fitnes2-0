@@ -2,8 +2,8 @@
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(2, 153px);
-  // column-gap: 60px;
+  grid-template-rows: repeat(2, 133px);
+  row-gap: 40px;
 
   @include vp-tablet {
     grid-template-columns: repeat(2, 1fr);
@@ -100,14 +100,25 @@ dl.advantages-table,
 }
 
 .advantages-table__item {
+  position: relative;
   display: grid;
   grid-template-columns: min-content auto;
   column-gap: 30px;
-  border-bottom: 1px solid $adv-understroke-a20;
-  // margin-bottom: 18px;
+  // border-bottom: 1px solid $adv-understroke-a20;
 
-  @include vp-tablet {
-    border: none;
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    left: 0;
+    right: 0;
+    height: 1px;
+    bottom: -20px;
+    background-color: $adv-understroke-a20;
+
+    @include vp-tablet {
+      display: none;
+    }
   }
 
   @include vp-mobile {
@@ -140,7 +151,7 @@ dl.advantages-table,
 }
 
 .advantages-table__item:last-child,
-.advantages-table__item:nth-last-child(2) {
+.advantages-table__item:nth-last-child(2).advantages-table__item:nth-child(2n) {
   border: none;
   align-self: end;
   transform: translateY(7px);
@@ -148,10 +159,14 @@ dl.advantages-table,
   @include vp-mobile {
     transform: translateY(-1px);
   }
+
+  &::after {
+    display: none;
+  }
 }
 
 .advantages-table__item dt {
-  grid-row: 1 / 3;
+  // grid-row: 1 / 3;
   color: #2e35ac;
   font-size: 14px;
   font-weight: 400;
