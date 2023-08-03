@@ -3,7 +3,6 @@
   grid-template-columns: 1fr 240px 1fr;
   grid-template-rows: repeat(2, 153px);
   column-gap: 60px;
-  font-family: $font-basic;
 
   @include vp-tablet {
     grid-template-columns: repeat(2, 1fr);
@@ -60,7 +59,6 @@ dl.advantages-table,
 }
 
 .advantages-table__main-item dt {
-  // font-family: $font-basic;
   font-size: 26px;
   font-weight: 700;
   line-height: 39px;
@@ -124,7 +122,6 @@ dl.advantages-table,
 .advantages-table__item dt {
   grid-row: 1 / 3;
   color: #2e35ac;
-  // font-family: $font-basic;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -154,7 +151,6 @@ dl.advantages-table,
   background: $gradient-text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  // font-family: $font-basic;
   font-size: 71px;
   font-weight: 700;
   line-height: 71px;
@@ -171,7 +167,6 @@ dl.advantages-table,
   // align-self: end;
   // display: block;
   margin: 0;
-  font-family: $font-basic;
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;

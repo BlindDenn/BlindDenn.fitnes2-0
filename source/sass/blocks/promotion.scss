@@ -24,10 +24,11 @@
   & h2 {
     margin: 0;
     margin-block-end: auto;
-    font-family: $font-accent;
+    font-family: $ff-accent;
     font-size: 54px;
     font-weight: 600;
-    line-height: 156%; /* 84.24px */
+    line-height: 156%;
+    /* 84.24px */
     letter-spacing: 1.62px;
 
     @include vp-tablet {

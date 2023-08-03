@@ -20,7 +20,7 @@
 
   & h2 {
     margin: 0;
-    font-family: $font-accent;
+    font-family: $ff-accent;
     font-size: 54px;
     font-weight: 600;
     line-height: 68px;
@@ -40,7 +40,6 @@
   }
 
   & ul {
-    font-family: $font-basic;
     position: relative;
     list-style: none;
     margin: 0;
@@ -95,7 +94,8 @@
     margin: 0;
     font-size: 16px;
     font-weight: 700;
-    line-height: 150%; /* 24px */
+    line-height: 150%;
+    /* 24px */
 
     &::after {
       content: ":";
@@ -113,7 +113,8 @@
     padding: 0;
     font-size: 14px;
     font-weight: 400;
-    line-height: 152.344%; /* 21.328px */
+    line-height: 152.344%;
+    /* 21.328px */
 
     @include vp-tablet {
       font-size: 18px;
@@ -121,7 +122,8 @@
     }
 
     @include vp-mobile {
-      line-height: 155%; /* 21.328px */
+      line-height: 155%;
+      /* 21.328px */
     }
   }
 }

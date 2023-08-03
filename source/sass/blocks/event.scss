@@ -21,7 +21,7 @@
   margin-inline: 10px;
   padding-bottom: 10px;
   text-align: center;
-  font-family: $font-accent;
+  font-family: $ff-accent;
   font-size: 82px;
   font-weight: 600;
   line-height: 78px;
@@ -38,7 +38,6 @@
 }
 
 .event__anounce dl {
-  font-family: $font-basic;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -92,7 +91,6 @@
 }
 
 .event p {
-  font-family: $font-basic;
   font-size: 18px;
   line-height: 27px;
   margin: 0;

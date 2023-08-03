@@ -33,7 +33,6 @@
 .subs-card h3 {
   margin: 0;
   color: $color-basic;
-  font-family: $font-basic;
   font-size: 26px;
   font-weight: 700;
   line-height: 30px;
@@ -47,7 +46,6 @@
 
 .subs-card p {
   margin: 0;
-  font-family: $font-basic;
   font-size: 16px;
   line-height: 24%;
 }
@@ -60,7 +58,6 @@
   &::before {
     content: attr(data-content);
     color: $card-shadow-a48;
-    font-family: $font-basic;
     font-size: 100px;
     font-weight: 700;
     line-height: 150px;
@@ -80,7 +77,6 @@
 .subs-card__price span {
   margin: 0;
   color: $color-accent;
-  font-family: $font-basic;
   font-size: 60px;
   font-weight: 700;
   line-height: 90px;

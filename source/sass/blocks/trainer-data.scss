@@ -7,7 +7,6 @@
 .trainer-data h3 {
   color: $color-white;
   margin: 0;
-  font-family: $font-basic;
   font-size: 18px;
   font-weight: 700;
   line-height: 27px;
@@ -16,7 +15,6 @@
 
 .trainer-data p {
   margin: 0;
-  font-family: $font-basic;
   text-align: center;
 
   @include vp-mobile {
@@ -29,14 +27,12 @@
   list-style: none;
   margin: 0;
   padding-left: 0;
-  font-family: $font-basic;
 }
 
 .trainer-data li {
   position: relative;
   margin: 0;
   padding-left: 31px;
-  font-family: $font-basic;
   font-size: 14px;
   line-height: 21px;
 
