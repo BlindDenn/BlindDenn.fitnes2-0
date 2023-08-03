@@ -2446,8 +2446,8 @@ button,
   color: #ffffff;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 396fr 65fr 700fr;
-  grid-template-columns: 396fr 65fr 700fr;
+  -ms-grid-columns: 132fr 264fr 65fr 700fr;
+  grid-template-columns: 132fr 264fr 65fr 700fr;
   -ms-grid-rows: 72px auto auto 60px 94px;
   grid-template-rows: 72px auto auto 60px 94px;
 }
@@ -2457,28 +2457,37 @@ button,
 }
 @media (max-width: 1199.8px) {
   .hero {
-    -ms-grid-columns: 1fr 30px 1fr;
-    grid-template-columns: 1fr 30px 1fr;
+    width: unset;
+    -ms-grid-columns: 138fr 186px 30fr 324fr;
+    grid-template-columns: 138fr 186px 30fr 324fr;
     -ms-grid-rows: 50px auto auto 61px 105px;
     grid-template-rows: 50px auto auto 61px 105px;
   }
 }
 @media (max-width: 767.8px) {
   .hero {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+    width: 100%;
+    -ms-grid-columns: 1fr 76px 214px 1fr;
+    grid-template-columns: 1fr 76px 214px 1fr;
     -ms-grid-rows: 8px auto auto 63px 78px;
     grid-template-rows: 8px auto auto 63px 78px;
   }
 }
 
 .hero__title {
-  -ms-grid-column: 1;
+  -ms-grid-column: 2;
   -ms-grid-column-span: 1;
-  grid-column: 1/2;
+  grid-column: 2/3;
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
+}
+@media (max-width: 767.8px) {
+  .hero__title {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+  }
 }
 
 .hero__title span {
@@ -2517,12 +2526,19 @@ button,
 }
 
 .hero__location {
-  -ms-grid-column: 1;
+  -ms-grid-column: 2;
   -ms-grid-column-span: 1;
-  grid-column: 1/2;
+  grid-column: 2/3;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
+}
+@media (max-width: 767.8px) {
+  .hero__location {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+  }
 }
 
 .hero__location span {
@@ -2559,21 +2575,38 @@ button,
 }
 
 .hero__description {
-  position: absolute;
-  top: 46%;
-  left: calc(29% - 316px);
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  grid-row: 3/span 3;
+  -webkit-margin-before: 123px;
+          margin-block-start: 123px;
 }
 @media (max-width: 1199.8px) {
   .hero__description {
-    top: 39.5%;
-    left: calc(50% - 339px);
+    -webkit-margin-before: 89px;
+            margin-block-start: 89px;
+    -webkit-padding-end: 25px;
+            padding-inline-end: 25px;
   }
 }
 @media (max-width: 767.8px) {
   .hero__description {
-    top: 34%;
-    left: unset;
-    right: 178px;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    -webkit-margin-before: 77px;
+            margin-block-start: 77px;
+    -webkit-padding-end: unset;
+            padding-inline-end: unset;
+    -webkit-transform: translateX(36px);
+        -ms-transform: translateX(36px);
+            transform: translateX(36px);
   }
 }
 
@@ -2613,9 +2646,9 @@ button,
 }
 
 .hero__button {
-  -ms-grid-column: 1;
+  -ms-grid-column: 2;
   -ms-grid-column-span: 1;
-  grid-column: 1/2;
+  grid-column: 2/3;
   grid-row: -2/-3;
   width: 234px;
 }
@@ -2627,6 +2660,7 @@ button,
 @media (max-width: 767.8px) {
   .hero__button {
     width: 100%;
+    grid-column: 1/-1;
   }
 }
 
@@ -3963,10 +3997,10 @@ button,
 }
 
 .trainer-data ul {
-  -webkit-margin-before: auto;
-          margin-block-start: auto;
   list-style: none;
   margin: 0;
+  -webkit-margin-before: auto;
+          margin-block-start: auto;
   padding-left: 0;
 }
 

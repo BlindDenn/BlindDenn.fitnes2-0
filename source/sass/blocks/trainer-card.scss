@@ -27,8 +27,8 @@
   position: absolute;
   top: 193px;
   transition: top 200ms,
-  color 200ms,
-  background-color 200ms;
+    color 200ms,
+    background-color 200ms;
 
   @include vp-mobile {
     top: 170px;
