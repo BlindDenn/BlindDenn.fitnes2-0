@@ -31,8 +31,8 @@
               <use href="img/sprite.svg#logo-main" />
             </svg>
           </a>
-          <nav class="header__main-nav">
-            <ul class="main-nav">
+          <nav class="header__menu">
+            <ul class="header__contacts">
               <li class="main-nav__item">
                 <a href="tel:88005555555" class="main-nav__link">8-800-555-55-55</a>
               </li>
@@ -465,9 +465,10 @@
                         </div>
                       </div>
                       <picture>
-                        <source type="image/webp" srcset="img/trainer-5-xl@1x.webp 1x, img/trainer-5-xl@2x.webp 2x">
+                        <source type="image/webp" srcset="img/trainer-5-xl@1x.webp 1x, img/trainer-5-xl@2x.webp 2x"
+                          loading="lazy">
                         <img class="trainer-card__image" src="img/trainer-5-s@1x.jpg" srcset="img/trainer-5-s@2x.jpg 2x"
-                          width="260" height="294" alt="Тренер фитнес центра">
+                          width="260" height="294" loading="lazy" alt="Тренер фитнес центра">
                       </picture>
                     </div>
                   </div>
@@ -485,9 +486,10 @@
                         </div>
                       </div>
                       <picture>
-                        <source type="image/webp" srcset="img/trainer-6-xl@1x.webp 1x, img/trainer-6-xl@2x.webp 2x">
+                        <source type="image/webp" srcset="img/trainer-6-xl@1x.webp 1x, img/trainer-6-xl@2x.webp 2x"
+                          loading="lazy">
                         <img class="trainer-card__image" src="img/trainer-6-s@1x.jpg" srcset="img/trainer-6-s@2x.jpg 2x"
-                          width="260" height="294" alt="Тренер фитнес центра">
+                          width="260" height="294" loading="lazy" alt="Тренер фитнес центра">
                       </picture>
                     </div>
                   </div>
@@ -511,9 +513,10 @@
                         </div>
                       </div>
                       <picture>
-                        <source type="image/webp" srcset="img/trainer-7-xl@1x.webp 1x, img/trainer-7-xl@2x.webp 2x">
+                        <source type="image/webp" srcset="img/trainer-7-xl@1x.webp 1x, img/trainer-7-xl@2x.webp 2x"
+                          loading="lazy">
                         <img class="trainer-card__image" src="img/trainer-7-s@1x.jpg" srcset="img/trainer-7-s@2x.jpg 2x"
-                          width="260" height="294" alt="Тренер фитнес центра">
+                          width="260" height="294" loading="lazy" alt="Тренер фитнес центра">
                       </picture>
                     </div>
                   </div>
@@ -537,9 +540,10 @@
                         </div>
                       </div>
                       <picture>
-                        <source type="image/webp" srcset="img/trainer-8-xl@1x.webp 1x, img/trainer-8-xl@2x.webp 2x">
+                        <source type="image/webp" srcset="img/trainer-8-xl@1x.webp 1x, img/trainer-8-xl@2x.webp 2x"
+                          loading="lazy">
                         <img class="trainer-card__image" src="img/trainer-8-s@1x.jpg" srcset="img/trainer-8-s@2x.jpg 2x"
-                          width="260" height="294" alt="Тренер фитнес центра">
+                          width="260" height="294" loading="lazy" alt="Тренер фитнес центра">
                       </picture>
                     </div>
                   </div>
@@ -922,7 +926,7 @@
             <div class="promotion__section-content">
               <h2>Бесплатное занятие</h2>
               <div class="promotion__form" data-form-validate="data-form-validate" data-callback="base">
-                <form class="promotion-form" action="https://echo.htmlacademy.ru" method="post">
+                <form class="promotion-form" action="https://echo.htmlacademy.ru" method="post" name="promotion">
                   <div class="promotion-form__inputs-wrapper">
                     <div class="promotion-form__custom-input" data-validate-type="text" data-limitation="name"
                       data-message-base="Укажите ваше имя" data-required="data-required">
