@@ -62,8 +62,10 @@
   }
 
   & li {
+    display: block;
     margin-bottom: 20px;
     margin-right: -70px;
+    break-inside: avoid;
 
     @include vp-mobile {
       margin-bottom: 19px;
