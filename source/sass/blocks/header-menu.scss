@@ -1,4 +1,4 @@
-.header__contacts {
+.header-menu__contacts {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -8,14 +8,14 @@
   margin-inline-start: 40px;
 }
 
-.main-nav__item {
+.header-menu__contacts-item {
   @include vp-tablet {
     transform: translateY(-5px);
   }
 
 }
 
-.main-nav__link {
+.header-menu__contacts-link {
   color: $color-white;
   font-family: $ff-accent;
   font-size: 26px;

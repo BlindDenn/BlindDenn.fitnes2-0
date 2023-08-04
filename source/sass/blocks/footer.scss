@@ -9,6 +9,7 @@
   @include vp-tablet {
     padding-block-start: 45px;
     padding-block-end: 44px;
+    grid-template-columns: 120px 1fr 120px;
   }
 
   @include vp-mobile {
@@ -151,7 +152,7 @@
 .footer__social {
   grid-column: -2 / -1;
   justify-self: end;
-  width: 120px;
+  max-width: 120px;
 
   @include vp-mobile {
     justify-self: start;
@@ -162,8 +163,9 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  // justify-self: flex-end;
   display: flex;
-  align-items: flex-end;
+  justify-self: flex-end;
   flex-wrap: wrap;
   gap: 11px;
 }

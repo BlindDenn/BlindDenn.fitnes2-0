@@ -2356,7 +2356,7 @@ button,
   }
 }
 
-.header__contacts {
+.header-menu__contacts {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -2374,14 +2374,14 @@ button,
 }
 
 @media (max-width: 1199.8px) {
-  .main-nav__item {
+  .header-menu__contacts-item {
     -webkit-transform: translateY(-5px);
         -ms-transform: translateY(-5px);
             transform: translateY(-5px);
   }
 }
 
-.main-nav__link {
+.header-menu__contacts-link {
   color: #ffffff;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 26px;
@@ -2390,14 +2390,14 @@ button,
   letter-spacing: 0.78px;
 }
 @media (max-width: 1199.8px) {
-  .main-nav__link {
+  .header-menu__contacts-link {
     font-size: 24px;
     line-height: 29px;
     letter-spacing: 0.48px;
   }
 }
 @media (max-width: 767.8px) {
-  .main-nav__link {
+  .header-menu__contacts-link {
     font-size: 20px;
     line-height: 27px;
     letter-spacing: 0.4px;
@@ -2682,6 +2682,8 @@ button,
             padding-block-start: 45px;
     -webkit-padding-after: 44px;
             padding-block-end: 44px;
+    -ms-grid-columns: 120px 1fr 120px;
+    grid-template-columns: 120px 1fr 120px;
   }
 }
 @media (max-width: 767.8px) {
@@ -2829,7 +2831,7 @@ button,
   grid-column: -2/-1;
   -ms-grid-column-align: end;
       justify-self: end;
-  width: 120px;
+  max-width: 120px;
 }
 @media (max-width: 767.8px) {
   .footer__social {
@@ -2845,9 +2847,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  justify-self: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 11px;
@@ -5297,7 +5297,7 @@ dl.advantages-table,
 @media (max-width: 1199.8px) {
   .contacts__section-content {
     width: 100%;
-    padding: 61px 118px 62px 88px;
+    padding: 61px 118px 63px 88px;
   }
 }
 @media (max-width: 767.8px) {
