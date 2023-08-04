@@ -31,8 +31,7 @@
   //   background-color 200ms;
 
   @include vp-mobile {
-    top: 170px;
-    padding: 41px calc((100% - 190px) / 2) 43px;
+    padding: 41px calc((100% - 190px) / 2) 24px;
   }
 }
 
