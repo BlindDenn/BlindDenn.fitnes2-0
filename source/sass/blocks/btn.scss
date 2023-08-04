@@ -45,9 +45,14 @@
       border: none;
     }
 
+    &.is-active:focus-visible {
+      outline-offset: -3px;
+      outline: 3px solid $color-white-a70;
+    }
+
     &:active {
       outline: none;
-      color: $bg-dark;
+      color: $color-white-a70;
       background-color: $color-white;
     }
 

@@ -81,6 +81,7 @@
     -webkit-text-stroke: 0.6px $color-basic;
     line-height: 120%;
     text-align: left;
+    cursor: pointer;
 
     @include vp-tablet {
       line-height: 120%;
@@ -97,7 +98,6 @@
       @include vp-tablet {}
     }
 
-    cursor: pointer;
 
     &:focus-visible {
       outline: none;
@@ -161,7 +161,8 @@
     background-color: $color-white;
   }
 
-  &__element.is-active>&__button:hover::before {
+  &__element.is-active>&__button:hover::before,
+  &__element.is-active>&__button:focus-visible::before {
     background-color: $color-basic;
   }
 
@@ -174,7 +175,8 @@
     }
   }
 
-  &__element.is-active>&__button:hover::after {
+  &__element.is-active>&__button:hover::after,
+  &__element.is-active>&__button:focus-visible::after {
     background-color: $color-white;
   }
 }
