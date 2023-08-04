@@ -2673,8 +2673,8 @@ button,
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr auto 1fr;
-  grid-template-columns: 1fr auto 1fr;
+  -ms-grid-columns: 140px 1fr 140px;
+  grid-template-columns: 140px 1fr 140px;
 }
 @media (max-width: 1199.8px) {
   .footer {
@@ -2696,10 +2696,14 @@ button,
 
 .footer__nav {
   grid-column: 2/-2;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 @media (max-width: 767.8px) {
   .footer__nav {
     grid-column: 1/-1;
+    -ms-grid-column-align: unset;
+        justify-self: unset;
   }
 }
 
@@ -2710,6 +2714,11 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 20px;
 }
 @media (max-width: 1199.8px) {
@@ -2797,7 +2806,12 @@ button,
 
 .footer__nav a:has(svg) {
   padding: 0;
-  top: -4px;
+  top: 3px;
+}
+@media (max-width: 1199.8px) {
+  .footer__nav a:has(svg) {
+    top: -4px;
+  }
 }
 @media (hover: hover) {
   .footer__nav a:has(svg):hover:not(.focus-visible)::after {
@@ -2815,6 +2829,7 @@ button,
   grid-column: -2/-1;
   -ms-grid-column-align: end;
       justify-self: end;
+  width: 120px;
 }
 @media (max-width: 767.8px) {
   .footer__social {
@@ -2833,6 +2848,8 @@ button,
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 11px;
 }
 
@@ -5069,6 +5086,8 @@ dl.advantages-table,
   height: 100%;
   min-height: 240px;
   padding: 62px;
+  -webkit-padding-end: 58px;
+          padding-inline-end: 58px;
   -webkit-padding-after: 57px;
           padding-block-end: 57px;
   color: #ffffff;

@@ -4,7 +4,7 @@
   position: relative;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: 140px 1fr 140px;
 
   @include vp-tablet {
     padding-block-start: 45px;
@@ -22,9 +22,11 @@
 
 .footer__nav {
   grid-column: 2 / -2;
+  justify-self: center;
 
   @include vp-mobile {
     grid-column: 1 / -1;
+    justify-self: unset;
   }
 }
 
@@ -33,6 +35,8 @@
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
 
   @include vp-tablet {
@@ -121,7 +125,11 @@
 
 .footer__nav a:has(svg) {
   padding: 0;
-  top: -4px;
+  top: 3px;
+
+  @include vp-tablet {
+    top: -4px;
+  }
 
   @include hover {
     &::after {
@@ -143,6 +151,7 @@
 .footer__social {
   grid-column: -2 / -1;
   justify-self: end;
+  width: 120px;
 
   @include vp-mobile {
     justify-self: start;
@@ -155,6 +164,7 @@
   padding: 0;
   display: flex;
   align-items: flex-end;
+  flex-wrap: wrap;
   gap: 11px;
 }
 
