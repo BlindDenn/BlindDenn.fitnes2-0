@@ -56,12 +56,6 @@
     grid-template-rows: auto minmax(211px, min-content) minmax(211px, min-content);
     gap: 30px;
     text-align: center;
-    // align-items: center;
-  }
-
-  & > * {
-    @include vp-mobile {
-      align-self: center;
-    }
+    align-items: center;
   }
 }

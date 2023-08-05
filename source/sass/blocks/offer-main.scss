@@ -16,7 +16,6 @@
     grid-row: unset;
     grid-template-columns: auto;
     grid-template-rows: 299px 299px;
-    // align-items: center;
   }
 
 
@@ -37,7 +36,6 @@
       font-size: 28px;
       font-weight: 700;
       line-height: 156%;
-      /* 43.68px */
     }
 
     & span {
@@ -45,7 +43,6 @@
       font-size: 70px;
       font-weight: 700;
       line-height: 156%;
-      /* 109.2px */
       margin-block-start: -26px;
     }
 
@@ -54,7 +51,6 @@
       font-size: 18px;
       font-weight: 400;
       line-height: 140%;
-      /* 25.2px */
 
       @include vp-mobile {
         margin-block-start: -5px;

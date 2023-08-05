@@ -21,22 +21,12 @@
   @include vp-tablet {
     grid-template-columns: 1fr;
     grid-template-rows: auto 345px 83px;
-    // justify-items: center;
+    justify-items: center;
   }
 
   @include vp-mobile {
     display: block;
-    // justify-items: unset;
-  }
-
-  & > * {
-    @include vp-tablet {
-      justify-self: center;
-    }
-
-    @include vp-mobile {
-      justify-self: unset;
-    }
+    justify-items: unset;
   }
 }
 
@@ -132,7 +122,6 @@
 }
 
 .gym__img img {
-  // width: 660px;
   justify-self: unset;
   height: 100%;
   width: 100%;
@@ -188,7 +177,6 @@
     left: unset;
     transform: translateX(0);
     height: auto;
-    // min-height: 167px;
     aspect-ratio: 320/167;
   }
 }

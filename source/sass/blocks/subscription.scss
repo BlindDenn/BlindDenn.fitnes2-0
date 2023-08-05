@@ -75,10 +75,6 @@
     bottom: 0;
     background-color: $tabs-understroke;
   }
-
-  // @media screen and (max-width: 767px) {
-  //   flex-wrap: wrap;
-  // }
 }
 
 .subscription__control {
@@ -191,35 +187,6 @@
   @include vp-mobile {
     gap: 35px;
   }
-
-  // @media screen and (max-width: 767px) {
-  //   padding: 15px;
-  // }
-
-  //   p {
-  //     margin: 0;
-
-  //     &:not(:last-child) {
-  //       margin: 0 0 20px 0;
-  //     }
-  //   }
-
-  //   &:nth-child(1) {
-  //     background-color: rgb(250, 235, 215);
-  //   }
-
-  //   &:nth-child(2) {
-  //     background-color: rgb(229, 250, 215);
-  //   }
-
-  //   &:nth-child(3) {
-  //     background-color: rgb(180, 188, 233);
-  //   }
-
-  //   &:nth-child(4) {
-  //     background-color: rgb(255, 187, 204);
-  //   }
-  // }
 
   .tabs--unset .tabs__content {
     height: 100px;

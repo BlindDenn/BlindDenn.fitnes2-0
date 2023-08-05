@@ -5,11 +5,7 @@
   display: grid;
   grid-template-columns: 132fr 264fr 65fr 700fr;
   grid-template-rows: 72px auto auto 60px 94px;
-  // justify-items: end;
-
-  & > * {
-    justify-self: end;
-  }
+  justify-items: end;
 
   @include vp-tablet {
     width: unset;
@@ -100,7 +96,6 @@
   grid-column: 1 / 2;
   grid-row: 3 / span 3;
   margin-block-start: 123px;
-  // left: calc(29% - 316px);
 
   @include vp-tablet {
     margin-block-start: 89px;
