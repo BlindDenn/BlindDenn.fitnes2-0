@@ -103,11 +103,29 @@
     line-height: 24px;
   }
 
+  &:hover,
+  &:focus-visible,
   &.is-active {
+    outline: none;
     opacity: 1;
     padding-block-end: 11px;
-    pointer-events: none;
     border-bottom: 2px solid $tabs-select-understroke;
+  }
+
+  &.is-active {
+    position: relative;
+    pointer-events: none;
+
+    &:focus-visible::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -10px;
+      right: -14px;
+      bottom: -2px;
+      left: -14px;
+      border: 2px solid $tabs-select-understroke;
+    }
   }
 }
 

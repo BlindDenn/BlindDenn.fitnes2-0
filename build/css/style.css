@@ -3383,12 +3383,26 @@ button,
     line-height: 24px;
   }
 }
-.subscription__control.is-active {
+.subscription__control:hover, .subscription__control:focus-visible, .subscription__control.is-active {
+  outline: none;
   opacity: 1;
   -webkit-padding-after: 11px;
           padding-block-end: 11px;
-  pointer-events: none;
   border-bottom: 2px solid #d10a42;
+}
+.subscription__control.is-active {
+  position: relative;
+  pointer-events: none;
+}
+.subscription__control.is-active:focus-visible::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -10px;
+  right: -14px;
+  bottom: -2px;
+  left: -14px;
+  border: 2px solid #d10a42;
 }
 
 .subscription__content {
