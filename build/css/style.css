@@ -4549,6 +4549,8 @@ dl.advantages-table,
     grid-row: unset;
     -ms-grid-columns: 279px 1fr;
     grid-template-columns: 279px 1fr;
+    -ms-grid-rows: 462px;
+    grid-template-rows: 462px;
   }
 }
 @media (max-width: 767px) {
