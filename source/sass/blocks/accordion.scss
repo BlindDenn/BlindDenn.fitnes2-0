@@ -94,11 +94,6 @@
       /* 21.6px */
     }
 
-    &.is-active {
-      @include vp-tablet {}
-    }
-
-
     &:focus-visible {
       outline: none;
     }
@@ -133,7 +128,7 @@
       content: "";
       width: 18px;
       height: 18px;
-      mask: url(../img/sprite.svg#plus-sign);
+      mask: url("../img/sprite.svg#plus-sign");
       background-color: $color-basic;
       position: absolute;
       right: 12px;
@@ -143,11 +138,10 @@
       @include vp-mobile {
         width: 12px;
         height: 12px;
-        mask: url(../img/sprite.svg#plus-sign-s);
+        mask: url("../img/sprite.svg#plus-sign-s");
         background-color: $color-basic;
         position: absolute;
         right: 9px;
-
       }
     }
 
@@ -157,26 +151,26 @@
     }
   }
 
-  &__element.is-active>&__button::before {
+  &__element.is-active > &__button::before {
     background-color: $color-white;
   }
 
-  &__element.is-active>&__button:hover::before,
-  &__element.is-active>&__button:focus-visible::before {
+  &__element.is-active > &__button:hover::before,
+  &__element.is-active > &__button:focus-visible::before {
     background-color: $color-basic;
   }
 
-  &__element.is-active>&__button::after {
-    mask: url(../img/sprite.svg#minus-sign);
+  &__element.is-active > &__button::after {
+    mask: url("../img/sprite.svg#minus-sign");
     background-color: $color-basic;
 
     @include vp-mobile {
-      mask: url(../img/sprite.svg#minus-sign-s);
+      mask: url("../img/sprite.svg#minus-sign-s");
     }
   }
 
-  &__element.is-active>&__button:hover::after,
-  &__element.is-active>&__button:focus-visible::after {
+  &__element.is-active > &__button:hover::after,
+  &__element.is-active > &__button:focus-visible::after {
     background-color: $color-white;
   }
 }

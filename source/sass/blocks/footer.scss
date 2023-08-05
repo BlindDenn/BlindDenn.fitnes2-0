@@ -83,7 +83,6 @@
   }
 
   &:active {
-
     &::after {
       display: none;
     }
@@ -114,7 +113,6 @@
 }
 
 .footer__nav svg {
-
   @include vp-tablet {
     width: 82px;
   }
@@ -140,7 +138,6 @@
 }
 
 .footer__nav li {
-
   @include vp-mobile {
     height: 40px;
   }

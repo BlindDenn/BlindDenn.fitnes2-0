@@ -1490,7 +1490,7 @@ button,
   .container--start {
     height: unset;
     margin-inline: auto;
-    padding: 0 0px;
+    padding: 0;
   }
 }
 @media (max-width: 767px) {
@@ -1519,9 +1519,6 @@ button,
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2952,7 +2949,7 @@ button,
 @media (max-width: 1199px) {
   .gym__description {
     grid-row: unset;
-    padding: 0px 0 35px;
+    padding: 0 0 35px;
     max-width: 640px;
   }
 }
@@ -3086,7 +3083,7 @@ button,
   position: absolute;
   bottom: 0;
   left: -63px;
-  background-color: brown;
+  background-color: #7989ad;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -3207,7 +3204,7 @@ button,
   width: 100px;
   height: 100px;
   background-color: transparent;
-  border: 2px solid red;
+  border: 2px solid #ed0233;
   border-radius: 50%;
   top: 50%;
   left: 50%;
@@ -3263,6 +3260,7 @@ button,
 .subscription {
   background-color: #f8f9fc;
 }
+
 .subscription__section-content {
   padding-block: 120px;
   margin-inline: auto;
@@ -3519,7 +3517,7 @@ button,
 @media (max-width: 767px) {
   .subs-card h3 {
     font-size: 22px;
-    line-height: 24.234px;
+    line-height: 24px;
   }
 }
 
@@ -3984,7 +3982,7 @@ button,
 .trainer-card__data p {
   display: none;
   margin: 0;
-  color: #B6BDCC;
+  color: #b6bdcc;
   font-size: 16px;
   line-height: 150%;
   /* 24px */
@@ -4249,6 +4247,7 @@ dl.advantages-table,
   -webkit-margin-before: auto;
           margin-block-start: auto;
 }
+
 .advantages-table__item {
   position: relative;
   display: -ms-grid;
@@ -4958,8 +4957,8 @@ dl.advantages-table,
   content: "";
   width: 18px;
   height: 18px;
-  -webkit-mask: url(../img/sprite.svg#plus-sign);
-          mask: url(../img/sprite.svg#plus-sign);
+  -webkit-mask: url("../img/sprite.svg#plus-sign");
+          mask: url("../img/sprite.svg#plus-sign");
   background-color: #102654;
   position: absolute;
   right: 12px;
@@ -4972,8 +4971,8 @@ dl.advantages-table,
   .accordion__button::after {
     width: 12px;
     height: 12px;
-    -webkit-mask: url(../img/sprite.svg#plus-sign-s);
-            mask: url(../img/sprite.svg#plus-sign-s);
+    -webkit-mask: url("../img/sprite.svg#plus-sign-s");
+            mask: url("../img/sprite.svg#plus-sign-s");
     background-color: #102654;
     position: absolute;
     right: 9px;
@@ -4989,14 +4988,14 @@ dl.advantages-table,
   background-color: #102654;
 }
 .accordion__element.is-active > .accordion__button::after {
-  -webkit-mask: url(../img/sprite.svg#minus-sign);
-          mask: url(../img/sprite.svg#minus-sign);
+  -webkit-mask: url("../img/sprite.svg#minus-sign");
+          mask: url("../img/sprite.svg#minus-sign");
   background-color: #102654;
 }
 @media (max-width: 767px) {
   .accordion__element.is-active > .accordion__button::after {
-    -webkit-mask: url(../img/sprite.svg#minus-sign-s);
-            mask: url(../img/sprite.svg#minus-sign-s);
+    -webkit-mask: url("../img/sprite.svg#minus-sign-s");
+            mask: url("../img/sprite.svg#minus-sign-s");
   }
 }
 .accordion__element.is-active > .accordion__button:hover::after, .accordion__element.is-active > .accordion__button:focus-visible::after {
@@ -5056,8 +5055,8 @@ dl.advantages-table,
           margin-block-start: 37px;
   margin-inline: 300px;
   position: relative;
-  -webkit-box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
-          box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
+  -webkit-box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
+          box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
 }
 @media (max-width: 1199px) {
   .reviews__swiper {
@@ -5420,7 +5419,7 @@ dl.advantages-table,
   padding: 0;
   font-size: 14px;
   font-weight: 400;
-  line-height: 152.344%;
+  line-height: 152.34%;
   /* 21.328px */
 }
 @media (max-width: 1199px) {

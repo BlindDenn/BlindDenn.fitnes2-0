@@ -10,7 +10,7 @@
   }
 
   @include vp-mobile {
-    height: 274px
+    height: 274px;
   }
 }
 
@@ -48,7 +48,7 @@
 .trainer-card__data p {
   display: none;
   margin: 0;
-  color: #B6BDCC;
+  color: #b6bdcc;
   font-size: 16px;
   line-height: 150%;
   /* 24px */
@@ -89,7 +89,7 @@
   }
 }
 
-.trainer-card__data li+li {
+.trainer-card__data li + li {
   margin-block-start: 13px;
 }
 

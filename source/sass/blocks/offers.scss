@@ -59,8 +59,7 @@
     // align-items: center;
   }
 
-  &>* {
-
+  & > * {
     @include vp-mobile {
       align-self: center;
     }

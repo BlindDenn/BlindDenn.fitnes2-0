@@ -1,7 +1,7 @@
 import Swiper from './vendor/swiper';
 
 const initTrainersSwiper = () => {
-  var trainersSwiper = new Swiper(".trainers-swiper", {
+  var trainersSwiper = new Swiper('.trainers-swiper', {
     slidesPerView: 1,
     spaceBetween: 10,
     breakpoints: {
@@ -26,10 +26,10 @@ const initTrainersSwiper = () => {
     autoHeight: false,
     loop: true,
     navigation: {
-      nextEl: ".trainers__swiper-button-next",
-      prevEl: ".trainers__swiper-button-prev",
+      nextEl: '.trainers__swiper-button-next',
+      prevEl: '.trainers__swiper-button-prev',
     },
   });
 };
 
-export { initTrainersSwiper };
+export {initTrainersSwiper};

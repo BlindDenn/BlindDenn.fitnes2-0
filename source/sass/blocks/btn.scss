@@ -1,8 +1,5 @@
 .btn {
   display: inline-flex;
-  // padding: 10px 20px;
-
-  display: flex;
   align-items: center;
   justify-content: center;
 
@@ -55,7 +52,6 @@
       color: $color-white-a70;
       background-color: $color-white;
     }
-
   }
 
   &--form {
@@ -67,7 +63,6 @@
   }
 
   &--thin-border {
-
     @include vp-tablet {
       border-width: 2px;
     }
