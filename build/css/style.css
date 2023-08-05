@@ -3731,13 +3731,11 @@ button,
   grid-template-columns: -webkit-min-content 1fr auto;
   grid-template-columns: min-content 1fr auto;
 }
-.event__anounce > * {
+
+.event__anounce h3 {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-}
-
-.event__anounce h3 {
   display: block;
   margin: 0;
   margin-inline: 10px;
@@ -3761,6 +3759,8 @@ button,
 }
 
 .event__anounce dl {
+  -ms-grid-row-align: center;
+      align-self: center;
   list-style: none;
   margin: 0;
   padding: 0;

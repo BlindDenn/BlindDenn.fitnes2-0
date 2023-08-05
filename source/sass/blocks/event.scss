@@ -10,12 +10,13 @@
   grid-template-columns: min-content 1fr auto;
   // align-items: center;
 
-  & > * {
-    align-self: center;
-  }
+  // & > * {
+  //   align-self: center;
+  // }
 }
 
 .event__anounce h3 {
+  align-self: center;
   display: block;
   margin: 0;
   margin-inline: 10px;
@@ -38,6 +39,7 @@
 }
 
 .event__anounce dl {
+  align-self: center;
   list-style: none;
   margin: 0;
   padding: 0;
