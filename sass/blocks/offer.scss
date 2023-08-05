@@ -1,0 +1,40 @@
+.offer {
+  height: 100%;
+  color: #1c3374;
+  padding: 30px 35px 36px;
+  border-image: $gradient-border;
+  border-image-slice: 1;
+  border-image-width: 7px;
+  display: flex;
+  flex-direction: column;
+
+  @include vp-mobile {
+    padding: 40px 35px 37px;
+    align-items: center;
+  }
+
+  & h3 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+  & p {
+    margin: 0;
+    margin-block-start: 7px;
+    font-size: 16px;
+    line-height: 140%;
+    /* 22.4px */
+  }
+
+  & a {
+    margin: 0;
+    margin-top: auto;
+    transform: translate(-10px, 9px);
+
+    @include vp-mobile {
+      transform: none;
+    }
+  }
+}

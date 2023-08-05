@@ -1,0 +1,93 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: $ff-basic;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+
+  &--bg-dark {
+    color: $color-white;
+    background-color: transparent;
+    border: 4px solid $color-white;
+
+    &:hover,
+    &:focus-visible {
+      outline: none;
+      color: $color-accent;
+      background-color: $color-white;
+    }
+
+    &:active {
+      outline: none;
+      color: $bg-dark;
+      background-color: $color-white;
+    }
+  }
+
+  &--bg-light {
+    background-color: transparent;
+    border: 2px solid $color-basic;
+
+    &:hover,
+    &:focus-visible,
+    &.is-active {
+      outline: none;
+      color: $color-white;
+      background: $gradient-button;
+      border: none;
+    }
+
+    &.is-active:focus-visible {
+      outline-offset: -3px;
+      outline: 3px solid $color-white-a70;
+    }
+
+    &:active {
+      outline: none;
+      color: $color-white-a70;
+      background-color: $color-white;
+    }
+  }
+
+  &--form {
+    border-width: 3px;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.7px;
+  }
+
+  &--thin-border {
+    @include vp-tablet {
+      border-width: 2px;
+    }
+  }
+
+  cursor: pointer;
+
+  transition: opacity $trans-default;
+
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+
+  &--faq-tabs {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 100%;
+    /* 18px */
+    border-width: 1px;
+    border-color: $color-basic-a20;
+    text-transform: capitalize;
+
+    @include vp-mobile {
+      font-size: 16px;
+    }
+  }
+}

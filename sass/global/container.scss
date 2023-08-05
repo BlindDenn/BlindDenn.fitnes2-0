@@ -1,0 +1,58 @@
+.container {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 103px;
+
+  @include vp-tablet {
+    padding: 0 45px;
+  }
+
+  @include vp-mobile {
+    padding: 0 15px;
+  }
+
+  &--full-width {
+    @include vp-mobile {
+      padding: 0;
+    }
+  }
+
+  &--start,
+  &--end {
+    width: 100%;
+    max-width: 683px;
+  }
+
+  &--start {
+    margin: 0 0 0 auto;
+    padding: 0 0 0 103px;
+
+    height: 100%;
+
+    @include vp-tablet {
+      height: unset;
+      margin-inline: auto;
+      padding: 0;
+    }
+
+    @include vp-mobile {
+      padding: 0 15px;
+    }
+  }
+
+  &--end {
+    margin: 0 auto 0 0;
+    padding: 0 103px 0 0;
+
+    @include vp-tablet {
+      height: unset;
+      margin-inline: auto;
+      padding: 0 0;
+    }
+
+    @include vp-mobile {
+      padding: 0 15px;
+    }
+  }
+}

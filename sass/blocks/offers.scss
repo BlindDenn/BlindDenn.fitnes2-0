@@ -1,0 +1,61 @@
+.offers {
+  padding: 142px 0 120px;
+
+  @include vp-tablet {
+    padding-block-start: 92px;
+    padding-block-end: 100px;
+  }
+
+  @include vp-mobile {
+    padding-block-start: 64px;
+    padding-block-end: 70px;
+  }
+}
+
+.offers h2 {
+  margin: 0;
+  font-family: $ff-accent;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 65px;
+  letter-spacing: 1.62px;
+  text-align: center;
+
+  @include vp-tablet {
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: 1.26px;
+  }
+
+  @include vp-mobile {
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.96px;
+  }
+}
+
+.offers__container {
+  margin-block-start: 34px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, minmax(211px, 1fr));
+  grid-auto-rows: minmax(211px, 1fr);
+  gap: 40px;
+  overflow: hidden;
+
+  @include vp-tablet {
+    margin-block-start: 40px;
+    grid-template-rows: minmax(462px, auto);
+    grid-auto-rows: minmax(211px, 1fr);
+    gap: 30px;
+  }
+
+  @include vp-mobile {
+    margin-block-start: 42px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto minmax(211px, min-content) minmax(211px, min-content);
+    gap: 30px;
+    text-align: center;
+    align-items: center;
+  }
+}

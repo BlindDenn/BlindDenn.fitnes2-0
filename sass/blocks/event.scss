@@ -1,0 +1,126 @@
+.event {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.event__anounce {
+  width: 100%;
+  display: grid;
+  grid-template-columns: min-content 1fr auto;
+}
+
+.event__anounce h3 {
+  align-self: center;
+  display: block;
+  margin: 0;
+  margin-inline: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-family: $ff-accent;
+  font-size: 82px;
+  font-weight: 600;
+  line-height: 78px;
+  letter-spacing: 2.46px;
+  text-transform: uppercase;
+
+  @include vp-tablet {
+    font-size: 48px;
+    line-height: 46px;
+    letter-spacing: 1.44px;
+    margin-inline: 6px;
+    padding-bottom: 3px;
+  }
+}
+
+.event__anounce dl {
+  align-self: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  grid-column: -2 / -1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  @include vp-tablet {
+    gap: 0;
+  }
+}
+
+.event__anounce dt {
+  font-size: 18px;
+  line-height: 31px;
+
+  @include vp-tablet {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+.event__anounce dd {
+  margin: 0;
+  width: fit-content;
+  border-top: 1px solid $color-white;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+
+  @include vp-tablet {
+    font-size: 24px;
+    line-height: 31px;
+  }
+}
+
+.event__anounce span {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  display: inline-block;
+  width: min-content;
+  margin-left: 7px;
+
+  @include vp-tablet {
+    font-size: 10px;
+    line-height: 11px;
+    margin-left: 4px;
+  }
+}
+
+.event p {
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0;
+  margin-block-start: 18px;
+
+  @include vp-tablet {
+    margin: 0;
+    margin-block-start: 4px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.event__button {
+  height: 71px;
+  margin-block-start: auto;
+
+  @include vp-tablet {
+    height: 41px;
+  }
+}
+
+.event-banner img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+
+  @include vp-tablet {
+    height: 292px;
+    object-fit: cover;
+  }
+
+  @include vp-mobile {
+    grid-column: 1 / -1;
+  }
+}

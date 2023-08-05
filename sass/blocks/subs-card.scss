@@ -1,0 +1,124 @@
+.subs-card {
+  max-width: 100%;
+  height: 448px;
+  background-color: $color-white;
+  padding: 60px 20px 68px;
+  border: none;
+  cursor: de;
+
+  &:hover,
+  &:focus-within {
+    border-image: $gradient-border;
+    border-image-slice: 1;
+    border-image-width: 7px;
+  }
+
+  @include vp-tablet {
+    padding: 67px 20px 63px;
+  }
+
+  @include vp-mobile {
+    height: 384px;
+    padding: 47px 20px 58px;
+  }
+}
+
+.subs-card__content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subs-card h3 {
+  margin: 0;
+  color: $color-basic;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-block-end: 21px;
+
+  @include vp-mobile {
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
+
+.subs-card p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24%;
+}
+
+.subs-card__price {
+  position: relative;
+  margin-top: auto;
+  z-index: 2;
+
+  &::before {
+    content: attr(data-content);
+    color: $card-shadow-a48;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 150px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    z-index: -1;
+
+    @include vp-mobile {
+      font-size: 80px;
+      line-height: 120px;
+    }
+  }
+}
+
+.subs-card__price span {
+  margin: 0;
+  color: $color-accent;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 90px;
+
+  @include vp-mobile {
+    font-size: 48px;
+    line-height: 72px;
+  }
+}
+
+.subs-card__price svg {
+  fill: $color-basic;
+  display: inline;
+  margin-inline-start: 10px;
+
+  @include vp-mobile {
+    width: 24px;
+    height: 33px;
+    margin-inline-start: 7px;
+  }
+}
+
+
+.subs-card__button {
+  width: 65%;
+  height: 66px;
+  margin-block-start: 34px;
+
+  @include vp-tablet {
+    width: calc(100% - 194px);
+  }
+
+  @include vp-mobile {
+    margin-block-start: 30px;
+    width: calc(100% - 42px);
+  }
+}
+
+.subs-card:hover .subs-card__button,
+.subs-card:focus-visible .subs-card__button {
+  outline: none;
+  color: $color-white;
+  background: $gradient-button;
+  border: none;
+}

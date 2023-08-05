@@ -1,0 +1,115 @@
+.trainer-card {
+  background-color: #b9c0cf;
+  display: grid;
+  width: 100%;
+  height: 294px;
+
+  @include vp-tablet {
+    height: 294px;
+  }
+
+  @include vp-mobile {
+    height: 274px;
+  }
+}
+
+.trainer-card__data {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  z-index: 1;
+  color: transparent;
+  background-color: transparent;
+  padding: 53px calc((100% - 180px) / 2) 24px;
+  display: flex;
+  flex-direction: column;
+
+  @include vp-mobile {
+    padding: 41px calc((100% - 190px) / 2) 24px;
+  }
+}
+
+.trainer-card__data h3 {
+  color: $color-white;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+}
+
+.trainer-card__data p {
+  display: none;
+  margin: 0;
+  color: #b6bdcc;
+  font-size: 16px;
+  line-height: 150%;
+  /* 24px */
+  text-align: center;
+  margin-block-start: -2px;
+
+  @include vp-mobile {
+    margin-block-start: -4px;
+  }
+}
+
+.trainer-card__data ul {
+  display: none;
+  list-style: none;
+  margin-block-end: 0;
+  padding: 0;
+  margin-block-start: auto;
+  padding-left: 0;
+}
+
+.trainer-card__data li {
+  position: relative;
+  margin: 0;
+  padding-left: 31px;
+  font-size: 14px;
+  line-height: 21px;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: $color-white;
+    position: absolute;
+    top: 8px;
+    left: 15px;
+  }
+}
+
+.trainer-card__data li + li {
+  margin-block-start: 13px;
+}
+
+
+.trainer-card:hover .trainer-card__data {
+  top: 0;
+  color: $color-white;
+  background-color: $color-basic-a89;
+  padding-block-end: 52px;
+}
+
+.trainer-card:hover p {
+  display: block;
+}
+
+.trainer-card:hover ul {
+  display: block;
+}
+
+.trainer-card img {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}

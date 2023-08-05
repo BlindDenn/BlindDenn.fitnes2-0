@@ -1,0 +1,11 @@
+.events {
+  padding-block-start: 120px;
+
+  @include vp-tablet {
+    padding-block-start: 100px;
+  }
+
+  @include vp-mobile {
+    padding-block-start: 69px;
+  }
+}
