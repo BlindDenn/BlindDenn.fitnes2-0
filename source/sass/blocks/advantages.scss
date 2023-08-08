@@ -1,8 +1,5 @@
 .advantages {
   background-color: $bg-additional;
-}
-
-.advantages__section-content {
   padding: 103px 0 123px;
 
   @include vp-tablet {
@@ -14,7 +11,10 @@
   }
 }
 
-.advantages__section-content h2 {
+.advantages__section-content {
+}
+
+.advantages h2 {
   margin: 0;
   margin-block-end: 55px;
   color: $color-basic;

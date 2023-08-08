@@ -3245,10 +3245,26 @@ button,
 
 .subscription {
   background-color: #f8f9fc;
+  padding-block: 120px;
+}
+@media (max-width: 1199px) {
+  .subscription {
+    -webkit-padding-before: 100px;
+            padding-block-start: 100px;
+    -webkit-padding-after: 103px;
+            padding-block-end: 103px;
+  }
+}
+@media (max-width: 767px) {
+  .subscription {
+    -webkit-padding-before: 71px;
+            padding-block-start: 71px;
+    -webkit-padding-after: 67px;
+            padding-block-end: 67px;
+  }
 }
 
 .subscription__section-content {
-  padding-block: 120px;
   margin-inline: auto;
   max-width: 100%;
   display: -webkit-box;
@@ -3268,18 +3284,6 @@ button,
 @media (max-width: 1199px) {
   .subscription__section-content {
     width: 442px;
-    -webkit-padding-before: 100px;
-            padding-block-start: 100px;
-    -webkit-padding-after: 103px;
-            padding-block-end: 103px;
-  }
-}
-@media (max-width: 767px) {
-  .subscription__section-content {
-    -webkit-padding-before: 71px;
-            padding-block-start: 71px;
-    -webkit-padding-after: 67px;
-            padding-block-end: 67px;
   }
 }
 
@@ -4051,23 +4055,20 @@ button,
 
 .advantages {
   background-color: #f8f9fc;
-}
-
-.advantages__section-content {
   padding: 103px 0 123px;
 }
 @media (max-width: 1199px) {
-  .advantages__section-content {
+  .advantages {
     padding: 91px 0 100px;
   }
 }
 @media (max-width: 767px) {
-  .advantages__section-content {
+  .advantages {
     padding: 64px 0 70px;
   }
 }
 
-.advantages__section-content h2 {
+.advantages h2 {
   margin: 0;
   -webkit-margin-after: 55px;
           margin-block-end: 55px;
@@ -4080,7 +4081,7 @@ button,
   text-align: center;
 }
 @media (max-width: 1199px) {
-  .advantages__section-content h2 {
+  .advantages h2 {
     -webkit-margin-after: 50px;
             margin-block-end: 50px;
     font-size: 42px;
@@ -4089,7 +4090,7 @@ button,
   }
 }
 @media (max-width: 767px) {
-  .advantages__section-content h2 {
+  .advantages h2 {
     -webkit-margin-after: 51px;
             margin-block-end: 51px;
     font-size: 32px;
