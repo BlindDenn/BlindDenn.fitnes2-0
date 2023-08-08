@@ -5274,23 +5274,17 @@ dl.advantages-table,
 
 .contacts {
   border-top: 1px solid #74819c;
+  padding: 56px 0 67px 120px;
 }
 @media (max-width: 1199px) {
   .contacts {
     border: none;
-  }
-}
-.contacts__section-content {
-  padding: 56px 0 67px 120px;
-}
-@media (max-width: 1199px) {
-  .contacts__section-content {
     width: 100%;
     padding: 61px 118px 63px 88px;
   }
 }
 @media (max-width: 767px) {
-  .contacts__section-content {
+  .contacts {
     padding: 64px 0 63px;
   }
 }

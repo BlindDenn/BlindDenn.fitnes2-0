@@ -1,21 +1,15 @@
 .contacts {
   border-top: 1px solid $column-divider;
+  padding: 56px 0 67px 120px;
 
   @include vp-tablet {
     border: none;
+    width: 100%;
+    padding: 61px 118px 63px 88px;
   }
 
-  &__section-content {
-    padding: 56px 0 67px 120px;
-
-    @include vp-tablet {
-      width: 100%;
-      padding: 61px 118px 63px 88px;
-    }
-
-    @include vp-mobile {
-      padding: 64px 0 63px;
-    }
+  @include vp-mobile {
+    padding: 64px 0 63px;
   }
 
   & h2 {
