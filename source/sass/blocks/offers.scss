@@ -33,29 +33,3 @@
     letter-spacing: 0.96px;
   }
 }
-
-.offers__container {
-  margin-block-start: 34px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(2, minmax(211px, 1fr));
-  grid-auto-rows: minmax(211px, 1fr);
-  gap: 40px;
-  overflow: hidden;
-
-  @include vp-tablet {
-    margin-block-start: 40px;
-    grid-template-rows: minmax(462px, auto);
-    grid-auto-rows: minmax(211px, 1fr);
-    gap: 30px;
-  }
-
-  @include vp-mobile {
-    margin-block-start: 42px;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto minmax(211px, min-content) minmax(211px, min-content);
-    gap: 30px;
-    text-align: center;
-    align-items: center;
-  }
-}

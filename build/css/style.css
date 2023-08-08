@@ -4480,7 +4480,10 @@ dl.advantages-table,
   }
 }
 
-.offers__container {
+.offers-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   -webkit-margin-before: 34px;
           margin-block-start: 34px;
   display: -ms-grid;
@@ -4494,7 +4497,7 @@ dl.advantages-table,
   overflow: hidden;
 }
 @media (max-width: 1199px) {
-  .offers__container {
+  .offers-list {
     -webkit-margin-before: 40px;
             margin-block-start: 40px;
     -ms-grid-rows: minmax(462px, auto);
@@ -4504,7 +4507,7 @@ dl.advantages-table,
   }
 }
 @media (max-width: 767px) {
-  .offers__container {
+  .offers-list {
     -webkit-margin-before: 42px;
             margin-block-start: 42px;
     -ms-grid-columns: 1fr;
@@ -4521,7 +4524,9 @@ dl.advantages-table,
   }
 }
 
-.offer-main {
+.offers-list__item-main {
+  border: none;
+  padding: 0;
   height: 100%;
   background-color: #ed0233;
   -ms-grid-row: 1;
@@ -4533,7 +4538,7 @@ dl.advantages-table,
   grid-template-columns: 1fr 1fr;
 }
 @media (max-width: 1199px) {
-  .offer-main {
+  .offers-list__item-main {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1/span 2;
@@ -4545,7 +4550,7 @@ dl.advantages-table,
   }
 }
 @media (max-width: 767px) {
-  .offer-main {
+  .offers-list__item-main {
     grid-column: unset;
     grid-row: unset;
     -ms-grid-columns: auto;
@@ -4554,7 +4559,7 @@ dl.advantages-table,
     grid-template-rows: 299px 299px;
   }
 }
-.offer-main__text-content {
+.offers-list__item-main-text-content {
   height: 100%;
   color: #ffffff;
   padding: 34px 45px 45px;
@@ -4567,20 +4572,20 @@ dl.advantages-table,
           flex-direction: column;
 }
 @media (max-width: 767px) {
-  .offer-main__text-content {
+  .offers-list__item-main-text-content {
     padding: 34px 45px 36px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
 }
-.offer-main__text-content h3 {
+.offers-list__item-main-text-content h3 {
   margin: 0;
   font-size: 28px;
   font-weight: 700;
   line-height: 156%;
 }
-.offer-main__text-content span {
+.offers-list__item-main-text-content span {
   display: block;
   font-size: 70px;
   font-weight: 700;
@@ -4588,19 +4593,19 @@ dl.advantages-table,
   -webkit-margin-before: -26px;
           margin-block-start: -26px;
 }
-.offer-main__text-content p {
+.offers-list__item-main-text-content p {
   margin: 0;
   font-size: 18px;
   font-weight: 400;
   line-height: 140%;
 }
 @media (max-width: 767px) {
-  .offer-main__text-content p {
+  .offers-list__item-main-text-content p {
     -webkit-margin-before: -5px;
             margin-block-start: -5px;
   }
 }
-.offer-main__text-content a {
+.offers-list__item-main-text-content a {
   margin: 0;
   margin-top: auto;
   -webkit-transform: translate(-10px, 9px);
@@ -4608,13 +4613,13 @@ dl.advantages-table,
           transform: translate(-10px, 9px);
 }
 @media (max-width: 767px) {
-  .offer-main__text-content a {
+  .offers-list__item-main-text-content a {
     -webkit-transform: none;
         -ms-transform: none;
             transform: none;
   }
 }
-.offer-main img {
+.offers-list__item-main img {
   background-color: #5089e5;
   width: 100%;
   height: 100%;
@@ -4624,7 +4629,7 @@ dl.advantages-table,
      object-position: top;
 }
 @media (max-width: 767px) {
-  .offer-main img {
+  .offers-list__item-main img {
     width: 100%;
     height: 299px;
     -o-object-fit: cover;
@@ -4634,7 +4639,7 @@ dl.advantages-table,
   }
 }
 
-.offer {
+.offers-list__item {
   height: 100%;
   color: #1c3374;
   padding: 30px 35px 36px;
@@ -4652,20 +4657,20 @@ dl.advantages-table,
           flex-direction: column;
 }
 @media (max-width: 767px) {
-  .offer {
+  .offers-list__item {
     padding: 40px 35px 37px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
 }
-.offer h3 {
+.offers-list__item h3 {
   margin: 0;
   font-size: 26px;
   font-weight: 700;
   line-height: 30px;
 }
-.offer p {
+.offers-list__item p {
   margin: 0;
   -webkit-margin-before: 7px;
           margin-block-start: 7px;
@@ -4673,7 +4678,7 @@ dl.advantages-table,
   line-height: 140%;
   /* 22.4px */
 }
-.offer a {
+.offers-list__item a {
   margin: 0;
   margin-top: auto;
   -webkit-transform: translate(-10px, 9px);
@@ -4681,7 +4686,7 @@ dl.advantages-table,
           transform: translate(-10px, 9px);
 }
 @media (max-width: 767px) {
-  .offer a {
+  .offers-list__item a {
     -webkit-transform: none;
         -ms-transform: none;
             transform: none;
