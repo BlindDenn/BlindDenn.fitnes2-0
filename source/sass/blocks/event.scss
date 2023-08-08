@@ -1,7 +1,40 @@
 .event {
+  width: 100%;
+  max-width: 1160px;
+  min-height: 500px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  background-color: $bg-banner;
+
+  @include vp-tablet {
+    grid-template-columns: 292px 1fr;
+    min-height: 292px;
+  }
+
+  @include vp-mobile {
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(292px, auto) 292px;
+  }
+}
+
+.event__content {
+  color: $color-white;
+  background-color: $bg-banner;
   height: 100%;
+  padding: 80px 15.5% 85px;
   display: flex;
   flex-direction: column;
+
+  @include vp-tablet {
+    padding: 46px 15.5% 50px;
+  }
+
+  @include vp-mobile {
+    width: 202px;
+    padding: 46px 0 51px;
+    margin-inline: auto;
+  }
 }
 
 .event__anounce {
@@ -110,7 +143,22 @@
   }
 }
 
-.event-banner img {
+.event img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+
+  @include vp-tablet {
+    height: 292px;
+    object-fit: cover;
+  }
+
+  @include vp-mobile {
+    grid-column: 1 / -1;
+  }
+}
+
+.event img {
   object-fit: cover;
   width: 100%;
   height: 100%;

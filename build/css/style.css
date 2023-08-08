@@ -3626,7 +3626,7 @@ button,
   }
 }
 
-.event-banner {
+.event {
   width: 100%;
   max-width: 1160px;
   min-height: 500px;
@@ -3638,14 +3638,14 @@ button,
   background-color: #ed0233;
 }
 @media (max-width: 1199px) {
-  .event-banner {
+  .event {
     -ms-grid-columns: 292px 1fr;
     grid-template-columns: 292px 1fr;
     min-height: 292px;
   }
 }
 @media (max-width: 767px) {
-  .event-banner {
+  .event {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     -ms-grid-rows: minmax(292px, auto) 292px;
@@ -3653,9 +3653,10 @@ button,
   }
 }
 
-.event-banner__content {
+.event__content {
   color: #ffffff;
   background-color: #ed0233;
+  height: 100%;
   padding: 80px 15.5% 85px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3666,46 +3667,16 @@ button,
           flex-direction: column;
 }
 @media (max-width: 1199px) {
-  .event-banner__content {
+  .event__content {
     padding: 46px 15.5% 50px;
   }
 }
 @media (max-width: 767px) {
-  .event-banner__content {
+  .event__content {
     width: 202px;
     padding: 46px 0 51px;
     margin-inline: auto;
   }
-}
-
-.event-banner img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-@media (max-width: 1199px) {
-  .event-banner img {
-    height: 292px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-}
-@media (max-width: 767px) {
-  .event-banner img {
-    grid-column: 1/-1;
-  }
-}
-
-.event {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .event__anounce {
@@ -3840,21 +3811,40 @@ button,
   }
 }
 
-.event-banner img {
+.event img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: 100%;
 }
 @media (max-width: 1199px) {
-  .event-banner img {
+  .event img {
     height: 292px;
     -o-object-fit: cover;
        object-fit: cover;
   }
 }
 @media (max-width: 767px) {
-  .event-banner img {
+  .event img {
+    grid-column: 1/-1;
+  }
+}
+
+.event img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 1199px) {
+  .event img {
+    height: 292px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (max-width: 767px) {
+  .event img {
     grid-column: 1/-1;
   }
 }
