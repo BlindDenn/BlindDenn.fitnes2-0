@@ -26,11 +26,12 @@
       <div class="container">
         <div class="header">
           <a href="#" class="header__logo-link">
-            <svg class="header__logo-image" width="122" height="24" role="img"
+            <img class="header__logo-image" src="img/svg/logo-main.svg" width="118" height="23" alt="Логотип фитнес центра Supergym">
+            <!-- <svg class="header__logo-image" width="122" height="24" role="img"
               aria-label="Логотип спортивного центра «SUPERGYM».">
               <use href="img/sprite.svg#logo-main" />
             </svg>
-          </a>
+          </a> -->
           <div class="header__menu header-menu">
             <ul class="header-menu__contacts">
               <li class="header-menu__contacts-item">
@@ -44,6 +45,7 @@
 
     <main class="main">
       <h1 class="visually-hidden">SUPERGYM. Самый большой фитнесс-центр за&nbsp;Уралом</h1>
+
       <section class="main__hero">
         <div class="container">
           <div class="hero">
@@ -297,9 +299,9 @@
         <div class="container">
           <div class="events__section-content">
             <h2 class="events__title visually-hidden">События</h2>
-            <div class="event-banner">
-              <div class="event-banner__content">
-                <div class="event">
+            <div class="event">
+              <div class="event__content">
+                <!-- <div class="event"> -->
                   <div class="event__anounce">
                     <h3 class="event__anounce-title">Super games</h3>
                     <dl>
@@ -315,7 +317,7 @@
                   </div>
                   <p class="event__description">Ежегодные соревнования по&nbsp;CrossFit</p>
                   <button class="event__button btn btn--bg-dark btn--thin-border">Заполнить заявку</button>
-                </div>
+                <!-- </div> -->
               </div>
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)"
@@ -329,7 +331,6 @@
                   alt="Обложка видео-ролика о фитес-центре Supergym">
               </picture>
             </div>
-
           </div>
         </div>
       </section>
@@ -538,7 +539,6 @@
 
       <section class="advantages">
         <div class="container container--full-width">
-          <div class="advantages__section-content">
             <h2 class="">Наши преимущества</h2>
             <div class="advantages__advantages-table">
               <dl class="advantages-table">
@@ -576,49 +576,44 @@
                 </div>
               </dl>
             </div>
-          </div>
         </div>
       </section>
 
       <section class="offers" id="offers">
         <div class="container">
-          <div class="offers__section-content">
-            <h2>Акции</h2>
-            <div class="offers__container">
-              <div class="offer-main">
-                <div class="offer-main__text-content">
-                  <h3>Год <span>4999</span></h3>
-                  <p>Безлимитный абонемент в&nbsp;тренажерный зал</p>
-                  <a class="link link--bg-dark" href="#">Подробнее</a>
-                </div>
-
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)"
-                    srcset="img/action-figure-xl@1x.webp 1x, img/action-figure-xl@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/action-figure-m@1x.webp 1x, img/action-figure-m@2x.webp 2x">
-                  <source type="image/webp" srcset="img/action-figure-s@1x.webp 1x, img/action-figure-s@2x.webp 2x">
-                  <source media="(min-width: 1200px)"
-                    srcset="img/action-figure-xl@1x.jpg 1x, img/action-figure-xl@2x.jpg 2x">
-                  <source media="(min-width: 768px)"
-                    srcset="img/action-figure-m@1x.jpg 1x, img/action-figure-m@2x.jpg 2x">
-                  <img src="img/action-figure-s@1x.jpg" srcset="img/action-figure-s@2x.jpg 2x" width="280" height="462"
-                    alt="Улыбающаяся спортсменка.">
-                </picture>
-
+          <h2>Акции</h2>
+          <ul class="offers-list">
+            <li class="offers-list__item-main">
+              <div class="offers-list__item-main-text-content">
+                <h3>Год <span>4999</span></h3>
+                <p>Безлимитный абонемент в&nbsp;тренажерный зал</p>
+                <a class="link link--bg-dark" href="#">Подробнее</a>
               </div>
-              <div class="offer">
-                <h3>Месяц бесплатно</h3>
-                <p>Приведи друга, получи абонемент в&nbsp;подарок</p>
-                <a class="link link--small" href="#">Подробнее</a>
-              </div>
-              <div class="offer">
-                <h3>Скидка 20%</h3>
-                <p>Корпоративный фитнес с&nbsp;командой</p>
-                <a class="link link--small" href="#">Подробнее</a>
-              </div>
-            </div>
-          </div>
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/action-figure-xl@1x.webp 1x, img/action-figure-xl@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/action-figure-m@1x.webp 1x, img/action-figure-m@2x.webp 2x">
+                <source type="image/webp" srcset="img/action-figure-s@1x.webp 1x, img/action-figure-s@2x.webp 2x">
+                <source media="(min-width: 1200px)"
+                  srcset="img/action-figure-xl@1x.jpg 1x, img/action-figure-xl@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/action-figure-m@1x.jpg 1x, img/action-figure-m@2x.jpg 2x">
+                <img src="img/action-figure-s@1x.jpg" srcset="img/action-figure-s@2x.jpg 2x" width="280" height="462"
+                  alt="Улыбающаяся спортсменка.">
+              </picture>
+            </li>
+            <li class="offers-list__item">
+              <h3>Месяц бесплатно</h3>
+              <p>Приведи друга, получи абонемент в&nbsp;подарок</p>
+              <a class="link link--small" href="#">Подробнее</a>
+            </li>
+            <li class="offers-list__item">
+              <h3>Скидка 20%</h3>
+              <p>Корпоративный фитнес с&nbsp;командой</p>
+              <a class="link link--small" href="#">Подробнее</a>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -886,6 +881,7 @@
       </section>
 
       <div class="main__footer">
+
         <section class="promotion">
           <div class="container container--start">
             <div class="promotion__section-content">
@@ -914,29 +910,28 @@
             </div>
           </div>
         </section>
+
         <section class="contacts">
           <div class="container container--end">
-            <div class="contacts__section-content">
-              <h2>Контакты</h2>
-              <ul class="contacts__items">
-                <li class="contacts__item">
-                  <h3>Адрес</h3>
-                  <p class="adress">г. Омск, ул. 60 лет Октября, 7</p>
-                </li>
-                <li class="contacts__item">
-                  <h3>График работы</h3>
-                  <p class="adress">Пн-Вс: с 8:00 до 22:00</p>
-                </li>
-                <li class="contacts__item">
-                  <h3>Телефон</h3>
-                  <a href="tel:88005555555">8-800-555-55-55</a>
-                </li>
-                <li class="contacts__item">
-                  <h3>Email</h3>
-                  <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
-                </li>
-              </ul>
-            </div>
+            <h2>Контакты</h2>
+            <ul class="contacts__items">
+              <li class="contacts__item">
+                <h3>Адрес</h3>
+                <p class="adress">г. Омск, ул. 60 лет Октября, 7</p>
+              </li>
+              <li class="contacts__item">
+                <h3>График работы</h3>
+                <p class="adress">Пн-Вс: с 8:00 до 22:00</p>
+              </li>
+              <li class="contacts__item">
+                <h3>Телефон</h3>
+                <a href="tel:88005555555">8-800-555-55-55</a>
+              </li>
+              <li class="contacts__item">
+                <h3>Email</h3>
+                <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+              </li>
+            </ul>
           </div>
         </section>
 
