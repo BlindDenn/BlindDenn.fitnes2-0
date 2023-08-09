@@ -13,9 +13,7 @@
   }
 
   @include vp-mobile {
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
-    grid-auto-flow: column;
+    display: block;
   }
 }
 
@@ -26,17 +24,18 @@
   justify-self: center;
 
   @include vp-mobile {
-    grid-column: 1 / -1;
+    grid-column: unset;
     justify-self: unset;
   }
 }
 
 .footer__nav ul {
+  margin-inline: auto;
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 20px;
 
@@ -148,7 +147,7 @@
 .footer__social {
   grid-column: -2 / -1;
   justify-self: end;
-  max-width: 120px;
+  max-width: 97px;
 
   @include vp-mobile {
     justify-self: start;
