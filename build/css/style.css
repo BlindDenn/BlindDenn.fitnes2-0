@@ -5394,7 +5394,8 @@ dl.advantages-table,
     font-size: 20px;
   }
 }
-.contacts p, .contacts a {
+.contacts p,
+.contacts a {
   display: block;
   margin: 0;
   padding: 0;
@@ -5404,14 +5405,16 @@ dl.advantages-table,
   /* 21.328px */
 }
 @media (max-width: 1199px) {
-  .contacts p, .contacts a {
+  .contacts p,
+.contacts a {
     font-size: 18px;
     -webkit-margin-before: 5px;
             margin-block-start: 5px;
   }
 }
 @media (max-width: 767px) {
-  .contacts p, .contacts a {
+  .contacts p,
+.contacts a {
     line-height: 155%;
     /* 21.328px */
   }

@@ -12,7 +12,7 @@
     padding: 64px 0 63px;
   }
 
-  & h2 {
+  h2 {
     margin: 0;
     font-family: $ff-accent;
     font-size: 54px;
@@ -33,7 +33,7 @@
     }
   }
 
-  & ul {
+  ul {
     position: relative;
     list-style: none;
     margin: 0;
@@ -55,7 +55,7 @@
     }
   }
 
-  & li {
+  li {
     display: block;
     margin-bottom: 20px;
     margin-right: -70px;
@@ -67,7 +67,7 @@
     }
   }
 
-  & li:first-child::after {
+  li:first-child::after {
     position: absolute;
     content: "";
     background-color: $column-divider;
@@ -86,7 +86,7 @@
     }
   }
 
-  & h3 {
+  h3 {
     margin: 0;
     font-size: 16px;
     font-weight: 700;
@@ -102,8 +102,8 @@
     }
   }
 
-  & p,
-  & a {
+  p,
+  a {
     display: block;
     margin: 0;
     padding: 0;
