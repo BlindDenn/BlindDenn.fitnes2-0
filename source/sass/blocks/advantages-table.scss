@@ -57,6 +57,10 @@ dl.advantages-table,
 }
 
 .advantages-table__main-item-content {
+  height: 100%;
+  max-height: 250px;
+  display: flex;
+  flex-direction: column;
   @include vp-mobile {
     width: 200px;
     margin-inline: auto;
