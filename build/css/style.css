@@ -1746,6 +1746,12 @@ button,
   border: 1px solid #ffffff;
   padding: 8px 0 3px 14px;
 }
+@media screen and (max-width: 767px) {
+  .promotion-form__custom-input input:focus {
+    -webkit-padding-after: 4px;
+            padding-block-end: 4px;
+  }
+}
 .promotion-form__custom-input input:focus::-webkit-input-placeholder {
   color: transparent;
 }
