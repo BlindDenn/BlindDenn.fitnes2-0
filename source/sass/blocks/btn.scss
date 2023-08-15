@@ -9,6 +9,7 @@
   line-height: 12px;
   letter-spacing: 0.6px;
   text-transform: uppercase;
+  user-select: none;
 
   &--bg-dark {
     color: $color-white;
