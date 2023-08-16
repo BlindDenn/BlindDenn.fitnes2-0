@@ -1,5 +1,25 @@
 import Swiper from './vendor/swiper';
 
+let visibleSlides = [];
+
+const getVisibleSlides = () => {
+  visibleSlides = document.querySelectorAll('.slide-visible');
+};
+
+const addTabIndex = (arr) => {
+  arr.forEach((item) => item.setAttribute('tabindex', 0));
+};
+
+const clearTabIndex = (actualSwiper) => {
+  actualSwiper.slides.forEach((item) => item.removeAttribute('tabindex'));
+};
+
+const onEventTabReassign = (actualSwiper) => {
+  clearTabIndex(actualSwiper);
+  getVisibleSlides();
+  addTabIndex(visibleSlides);
+};
+
 const initTrainersSwiper = () => {
   var trainersSwiper = new Swiper('.trainers-swiper', {
     slidesPerView: 1,
@@ -29,7 +49,19 @@ const initTrainersSwiper = () => {
       nextEl: '.trainers__swiper-button-next',
       prevEl: '.trainers__swiper-button-prev',
     },
+    watchSlidesProgress: true,
+    slideVisibleClass: 'slide-visible',
+    on: {
+      init() {
+        getVisibleSlides();
+        addTabIndex(visibleSlides);
+      },
+    },
   });
+
+  trainersSwiper.on('transitionEnd', () => onEventTabReassign(trainersSwiper));
+  trainersSwiper.on('breakpoint', () => onEventTabReassign(trainersSwiper));
+
 };
 
 export {initTrainersSwiper};
