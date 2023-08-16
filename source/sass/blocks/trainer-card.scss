@@ -90,7 +90,8 @@
 }
 
 
-.trainer-card:hover .trainer-card__data {
+.trainer-card:hover .trainer-card__data,
+.trainer-card:focus-visible .trainer-card__data {
   top: 0;
   color: $color-white;
   background-color: $color-basic-a89;

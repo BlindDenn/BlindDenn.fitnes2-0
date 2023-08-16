@@ -4017,7 +4017,8 @@ button,
           margin-block-start: 13px;
 }
 
-.trainer-card:hover .trainer-card__data {
+.trainer-card:hover .trainer-card__data,
+.trainer-card:focus-visible .trainer-card__data {
   top: 0;
   color: #ffffff;
   background-color: rgba(16, 38, 84, 0.89);

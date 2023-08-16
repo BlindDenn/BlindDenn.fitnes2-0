@@ -7,11 +7,13 @@ const getVisibleSlides = () => {
 };
 
 const addTabIndex = (arr) => {
-  arr.forEach((item) => item.setAttribute('tabindex', 0));
+  arr.forEach((item) => item.firstElementChild.setAttribute('tabindex', 0));
 };
 
 const clearTabIndex = (actualSwiper) => {
-  actualSwiper.slides.forEach((item) => item.removeAttribute('tabindex'));
+  actualSwiper.slides
+      .filter((item) => item.firstElementChild.hasAttribute('tabindex'))
+      .forEach((item) => item.firstElementChild.removeAttribute('tabindex'));
 };
 
 const onEventTabReassign = (actualSwiper) => {
