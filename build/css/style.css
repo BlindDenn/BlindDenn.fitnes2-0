@@ -3917,20 +3917,12 @@ button,
   display: -ms-grid;
   display: grid;
   width: 100%;
-  height: 294px;
-}
-@media (max-width: 1199px) {
-  .trainer-card {
-    height: 294px;
-  }
-}
-@media (max-width: 767px) {
-  .trainer-card {
-    height: 274px;
-  }
+  height: auto;
 }
 
 .trainer-card__data {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -3958,22 +3950,34 @@ button,
   color: #ffffff;
   margin: 0;
   padding: 0;
-  font-size: 18px;
+  font-size: 1.32vw;
   font-weight: 700;
   line-height: 24px;
   text-align: center;
+}
+@media (min-width: 1366px) {
+  .trainer-card__data h3 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1199px) {
+  .trainer-card__data h3 {
+    font-size: 2.34vw;
+  }
 }
 
 .trainer-card__data p {
   display: none;
   margin: 0;
   color: #b6bdcc;
-  font-size: 16px;
+  font-size: 1.33vw;
   line-height: 150%;
   /* 24px */
   text-align: center;
   -webkit-margin-before: -2px;
           margin-block-start: -2px;
+  -webkit-padding-after: 12px;
+          padding-block-end: 12px;
 }
 @media (max-width: 767px) {
   .trainer-card__data p {
@@ -4024,6 +4028,7 @@ button,
   background-color: rgba(16, 38, 84, 0.89);
   -webkit-padding-after: 52px;
           padding-block-end: 52px;
+  overflow-y: auto;
 }
 
 .trainer-card:hover p {
@@ -4039,10 +4044,6 @@ button,
   grid-row: 1/-1;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: bottom;
-     object-position: bottom;
 }
 
 .advantages {
