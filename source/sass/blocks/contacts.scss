@@ -5,7 +5,8 @@
   @include vp-tablet {
     border: none;
     width: 100%;
-    padding: 61px 118px 63px 88px;
+    padding: 61px calc((100% - 500px) / 2 + 30px) 63px calc((100% - 500px) / 2);
+    margin-inline: auto;
   }
 
   @include vp-mobile {

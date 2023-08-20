@@ -1506,7 +1506,7 @@ button,
   .container--end {
     height: unset;
     margin-inline: auto;
-    padding: 0 0;
+    padding: 0;
   }
 }
 @media (max-width: 767px) {
@@ -5208,7 +5208,7 @@ dl.advantages-table,
   .promotion h2 {
     font-size: 42px;
     line-height: 50px;
-    letter-spacing: 0.95px;
+    letter-spacing: 1.6px;
   }
 }
 @media (max-width: 767px) {
@@ -5277,7 +5277,8 @@ dl.advantages-table,
   .contacts {
     border: none;
     width: 100%;
-    padding: 61px 118px 63px 88px;
+    padding: 61px calc((100% - 500px) / 2 + 30px) 63px calc((100% - 500px) / 2);
+    margin-inline: auto;
   }
 }
 @media (max-width: 767px) {
