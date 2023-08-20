@@ -2436,12 +2436,34 @@ button,
 }
 
 .header-menu__contacts-link {
+  outline: none;
+  position: relative;
   color: #ffffff;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 26px;
   font-weight: 600;
   line-height: 31px;
   letter-spacing: 0.78px;
+}
+.header-menu__contacts-link:active {
+  opacity: 0.75;
+}
+.header-menu__contacts-link::after {
+  position: absolute;
+  content: "";
+  top: -3px;
+  right: -10px;
+  bottom: -2px;
+  left: -10px;
+}
+.header-menu__contacts-link:hover::after {
+  right: 0;
+  left: 0;
+  -webkit-border-after: 1px solid #ffffff;
+          border-block-end: 1px solid #ffffff;
+}
+.header-menu__contacts-link:focus-visible::after {
+  border: 1px solid #ffffff;
 }
 @media (max-width: 1199px) {
   .header-menu__contacts-link {

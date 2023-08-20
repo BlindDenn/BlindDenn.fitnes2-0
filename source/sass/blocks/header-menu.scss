@@ -15,12 +15,37 @@
 }
 
 .header-menu__contacts-link {
+  outline: none;
+  position: relative;
   color: $color-white;
   font-family: $ff-accent;
   font-size: 26px;
   font-weight: 600;
   line-height: 31px;
   letter-spacing: 0.78px;
+
+  &:active {
+    opacity: 0.75;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: -3px;
+    right: -10px;
+    bottom: -2px;
+    left: -10px;
+  }
+
+  &:hover::after {
+    right: 0;
+    left: 0;
+    border-block-end: 1px solid $color-white;
+  }
+
+  &:focus-visible::after {
+    border: 1px solid $color-white;
+  }
 
   @include vp-tablet {
     font-size: 24px;
