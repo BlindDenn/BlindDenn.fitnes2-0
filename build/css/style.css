@@ -2175,13 +2175,15 @@ button,
   width: 56px;
   position: absolute;
   background-color: transparent;
-  top: 0;
-  bottom: 0;
+  top: calc(50% - 30px);
+  bottom: calc(50% - 30px);
   cursor: pointer;
 }
 @media (max-width: 767px) {
   .custom-swiper-button {
     width: 32px;
+    top: 0;
+    bottom: 0;
   }
 }
 .custom-swiper-button--prev {
@@ -3942,7 +3944,7 @@ button,
 }
 @media (max-width: 767px) {
   .trainer-card__data {
-    padding: 41px calc((100% - 190px) / 2) 24px;
+    padding: 43px calc((100% - 190px) / 2) 24px;
   }
 }
 
@@ -4020,6 +4022,13 @@ button,
           padding-block-end: 52px;
   overflow-y: auto;
 }
+@media (max-width: 767px) {
+  .trainer-card:hover .trainer-card__data,
+.trainer-card:focus-visible .trainer-card__data {
+    -webkit-padding-after: 43px;
+            padding-block-end: 43px;
+  }
+}
 
 .trainer-card:hover p {
   display: block;
@@ -4034,6 +4043,15 @@ button,
   grid-row: 1/-1;
   width: 100%;
   height: 100%;
+}
+@media (max-width: 767px) {
+  .trainer-card img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center bottom;
+       object-position: center bottom;
+    width: 100%;
+  }
 }
 
 .advantages {
