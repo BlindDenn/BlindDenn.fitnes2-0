@@ -3950,27 +3950,17 @@ button,
   color: #ffffff;
   margin: 0;
   padding: 0;
-  font-size: 1.32vw;
+  font-size: 18px;
   font-weight: 700;
   line-height: 24px;
   text-align: center;
-}
-@media (min-width: 1366px) {
-  .trainer-card__data h3 {
-    font-size: 18px;
-  }
-}
-@media (max-width: 1199px) {
-  .trainer-card__data h3 {
-    font-size: 2.34vw;
-  }
 }
 
 .trainer-card__data p {
   display: none;
   margin: 0;
   color: #b6bdcc;
-  font-size: 1.33vw;
+  font-size: 16px;
   line-height: 150%;
   /* 24px */
   text-align: center;

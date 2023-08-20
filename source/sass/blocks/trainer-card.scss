@@ -36,27 +36,20 @@
   color: $color-white;
   margin: 0;
   padding: 0;
-  font-size: 1.32vw;
-  // font-size: 18px;
+  // font-size: 1.32vw;
+  font-size: 18px;
   font-weight: 700;
+  // line-height: 130%;
   line-height: 24px;
   text-align: center;
-
-  @include vp-1366 {
-    font-size: 18px;
-  }
-
-  @include vp-tablet {
-    font-size: 2.34vw;
-  }
 }
 
 .trainer-card__data p {
   display: none;
   margin: 0;
   color: #b6bdcc;
-  font-size: 1.33vw;
-  // font-size: 16px;
+  // font-size: 1.33vw;
+  font-size: 16px;
   line-height: 150%;
   /* 24px */
   text-align: center;
