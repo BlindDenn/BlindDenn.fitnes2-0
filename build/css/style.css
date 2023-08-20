@@ -3688,9 +3688,8 @@ button,
 }
 @media (max-width: 767px) {
   .event__content {
-    width: 202px;
     padding: 46px 0 51px;
-    margin-inline: auto;
+    margin-inline: 44px;
   }
 }
 
@@ -3702,6 +3701,12 @@ button,
   -ms-grid-columns: min-content 1fr auto;
   grid-template-columns: -webkit-min-content 1fr auto;
   grid-template-columns: min-content 1fr auto;
+}
+@media (max-width: 767px) {
+  .event__anounce {
+    width: 202px;
+    margin-inline: auto;
+  }
 }
 
 .event__anounce h3 {
@@ -3812,6 +3817,12 @@ button,
             margin-block-start: 4px;
     font-size: 12px;
     line-height: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .event p {
+    width: 202px;
+    margin-inline: auto;
   }
 }
 
