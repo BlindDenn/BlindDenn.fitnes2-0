@@ -1516,6 +1516,7 @@ button,
 }
 
 .btn {
+  padding: 19px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1526,6 +1527,7 @@ button,
       -ms-flex-pack: center;
           justify-content: center;
   font-family: "Roboto Condensed", "Arial", sans-serif;
+  text-align: center;
   font-size: 12px;
   font-weight: 700;
   line-height: 12px;
@@ -2524,8 +2526,8 @@ button,
   display: grid;
   -ms-grid-columns: 132fr 264fr 65fr 700fr;
   grid-template-columns: 132fr 264fr 65fr 700fr;
-  -ms-grid-rows: 82px auto auto 60px 94px;
-  grid-template-rows: 82px auto auto 60px 94px;
+  -ms-grid-rows: 82px auto auto minmax(60px, auto) 94px;
+  grid-template-rows: 82px auto auto minmax(60px, auto) 94px;
   justify-items: end;
 }
 @media (max-width: 1199px) {
@@ -3543,7 +3545,7 @@ button,
 
 .subs-card {
   max-width: 100%;
-  height: 448px;
+  min-height: 448px;
   background-color: #ffffff;
   padding: 60px 20px 68px;
   border: none;
@@ -3602,6 +3604,8 @@ button,
   margin: 0;
   font-size: 16px;
   line-height: 24%;
+  -webkit-margin-after: 64px;
+          margin-block-end: 64px;
 }
 
 .subs-card__price {
@@ -3661,7 +3665,7 @@ button,
 
 .subs-card__button {
   width: 65%;
-  height: 66px;
+  min-height: 66px;
   -webkit-margin-before: 34px;
           margin-block-start: 34px;
 }
@@ -3871,6 +3875,8 @@ button,
   margin: 0;
   -webkit-margin-before: 18px;
           margin-block-start: 18px;
+  -webkit-margin-after: 24px;
+          margin-block-end: 24px;
 }
 @media (max-width: 1199px) {
   .event p {
@@ -3889,7 +3895,7 @@ button,
 }
 
 .event__button {
-  height: 71px;
+  min-height: 71px;
   -webkit-margin-before: auto;
           margin-block-start: auto;
 }
@@ -5333,7 +5339,7 @@ dl.advantages-table,
   -webkit-margin-before: 29px;
           margin-block-start: 29px;
   width: 100%;
-  height: 55px;
+  min-height: 55px;
 }
 @media (max-width: 767px) {
   .promotion-form__submit-button {

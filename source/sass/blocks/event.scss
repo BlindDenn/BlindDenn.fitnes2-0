@@ -130,6 +130,7 @@
   line-height: 27px;
   margin: 0;
   margin-block-start: 18px;
+  margin-block-end: 24px;
 
   @include vp-tablet {
     margin: 0;
@@ -145,7 +146,7 @@
 }
 
 .event__button {
-  height: 71px;
+  min-height: 71px;
   margin-block-start: auto;
 
   @include vp-tablet {

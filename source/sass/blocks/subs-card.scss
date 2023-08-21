@@ -1,6 +1,6 @@
 .subs-card {
   max-width: 100%;
-  height: 448px;
+  min-height: 448px;
   background-color: $color-white;
   padding: 60px 20px 68px;
   border: none;
@@ -48,6 +48,7 @@
   margin: 0;
   font-size: 16px;
   line-height: 24%;
+  margin-block-end: 64px;
 }
 
 .subs-card__price {
@@ -102,7 +103,7 @@
 
 .subs-card__button {
   width: 65%;
-  height: 66px;
+  min-height: 66px;
   margin-block-start: 34px;
 
   @include vp-tablet {

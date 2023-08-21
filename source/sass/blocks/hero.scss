@@ -4,7 +4,7 @@
   color: $color-white;
   display: grid;
   grid-template-columns: 132fr 264fr 65fr 700fr;
-  grid-template-rows: 82px auto auto 60px 94px;
+  grid-template-rows: 82px auto auto minmax(60px, auto) 94px;
   justify-items: end;
 
   @include vp-tablet {
