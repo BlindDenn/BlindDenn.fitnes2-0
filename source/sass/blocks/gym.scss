@@ -143,10 +143,11 @@
 
 .gym__video {
   grid-column: -2 / -1;
+  grid-row: -1 / -2;
   width: 364px;
   height: 228px;
   position: absolute;
-  bottom: 0;
+  top: -113px;
   left: -63px;
   background-color: #7989ad;
   display: grid;
