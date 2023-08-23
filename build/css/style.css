@@ -3393,10 +3393,13 @@ button,
 }
 
 .subscription__controls {
+  max-width: 80%;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 47px;
   margin-bottom: 39px;
 }

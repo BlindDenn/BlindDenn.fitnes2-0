@@ -54,8 +54,10 @@
 }
 
 .subscription__controls {
+  max-width: 80%;
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   gap: 47px;
   margin-bottom: 39px;
 
