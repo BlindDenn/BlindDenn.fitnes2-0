@@ -38,9 +38,9 @@
 
   @include vp-tablet {
     grid-column: 1 / span 2;
-    grid-row: unset;
+    grid-row: auto;
     grid-template-columns: 279px 1fr;
-    grid-template-rows: 462px;
+    grid-template-rows: minmax(462px, auto);
   }
 
   @include vp-mobile {

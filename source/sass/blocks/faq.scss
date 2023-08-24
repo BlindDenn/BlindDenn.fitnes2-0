@@ -70,9 +70,9 @@
 }
 
 .faq__control {
-  height: 54px;
+  min-height: 54px;
 
   @include vp-mobile {
-    height: 44px;
+    min-height: 44px;
   }
 }

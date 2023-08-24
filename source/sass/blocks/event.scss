@@ -150,7 +150,7 @@
   margin-block-start: auto;
 
   @include vp-tablet {
-    height: 41px;
+    min-height: 41px;
   }
 }
 

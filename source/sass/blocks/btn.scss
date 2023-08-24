@@ -34,21 +34,32 @@
 
   &--bg-light {
     background-color: transparent;
+    padding-block-start: 23px;
+    padding-block-end: 24px;
     border: 2px solid $color-basic;
+
+    @include vp-mobile {
+      padding-block: 12px;
+    }
 
     &:hover,
     &:focus-visible,
     &.is-active {
+      padding: 18px;
       outline: none;
       color: $color-white;
       background: $gradient-button;
       border: none;
+
+      @include vp-mobile {
+        padding-block: 12px;
+      }
     }
 
-    &.is-active:focus-visible {
-      outline-offset: -3px;
-      outline: 3px solid $color-white-a70;
-    }
+    // &.is-active:focus-visible {
+    //   outline-offset: -3px;
+    //   outline: 3px solid $color-white-a70;
+    // }
 
     &:active {
       outline: none;
@@ -66,6 +77,8 @@
 
   &--thin-border {
     @include vp-tablet {
+      padding-block-start: 12px;
+      padding-block-end: 13px;
       border-width: 2px;
     }
   }
@@ -84,13 +97,48 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 100%;
+    color: $color-basic;
     /* 18px */
+    padding-block-start: 15px;
+    padding-block-end: 16px;
     border-width: 1px;
     border-color: $color-basic-a20;
-    text-transform: capitalize;
+    text-transform: none;
 
     @include vp-mobile {
       font-size: 16px;
+      padding-block: 11px;
+    }
+
+    &:hover,
+    &:focus-visible {
+      color: $color-basic;
+      background: none;
+      border: 1px solid $color-basic;
+      padding-block-start: 16px;
+      padding-block-end: 17px;
+
+      @include vp-mobile {
+        padding-block: 12px;
+      }
+    }
+
+    &:active {
+      color: $color-basic-a50;
+      }
+
+    &.is-active,
+    &.is-acrive:hover {
+      color: $color-white;
+      background: $gradient-button;
+      padding-block-start: 16px;
+      padding-block-end: 17px;
+      border: none;
+      pointer-events: none;
+    }
+
+    &.is-active:focus-visible {
+      border: 1px solid $color-basic;
     }
   }
 }
