@@ -47,7 +47,7 @@
     grid-column: unset;
     grid-row: unset;
     grid-template-columns: auto;
-    grid-template-rows: 299px 299px;
+    grid-template-rows: minmax(299px, auto) 299px;
   }
 
 
@@ -83,6 +83,7 @@
       font-size: 18px;
       font-weight: 400;
       line-height: 140%;
+      margin-block-end: 20px;
 
       @include vp-mobile {
         margin-block-start: -5px;
