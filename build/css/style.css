@@ -3216,6 +3216,8 @@ button,
 }
 @media (max-width: 1199px) {
   .gym__video {
+    top: unset;
+    bottom: 0;
     width: 266px;
     height: 167px;
     left: 50%;
@@ -3596,9 +3598,8 @@ button,
   background-color: #ffffff;
   padding: 60px 20px 68px;
   border: none;
-  cursor: de;
 }
-.subs-card:hover, .subs-card:focus-within {
+.subs-card:hover, .subs-card:focus-visible, .subs-card:active {
   -o-border-image: linear-gradient(to bottom right, #ed0233 0%, #003eb7 100%);
      border-image: -webkit-gradient(linear, left top, right bottom, from(#ed0233), to(#003eb7));
      border-image: linear-gradient(to bottom right, #ed0233 0%, #003eb7 100%);
@@ -3711,6 +3712,7 @@ button,
 }
 
 .subs-card__button {
+  z-index: 10;
   width: 65%;
   min-height: 66px;
   -webkit-margin-before: 34px;
@@ -3730,11 +3732,18 @@ button,
 }
 
 .subs-card:hover .subs-card__button,
-.subs-card:focus-visible .subs-card__button {
+.subs-card:focus-visible .subs-card__button,
+.subs-card__button:active {
   outline: none;
+  padding: 18px;
   color: #ffffff;
   background: linear-gradient(115deg, #ed0233 0%, #003eb7 100%);
   border: none;
+}
+
+.subs-card .subs-card__button:active {
+  outline: default;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .events {

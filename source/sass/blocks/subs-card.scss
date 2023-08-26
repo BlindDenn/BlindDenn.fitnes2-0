@@ -4,10 +4,10 @@
   background-color: $color-white;
   padding: 60px 20px 68px;
   border: none;
-  cursor: de;
 
   &:hover,
-  &:focus-within {
+  &:focus-visible,
+  &:active {
     border-image: $gradient-border;
     border-image-slice: 1;
     border-image-width: 7px;
@@ -102,6 +102,7 @@
 
 
 .subs-card__button {
+  z-index: 10;
   width: 65%;
   min-height: 66px;
   margin-block-start: 34px;
@@ -117,9 +118,18 @@
 }
 
 .subs-card:hover .subs-card__button,
-.subs-card:focus-visible .subs-card__button {
+// .subs-card__button:hover,
+.subs-card:focus-visible .subs-card__button,
+// .subs-card:active .subs-card__button {
+.subs-card__button:active {
   outline: none;
+  padding: 18px;
   color: $color-white;
   background: $gradient-button;
   border: none;
+}
+
+.subs-card .subs-card__button:active {
+  outline: default;
+  color: $color-white-a70;
 }
