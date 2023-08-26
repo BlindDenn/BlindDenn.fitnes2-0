@@ -3451,6 +3451,9 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   gap: 47px;
   margin-bottom: 39px;
 }
@@ -3511,18 +3514,7 @@ button,
   border-bottom: 2px solid #d10a42;
 }
 .subscription__control.is-active {
-  position: relative;
   pointer-events: none;
-}
-.subscription__control.is-active:focus-visible::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: -10px;
-  right: -14px;
-  bottom: -2px;
-  left: -14px;
-  border: 2px solid #d10a42;
 }
 
 .subscription__content {

@@ -58,6 +58,7 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
   gap: 47px;
   margin-bottom: 39px;
 
@@ -114,19 +115,7 @@
   }
 
   &.is-active {
-    position: relative;
     pointer-events: none;
-
-    &:focus-visible::after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: -10px;
-      right: -14px;
-      bottom: -2px;
-      left: -14px;
-      border: 2px solid $tabs-select-understroke;
-    }
   }
 }
 
