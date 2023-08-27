@@ -74,11 +74,18 @@
       right: 10px;
       bottom: 2px;
       background-color: $color-white;
+
+      @include vp-mobile {
+        left: 0;
+        bottom: -2px;
+        right: 0;
+      }
     }
   }
 
   &:focus-visible {
     outline: 1px solid $color-white;
+    outline-offset: 10px;
   }
 
   &:active {
@@ -206,12 +213,12 @@
   border-radius: 50%;
   color: $bg-footer;
 
-  @include hover {
+  &:hover {
     background-color: $color-accent;
     color: $color-white;
   }
 
-  @include focus {
+  &:focus-visible {
     background-color: $color-accent;
     color: $color-white;
     outline: none;

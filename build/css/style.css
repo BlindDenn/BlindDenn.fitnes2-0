@@ -2891,8 +2891,16 @@ button,
     background-color: #ffffff;
   }
 }
+@media (hover: hover) and (max-width: 767px) {
+  .footer__nav a:hover:not(.focus-visible)::after {
+    left: 0;
+    bottom: -2px;
+    right: 0;
+  }
+}
 .footer__nav a:focus-visible {
   outline: 1px solid #ffffff;
+  outline-offset: 10px;
 }
 .footer__nav a:active::after {
   display: none;
@@ -3014,13 +3022,11 @@ button,
   border-radius: 50%;
   color: #030a1a;
 }
-@media (hover: hover) {
-  .footer__social a:hover:not(.focus-visible) {
-    background-color: #103aae;
-    color: #ffffff;
-  }
+.footer__social a:hover {
+  background-color: #103aae;
+  color: #ffffff;
 }
-.footer__social a.focus-visible:focus {
+.footer__social a:focus-visible {
   background-color: #103aae;
   color: #ffffff;
   outline: none;
