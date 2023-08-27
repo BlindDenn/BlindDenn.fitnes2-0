@@ -124,3 +124,48 @@
     }
   }
 }
+
+.contacts__item-link {
+  position: relative;
+  width: fit-content;
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:disabled,
+  &:not([href]) {
+    pointer-events: none;
+    opacity: 0.3;
+  }
+
+  &:hover::after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-block-end: 1px solid $color-basic;
+  }
+
+  &:focus-visible::after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    right: -5px;
+    bottom: 0;
+    left: -5px;
+    border: 1px solid $color-basic;
+  }
+
+  &:active::after {
+    display: none;
+  }
+}

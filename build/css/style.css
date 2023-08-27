@@ -5585,6 +5585,47 @@ dl.advantages-table,
   }
 }
 
+.contacts__item-link {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.contacts__item-link:focus-visible {
+  outline: none;
+}
+.contacts__item-link:active {
+  opacity: 0.5;
+}
+.contacts__item-link:disabled, .contacts__item-link:not([href]) {
+  pointer-events: none;
+  opacity: 0.3;
+}
+.contacts__item-link:hover::after {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-border-after: 1px solid #102654;
+          border-block-end: 1px solid #102654;
+}
+.contacts__item-link:focus-visible::after {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  right: -5px;
+  bottom: 0;
+  left: -5px;
+  border: 1px solid #102654;
+}
+.contacts__item-link:active::after {
+  display: none;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
