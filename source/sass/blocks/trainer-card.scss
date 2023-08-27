@@ -108,11 +108,13 @@
   }
 }
 
-.trainer-card:hover p {
+.trainer-card:hover p,
+.trainer-card:focus-visible p {
   display: block;
 }
 
-.trainer-card:hover ul {
+.trainer-card:hover ul,
+.trainer-card:focus-visible ul {
   display: block;
 }
 
