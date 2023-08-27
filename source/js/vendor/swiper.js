@@ -7919,6 +7919,7 @@ const swiper = () => {
 
       function onEnterOrSpaceKey(e) {
         if (e.keyCode !== 13 && e.keyCode !== 32) return;
+        e.preventDefault();
         const params = swiper.params.a11y;
         const $targetEl = $(e.target);
 
