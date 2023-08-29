@@ -2588,8 +2588,8 @@ button,
     width: unset;
     -ms-grid-columns: 138fr 186px 30fr 324fr;
     grid-template-columns: 138fr 186px 30fr 324fr;
-    -ms-grid-rows: 50px auto auto 61px 105px;
-    grid-template-rows: 50px auto auto 61px 105px;
+    -ms-grid-rows: 50px auto auto minmax(61px, auto) 105px;
+    grid-template-rows: 50px auto auto minmax(61px, auto) 105px;
   }
 }
 @media (max-width: 767px) {
@@ -2597,8 +2597,8 @@ button,
     width: 100%;
     -ms-grid-columns: 1fr 76px 214px 1fr;
     grid-template-columns: 1fr 76px 214px 1fr;
-    -ms-grid-rows: 8px auto auto 63px 78px;
-    grid-template-rows: 8px auto auto 63px 78px;
+    -ms-grid-rows: 8px auto auto minmax(63px, auto) 78px;
+    grid-template-rows: 8px auto auto minmax(63px, auto) 78px;
   }
 }
 

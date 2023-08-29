@@ -10,13 +10,13 @@
   @include vp-tablet {
     width: unset;
     grid-template-columns: 138fr 186px 30fr 324fr;
-    grid-template-rows: 50px auto auto 61px 105px;
+    grid-template-rows: 50px auto auto minmax(61px, auto) 105px;
   }
 
   @include vp-mobile {
     width: 100%;
     grid-template-columns: 1fr 76px 214px 1fr;
-    grid-template-rows: 8px auto auto 63px 78px;
+    grid-template-rows: 8px auto auto minmax(63px, auto) 78px;
   }
 }
 
