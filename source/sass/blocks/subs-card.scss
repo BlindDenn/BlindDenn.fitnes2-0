@@ -2,7 +2,7 @@
   max-width: 100%;
   min-height: 448px;
   background-color: $color-white;
-  padding: 60px 20px 68px;
+  padding: 62px 20px 66px;
   border: none;
 
   &:hover,
@@ -14,12 +14,12 @@
   }
 
   @include vp-tablet {
-    padding: 67px 20px 63px;
+    padding: 61px 20px 68px;
   }
 
   @include vp-mobile {
-    height: 384px;
-    padding: 47px 20px 58px;
+    min-height: 384px;
+    padding: 51px 20px 54px;
   }
 }
 
@@ -49,6 +49,10 @@
   font-size: 16px;
   line-height: 24%;
   margin-block-end: 64px;
+
+  @include vp-mobile {
+    margin-block-end: 50px;
+  }
 }
 
 .subs-card__price {
