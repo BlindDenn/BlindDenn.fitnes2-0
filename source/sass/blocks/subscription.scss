@@ -97,6 +97,7 @@
   font-weight: 400;
   line-height: 30px;
   opacity: 0.5;
+  user-select: none;
 
   @include vp-tablet {
     font-size: 18px;
