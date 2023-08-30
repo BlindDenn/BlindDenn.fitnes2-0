@@ -3979,7 +3979,6 @@ button,
 }
 @media (max-width: 1199px) {
   .event p {
-    margin: 0;
     -webkit-margin-before: 4px;
             margin-block-start: 4px;
     font-size: 12px;
@@ -4013,7 +4012,7 @@ button,
 }
 @media (max-width: 1199px) {
   .event img {
-    height: 292px;
+    min-width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }

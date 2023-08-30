@@ -133,7 +133,6 @@
   margin-block-end: 24px;
 
   @include vp-tablet {
-    margin: 0;
     margin-block-start: 4px;
     font-size: 12px;
     line-height: 18px;
@@ -161,11 +160,12 @@
   background-color: #000145;
 
   @include vp-tablet {
-    height: 292px;
+    min-width: 100%;
     object-fit: cover;
   }
 
   @include vp-mobile {
+    // height: 292px;
     grid-column: 1 / -1;
   }
 }
